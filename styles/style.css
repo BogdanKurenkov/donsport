@@ -474,6 +474,15 @@ input {
     padding: 20px 0;
 }
 
+.percent {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.percent img{
+    margin-top: 15px;
+}
 
 .footer {
     background: var(--dark-blue);
