@@ -32,9 +32,89 @@
 
         <section class="buy-card">
             <div class="container container_relative">
-                <img class="buy-card__bg" src="/assets/img/bar.png" alt="bg">
                 <div class="buy-card-window">
-                    
+                    <div class="buy-card-heading">
+                        <div class="heading_left">
+                            <h4>купить карту</h4>
+                            <p>Оставьте свой контакт. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты
+                            </p>
+                        </div>
+                        <div class="close-card">
+                            <img src="/assets/svg/x.svg" alt="x">
+                        </div>
+                    </div>
+
+                    <form class="buy-card-form">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Телефон">
+
+                        <div class="dropdown-container">
+                            <div class="dropdown-header" data-dropdown>
+                                <span class="selected-item">Клуб</span>
+                                <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                            </div>
+                            <div class="dropdown-menu">
+                                <div class="menu-item" data-value="Атлант">Атлант <span>Подольск, ул. Ленинградская,
+                                        д.5</span></div>
+                                <div class="menu-item" data-value="Амосфера">Амосфера
+                                    <span>Подольск, ул. Ленинградская, д.5</span>
+                                </div>
+                                <div class="menu-item" data-value="Алые паруса">Алые паруса
+                                    <span>г. Москва, Ул. Авиационная, 79</span>
+                                </div>
+                                <div class="menu-item" data-value="Бирюзова">Бирюзова
+                                    <span>г. Москва, ул. Маршала Бирюзова, 32 к. 1</span>
+                                </div>
+                                <div class="menu-item" data-value="Хамовники">Хамовники
+                                    <span>г. Москва, ул. Малая Пироговская, 8</span>
+                                </div>
+                                <div class="menu-item" data-value="Юго-Западная">Юго-Западная
+                                    <span>г. Москва, пр-т Вернадского, 92</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dobule-dd-wrapper">
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" data-dropdown>
+                                    <span class="selected-item">Сегодня 10.02</span>
+                                    <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg"
+                                        alt="arrow">
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div class="menu-item menu-item_date selected" data-value="Сегодня, 10.02">Сегодня
+                                        <span>10.02</span>
+                                    </div>
+                                    <div class="menu-item menu-item_date" data-value="Завтра, 11.02">Завтра
+                                        <span>11.02</span>
+                                    </div>
+                                    <div class="menu-item menu-item_date" data-value="Четверг, 12.02">Четверг
+                                        <span>12.02</span>
+                                    </div>
+                                    <div class="menu-item menu-item_date" data-value="Пятница, 13.03">Пятница
+                                        <span>13.03</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" data-dropdown>
+                                    <span class="selected-item">10:00 - 17:00</span>
+                                    <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg"
+                                        alt="arrow">
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div class="menu-item selected" data-value="10:00 - 17:00">10:00 - 17:00</div>
+                                    <div class="menu-item" data-value="17:00 - 22:00">17:00 - 22:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary">Отправить</button>
+                    </form>
+
+                    <p class="form-politic">Нажимая на кнопку “Отправить” я соглашаюсь с условиями политики
+                        конфиденциальности</p>
+
                 </div>
             </div>
         </section>
@@ -109,6 +189,8 @@
         </div>
     </footer>
 
+
+    <script defer src="/js/dropdown.js"></script>
 </body>
 
 </html>
