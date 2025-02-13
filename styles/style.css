@@ -31,6 +31,7 @@ h6 {
     --dark-blue: #383838;
     --beige: #E1DAD7;
     --border: 1px solid rgba(255, 255, 255, 0.4);
+    --card-bg: #F1F2F4;
 }
 
 .video-container {
@@ -74,6 +75,115 @@ h6 {
     max-width: 768px;
     text-align: left;
 }
+
+.buy-card {
+    padding: 30px 0;
+}
+
+.buy-card__bg {
+    width: 100%;
+}
+
+.container_relative {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     background: #383838;
