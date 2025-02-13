@@ -133,6 +133,7 @@ input {
 .content-overlay {
     z-index: 1;
     text-align: center;
+    margin: 0 auto 40px;
 }
 
 .container {
@@ -149,6 +150,20 @@ input {
 .page-title_small {
     max-width: 768px;
     text-align: left;
+}
+
+.main-page-text {
+    color: var(--white);
+    align-self: flex-end;
+    text-align: right;
+    max-width: 355px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .buy-card {
@@ -480,7 +495,7 @@ input {
     gap: 4px;
 }
 
-.percent img{
+.percent img {
     margin-top: 15px;
 }
 
