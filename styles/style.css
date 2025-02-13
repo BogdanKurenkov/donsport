@@ -59,31 +59,32 @@ h6 {
     display: inline-block;
     overflow: hidden;
     transition: background-color 0.3s ease;
-  }
-  
-  .hover-effect::after {
+}
+
+.hover-effect::after {
     content: attr(data-hover-text);
     position: absolute;
-    top: -100%; 
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e74c3c;
+    background-color: var(--dark-blue);
     transition: top 0.3s ease;
     z-index: 1;
-    color: var(--white) ;
-  }
-  
-  .hover-effect:hover {
+    color: var(--white);
+}
+
+.hover-effect:hover {
     background-color: transparent;
-  }
-  
-  .hover-effect:hover::after {
-    top: 0; 
-  }
+}
+
+.hover-effect:hover::after {
+    top: 0;
+    font-weight: 700;
+}
 
 a.navigate-btn {
     background: var(--card-bg);
@@ -415,18 +416,63 @@ input {
 
 
 
+.numbers-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    height: 916px;
+}
 
+.numbers-card {
+    padding: 20px;
+    width: 100%;
+    height: 50%;
+    background: var(--card-bg);
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+}
 
+.numbers-card h4 {
+    font-size: 160px;
+    line-height: 160px;
+}
 
+.numbers-card__description {
+    font-size: 18px;
+    font-weight: 600;
+}
 
+.numbers-left,
+.numbers-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: calc(25% - 8px);
 
+}
 
+.center-section {
+    width: 50%;
+    border-radius: 16px;
+}
 
+.center-section img {
+    width: 100%;
+    height: 100%;
+}
 
+.center-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-
-
-
+.numbers {
+    padding: 20px 0;
+}
 
 
 .footer {
