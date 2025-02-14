@@ -1108,6 +1108,17 @@ a.social-media img {
     opacity: 1;
 }
 
+.buy-card-window_consultation {
+    background-image: url('/assets/img/line_consultation.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 0;
+}
+
+.form-politic_consultation {
+    margin-bottom: 40px;
+}
+
 /*  */
 
 @media(max-width:1440px) {
