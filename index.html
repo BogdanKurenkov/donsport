@@ -9,6 +9,7 @@
     <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -42,7 +43,7 @@
                     </nav>
                 </div>
                 <div class="header-col3">
-                    <p class="phone">+7 495 292 12 94</p>
+                    <p id="phone-number" class="phone">+7 495 292 12 94</p>
                     <button class="back-call">Обратный звонок</button>
                     <button class="buy-card__btn">Купить карту</button>
                     <div class="burger-menu">
@@ -323,6 +324,12 @@
         </section>
 
         <section>
+            <div class="feedback">
+
+            </div>
+        </section>
+
+        <section>
             <div class="container container_flex">
                 <h3 class="section-title">Новости</h3>
                 <div class="news">
@@ -506,7 +513,7 @@
 
                     <div class="footer-col footer-col_col1">
                         <h3 class="footer-title">
-                            подписывайся на нас в соцсетях
+                            подписывайся <br> на нас в соцсетях
                         </h3>
                         <div class="social-media-wrapper">
                             <a href="#" class="social-media">
@@ -557,15 +564,19 @@
                 <div class="footer-bottom">
                     <img class="footer-logo" src="/assets/img/footer-logo.png" alt="donsport">
                     <div class="footer-info">
-                        <p>2003 - 2025 ДОНСПОРТ</p>
-                        <a href="#">оферта</a>
-                        <p>сайт сделан в <a href="#">finik</a></p>
+                        <p class="years">2003 - 2025 ДОНСПОРТ</p>
+                        <a class="oferta" href="#">оферта</a>
+                        <p class="finik">сайт сделан в <a href="#">finik</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
     <script src="/js/header.js"></script>
+    <script src="/js/clipBoard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script defer src="/js/dropdown.js"></script>
     <script src="/js/changeSLides.js"></script>
