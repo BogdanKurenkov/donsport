@@ -1145,12 +1145,16 @@ a.social-media img {
     font-size: 18px;
 }
 
-.feedback-wrapper {
+/* .feedback-wrapper {
     display: flex;
     gap: 8px;
     overflow: visible;
     justify-content: center;
     margin-top: 40px;
+} */
+
+.section-title_feedback {
+    margin-bottom: 40px;
 }
 
 .feedback {
@@ -1173,8 +1177,34 @@ a.social-media img {
     margin: 45px auto 0;
 }
 
-.slider-controls-wrapper img {
+.slider-next,
+.slider-prev {
     cursor: pointer;
+}
+
+
+.splide__pagination {
+    display: none !important;
+}
+
+.my-carousel-progress {
+    background: #F1F2F4;
+    height: 9px;
+    border-radius: 40px;
+    overflow: hidden;
+    width: 141px;
+}
+
+.my-carousel-progress-bar {
+    background: #383838;
+    border-radius: 40px;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.splide__arrows {
+    display: none;
 }
 
 /*  */
