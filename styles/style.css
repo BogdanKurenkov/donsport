@@ -577,6 +577,7 @@ a.social-media img {
 .for-love-wrapper {
     display: flex;
     gap: 4px;
+    overflow: hidden;
 }
 
 .for-love-left {
