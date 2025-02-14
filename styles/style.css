@@ -589,10 +589,12 @@ a.social-media img {
     flex-direction: column;
     background-color: var(--card-bg);
     padding: 40px;
+    border-radius: 16px;
 }
 
 .for-love-right {
     width: 50%;
+    border-radius: 16px;
 }
 
 .for-love__title {
@@ -678,6 +680,9 @@ a.social-media img {
     max-width: 319px;
     padding: 16px;
     min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .love-card__description {
@@ -702,5 +707,190 @@ a.social-media img {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-top: auto;
+}
+
+
+/*  */
+.container-slider {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+.slider-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tab {
+    padding: 10px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-right {
+    width: 70%;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-desc {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: var(--dark-blue);
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 648px;
+}
+
+.tabs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tab {
+    position: relative;
+    padding: 10px 20px;
+    background: #F7F8FA;
+    border: none;
+    cursor: pointer;
+    color: rgba(56, 56, 56, 0.2);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.tab.active {
+    background: var(--white);
+    position: relative;
+    color: var(--dark-blue);
+}
+
+.tab.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #F7F8FA;
+    transition: none;
+    z-index: 0;
+
+    /* Оставляем под текстом */
+}
+
+.tab span {
+    position: relative;
+    z-index: 1;
+    /* Делаем текст выше синего блока */
+}
+
+.tab.active.animating::before {
+    animation: progress-tab 10s linear forwards;
+}
+
+.slider-title {
+    text-align: left;
+    margin: 24px 0 0 24px;
+}
+
+@keyframes progress-tab {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.fitness {
+    padding: 20px 0;
+}
+
+.slide-title {
+    font-size: 52px;
+    line-height: 46.8px;
+    color: var(--dark-blue);
+}
+
+.slide-desc-wrapper {
+    display: flex;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.slide-icon {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: var(--card-bg);
+}
+
+.slide-icon img {
+    width: 119px;
+    height: 97px;
+}
+
+.slide-desc-wrapper,
+.slide-btn {
+    background: var(--white);
+}
+
+.column p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.column {
+    padding: 14px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.slide-btn {
+    color: var(--dark-blue);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    height: 54px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
