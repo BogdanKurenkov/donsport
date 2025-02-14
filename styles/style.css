@@ -1071,20 +1071,42 @@ a.social-media img {
     border-radius: 8px;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    backdrop-filter: blur(16.5px);
+    opacity: 0;
+    visibility: hidden;
+}
 
+.overlay_active {
+    opacity: 1;
+    visibility: visible;
+}
 
+.body-lock {
+    overflow: hidden;
+}
 
+.overlay__content {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
+.overlay_active .overlay__content {
+    transform: scale(1);
+    opacity: 1;
+}
 
 /*  */
 

@@ -1,8 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    console.log(document.getElementById('phone-number'))
-
     const clipboard = new ClipboardJS('#phone-number', {
         text: function () {
             return document.getElementById('phone-number').textContent;
