@@ -423,6 +423,7 @@ input {
     line-height: 90px;
     text-align: center;
     max-width: 680px;
+    margin: 0 auto;
 }
 
 
