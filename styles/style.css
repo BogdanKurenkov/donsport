@@ -1150,6 +1150,7 @@ a.social-media img {
     gap: 8px;
     overflow: visible;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .feedback {
@@ -1162,6 +1163,18 @@ a.social-media img {
     padding: 24px;
     height: 450px;
     flex-shrink: 0;
+}
+
+.slider-controls-wrapper {
+    display: flex;
+    width: 269px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px auto 0;
+}
+
+.slider-controls-wrapper img {
+    cursor: pointer;
 }
 
 /*  */
