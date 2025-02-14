@@ -921,14 +921,11 @@ a.social-media img {
     background: #F7F8FA;
     transition: none;
     z-index: 0;
-
-    /* Оставляем под текстом */
 }
 
 .tab span {
     position: relative;
     z-index: 1;
-    /* Делаем текст выше синего блока */
 }
 
 .tab.active.animating::before {
@@ -1012,14 +1009,39 @@ a.social-media img {
 }
 
 
+.section-description {
+    max-width: 469px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #AAB2C2;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 21.6px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
 
+.container_overflow {
+    overflow: visible;
+}
 
+.team-cards {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
 
+.team-card {
+    width: calc(20% - 8px);
+}
 
+.navigate-btn_center {
+    margin: 40px auto 0;
+}
 
-
-
-
+.team {
+    margin: 180px 0;
+}
 
 
 
