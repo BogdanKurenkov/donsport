@@ -1043,17 +1043,33 @@ a.social-media img {
     margin: 180px 0;
 }
 
+.team-card-wrapper {
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
+.trainer-name {
+    font-size: 52px;
+    line-height: 46.8px;
+    max-width: 248px;
+}
 
+.trainer {
+    border-radius: 8px;
+}
 
+.team-card-wrapper {
+    background: var(--card-bg);
+}
 
-
-
-
-
-
-
-
+.trainer-description {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    border-radius: 8px;
+}
 
 
 
