@@ -426,16 +426,10 @@ input {
 }
 
 
-
-
-
-
-
 .numbers-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    height: 916px;
 }
 
 .numbers-card {
@@ -577,4 +571,134 @@ a.social-media img {
     justify-content: space-between;
     width: 100%;
     max-width: 1106px;
+}
+
+.for-love-wrapper {
+    display: flex;
+    gap: 4px;
+}
+
+.for-love-left {
+    width: 50%;
+    background-image: url('/assets/img/line_forlove.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    padding: 40px;
+}
+
+.for-love-right {
+    width: 50%;
+}
+
+.for-love__title {
+    max-width: 468px;
+}
+
+.icon-wrapper {
+    width: 142px;
+    height: 142px;
+    border-radius: 8px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--card-bg);
+    flex-shrink: 0;
+}
+
+.for-love__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.icon-wrapper_dumbbell {
+    position: absolute;
+    z-index: 2;
+    width: 142px;
+    height: 142px;
+    right: 0;
+}
+
+.icon-wrapper_heart {
+    position: relative;
+    width: 142px;
+    height: 142px;
+    top: -100px;
+    left: -15px;
+}
+
+.for-love-wrapper .btn-primary {
+    margin-top: auto;
+    width: 188px;
+    height: 49px;
+    margin: auto auto 0;
+}
+
+.for-love__promotion {
+    background: var(--white);
+    border-radius: 32px;
+    padding: 8px 18px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    width: max-content;
+    margin: 0 auto;
+}
+
+.for-love__promotion span {
+    font-weight: 700;
+    padding: 8px 18px;
+    background: var(--card-bg);
+    border-radius: 40px;
+}
+
+.love-card-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.love-card {
+    background: var(--white);
+    border-radius: 12px;
+    max-width: 319px;
+    padding: 16px;
+    min-height: 290px;
+}
+
+.love-card__description {
+    color: #CBD1DC;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.love-card__title {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.for-love__cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 8px;
+}
+
+.love-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
 }
