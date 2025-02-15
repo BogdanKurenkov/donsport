@@ -1063,12 +1063,15 @@ a.social-media img {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 367px;
+    border-radius: 8px;
 }
 
 .trainer-name {
     font-size: 52px;
     line-height: 46.8px;
     max-width: 248px;
+    text-wrap: wrap;
 }
 
 .trainer {
@@ -1223,16 +1226,16 @@ a.social-media img {
     font-weight: 600;
     display: flex;
     justify-content: space-between;
-    opacity: 0; 
-    transform: translateY(-10px); 
-    max-height: 0; 
-    overflow: hidden; 
-    transition: opacity 0.3s ease, transform 0.5s ease, max-height 0.5s ease; 
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, transform 0.5s ease, max-height 0.5s ease;
 }
 
 .error-message.visible {
-    opacity: 1; 
-    transform: translateY(0); 
+    opacity: 1;
+    transform: translateY(0);
     max-height: 100px;
 }
 
@@ -1338,5 +1341,34 @@ a.social-media img {
 
     .footer-top {
         margin-top: 35px;
+    }
+}
+
+
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 80s linear infinite;
+}
+
+.team-card {
+    display: inline-block;
+    width: 367px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }
