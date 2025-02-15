@@ -1376,6 +1376,45 @@ a.social-media img {
     max-width: 428px;
 }
 
+.club-preview {
+    position: absolute;
+    opacity: 0.4;
+    transition: opacity 0.5s ease;
+}
+
+.club-preview_active {
+    opacity: 1;
+}
+
+.club-preview_1 {
+    top: 15.9%;
+    left: 50%;
+}
+
+.club-preview_2 {
+    top: calc(15.9% + 105px);
+}
+
+.club-preview_3 {
+    top: calc(15.9% + 105px);
+    left: calc(50% + 55px);
+}
+
+.club-preview_4 {
+    top: 50.43%;
+    left: calc(22vw - 100px)
+}
+
+.club-preview_5 {
+    bottom: 8.73%;
+    left: calc(29vw - 100px);
+}
+
+.club-preview_6 {
+    bottom: 12.3%;
+    left: calc(35vw - 100px);
+}
+
 /*  */
 
 @media(max-width:1440px) {
