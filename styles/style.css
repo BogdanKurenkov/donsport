@@ -1361,6 +1361,7 @@ a.social-media img {
     line-height: 24.59px;
     padding: 20px 48px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .section-title_buy {
