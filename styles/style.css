@@ -1579,6 +1579,31 @@ a.social-media img {
         line-height: 68.4px;
         max-width: 502px;
     }
+
+    .team-card,
+    .team-card-wrapper {
+        width: 275px;
+    }
+
+    .team-card img {
+        max-width: 275px;
+    }
+
+    .trainer-name {
+        font-size: 32px;
+        line-height: 28.8px;
+    }
+
+    .trainer-description {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .team-card-wrapper {
+        padding: 12px 18px;
+    }
+
+
 }
 
 @media(max-width:1024px) {
@@ -1607,6 +1632,16 @@ a.social-media img {
 }
 
 @media(max-width:768px) {
+    .team-card,
+    .team-card-wrapper {
+        width: 240px;
+        padding: 12px 16px;
+    }
+
+    .team-card img {
+        max-width: 240px;
+    }
+
     .news-card {
         width: 40%;
         flex-shrink: 0;
