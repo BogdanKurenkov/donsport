@@ -966,7 +966,7 @@ a.social-media img {
 
 .slider-title {
     text-align: left;
-    margin: 24px 0 0 24px;
+    margin: 4px 0 0 4px;
 }
 
 @keyframes progress-tab {
@@ -1069,6 +1069,10 @@ a.social-media img {
 
 .navigate-btn_center {
     margin: 40px auto 0;
+}
+
+.tab span {
+    font-size: 18px;
 }
 
 .team {
@@ -1437,6 +1441,91 @@ a.social-media img {
     color: var(--white);
 }
 
+.for-love-right img {
+    border-radius: 16px;
+}
+
+.app-section {
+    margin-bottom: 200px;
+}
+
+.love-card-icon-wrapper {
+    background: var(--card-bg);
+    border-radius: 50%;
+}
+
+.app-wrapper {
+    background-color: var(--card-bg);
+    background-image: url('/assets/img/line_app.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 603px;
+    overflow: visible;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.mobile-phone {
+    position: relative;
+    transform: translateY(-23%);
+    margin-left: 32%;
+}
+
+.app-card-description {
+    color: #CBD1DC;
+}
+
+.app-left .section-title {
+    text-align: left;
+    margin: 0px;
+}
+
+.app-card {
+    background: var(--white);
+    width: 319px;
+    height: 290px;
+    padding: 20px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    position: absolute;
+}
+
+.app-icon-wrapper {
+    background: var(--card-bg);
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-card-info-wrapper {
+    max-width: 273px;
+}
+
+.app-right {
+    position: relative;
+    width: 100%;
+}
+
+.app-left {
+    width: 30%;
+}
+
+.app-card_second {
+    right: 7%;
+    bottom: 9%;
+}
+
+.app-card_first {
+    left: 22%;
+    top: 24%;
+}
+
 /*  */
 
 @media(max-width:1680px) {
@@ -1460,6 +1549,37 @@ a.social-media img {
 }
 
 @media(max-width:1440px) {
+
+    .header-col3>* {
+        font-size: 12px;
+    }
+
+    .header-col2 {
+        height: 50px;
+    }
+
+    .burger-menu {
+        width: 37px;
+        height: 37px;
+    }
+
+    .header-col3 {
+        padding: 6px;
+    }
+
+    .back-call,
+    .buy-card__btn {
+        padding: 10.5px 19.5px;
+    }
+
+    .phone {
+        padding: 5.25px 19.5px;
+    }
+
+    .icon-wrapper {
+        width: 107px;
+        height: 107px;
+    }
 
     .page-title {
         font-size: 98px;
@@ -1637,9 +1757,38 @@ a.social-media img {
         line-height: 16.8px;
         max-width: 266px;
     }
+
+    .tab span {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 76px;
+        line-height: 68.4px;
+    }
+}
+
+@media(max-width:1280px) {
+    .header-col2 {
+        display: none;
+    }
 }
 
 @media(max-width:1024px) {
+
+    .container-slider {
+        flex-direction: column-reverse;
+    }
+
+    .slider-left,
+    .slider-right {
+        width: 100%;
+    }
+
+    .slider-title {
+        display: none;
+    }
+
     .footer-top {
         flex-direction: column;
         gap: 116px;
@@ -1752,6 +1901,12 @@ a.social-media img {
 }
 
 @media(max-width:500px) {
+
+    .phone,
+    .back-call,
+    .buy-card__btn {
+        display: none;
+    }
 
     .page-title {
         font-size: 58px;
