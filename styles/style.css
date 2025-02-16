@@ -582,6 +582,7 @@ input {
 .numbers-card__description {
     font-size: 18px;
     font-weight: 600;
+    line-height: 21.6px;
 }
 
 .numbers-left,
@@ -596,6 +597,17 @@ input {
 .center-section {
     width: 50%;
     border-radius: 16px;
+    position: relative;
+}
+
+.center-section h4 {
+    position: absolute;
+    left: 24px;
+    bottom: 4px;
+    font-size: 100px;
+    line-height: 90px;
+    color: var(--white);
+    max-width: 669px;
 }
 
 .center-section img {
@@ -1551,6 +1563,22 @@ a.social-media img {
         font-size: 14px;
         gap: 0;
     }
+
+    .numbers-card h4 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .numbers-card__description {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .center-section h4 {
+        font-size: 76px;
+        line-height: 68.4px;
+        max-width: 502px;
+    }
 }
 
 @media(max-width:1024px) {
@@ -1598,9 +1626,86 @@ a.social-media img {
         height: 916px !important;
         background-position-x: 40%;
     }
+
+    .menu-item {
+        padding: 4px 4px 4px 16px;
+        border-radius: 2px;
+    }
+
+    .menu-item span {
+        width: 57px;
+        height: 33px;
+    }
+
+    .dropdown-menu {
+        border-radius: 4px;
+    }
+
+    .numbers-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .numbers-left,
+    .numbers-right {
+        width: calc(50% - 4px);
+    }
+
+    .center-section {
+        order: 3;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .percent img {
+        width: 27px;
+        height: 51px;
+    }
+
+    .numbers-card {
+        height: 341px;
+        border-radius: 8px;
+    }
 }
 
+
+
 @media(max-width:500px) {
+
+    .numbers-card h4 {
+        font-size: 55.92px;
+        line-height: 55.92px;
+    }
+
+    .numbers-card {
+        height: 180px;
+        padding: 10px;
+    }
+
+    .center-section h4 {
+        font-size: 36px;
+        max-width: 233px;
+        line-height: 32.4px;
+    }
+
+    .percent img {
+        width: 13px;
+        height: 24.2px;
+        margin-top: 5px;
+    }
+
+    .numbers-card__description {
+        font-size: 12px;
+    }
+
+    .menu-item {
+        padding: 4px 4px 4px 10px;
+    }
+
+    .dropdown-menu {
+        padding: 4px;
+        gap: 4px;
+    }
+
     .container {
         width: calc(100vw - 32px);
     }
@@ -1639,26 +1744,26 @@ a.social-media img {
         margin-top: 35px;
     }
 
-    .buy-card .container_relative{  
+    .buy-card .container_relative {
         background: none;
         height: max-content !important;
     }
 
-    .heading_left h4{
+    .heading_left h4 {
         font-size: 40px;
         line-height: 36px;
     }
 
-    .buy-card-window{
+    .buy-card-window {
         padding: 20px;
     }
 
-    .dropdown-header{
+    .dropdown-header {
         padding: 0 12px;
         font-size: 14px;
     }
 
-    .dropdown-header img{
+    .dropdown-header img {
         width: 16px;
         height: 16px;
     }
