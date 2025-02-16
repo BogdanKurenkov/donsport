@@ -6,11 +6,12 @@ const splide = new Splide('.splide', {
     padding: { left: '3.5%', right: '3.5%' },
     breakpoints: {
         768: {
-            padding: { left: '4%', right: '15%' },
+            perPage: 1,
+            padding: { left: '20%', right: '20%' },
         },
         480: {
             perPage: 1,
-            padding: { left: '10%', right: '10%' },
+            padding: { left: '5%', right: '5%' },
         },
     },
 });

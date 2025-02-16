@@ -1459,6 +1459,24 @@ a.social-media img {
 }
 
 @media(max-width:1440px) {
+    .feedback-top p {
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+
+    .feedback-bottom img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .feedback {
+        height: 345px;
+    }
+
+    .feedback-bottom p {
+        font-size: 14px;
+    }
+
     .footer-title {
         font-size: 51px;
         line-height: 45.9px;
@@ -1632,6 +1650,12 @@ a.social-media img {
 }
 
 @media(max-width:768px) {
+
+    .feedback-top img {
+        width: 43px;
+        height: 39px;
+    }
+
     .team-card,
     .team-card-wrapper {
         width: 240px;
@@ -1702,9 +1726,33 @@ a.social-media img {
     }
 }
 
-
-
 @media(max-width:500px) {
+    .feedback {
+        height: 242px;
+    }
+
+    .feedback-bottom img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .feedback-top img {
+        width: 30px;
+        height: 27px;
+    }
+
+    .feedback {
+        padding: 14px;
+    }
+
+    .feedback-top {
+        gap: 40px;
+    }
+
+    .feedback-top p {
+        font-size: 14px;
+        line-height: 18.2px;
+    }
 
     .numbers-card h4 {
         font-size: 55.92px;
