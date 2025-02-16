@@ -1512,18 +1512,54 @@ a.social-media img {
     width: 100%;
 }
 
-.app-left {
-    width: 30%;
+.app-left,
+.app-left h3 {
+    width: 564px;
+}
+
+.app-left h3 {
+    margin-bottom: 8px !important;
 }
 
 .app-card_second {
-    right: 7%;
+    right: 1%;
     bottom: 9%;
 }
 
 .app-card_first {
     left: 22%;
     top: 24%;
+}
+
+.app-left p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    max-width: 488px;
+}
+
+.app-icons {
+    margin-top: auto;
+    width: 435px;
+    display: flex;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.app-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-icon {
+    display: flex;
+    background: var(--card-bg);
+    width: 50%;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
 }
 
 /*  */
@@ -1549,6 +1585,10 @@ a.social-media img {
 }
 
 @media(max-width:1440px) {
+
+    .header-col1 {
+        padding: 7.25px 16px;
+    }
 
     .header-col3>* {
         font-size: 12px;
