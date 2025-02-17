@@ -1123,11 +1123,11 @@ a.social-media img {
     height: 100vh;
     z-index: 5;
     background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16.5px);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    backdrop-filter: blur(16.5px);
     opacity: 0;
     visibility: hidden;
 }
@@ -1305,7 +1305,7 @@ a.social-media img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 16px;
     background: var(--card-bg);
     width: 100%;
     padding: 32px 24px 24px 32px;
@@ -1367,7 +1367,7 @@ a.social-media img {
     border-radius: 12px;
     opacity: 0;
     transform: translateY(-40px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
     pointer-events: none;
     height: 0;
     margin: -4px;
@@ -1377,10 +1377,11 @@ a.social-media img {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-    height: auto;
+    height: 460px;
+    max-height: 460px;
     pointer-events: all;
     margin: 0;
-
+    position: relative;
 }
 
 .dropdown-content img.dropdown-image {
@@ -1610,6 +1611,103 @@ a.social-media img {
 .btn-primary__forlove_mobile {
     display: none;
 }
+
+.club-detail {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+
+.club-detail_flex {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 32px);
+}
+
+.club-detail>* {
+    background: var(--white);
+    margin-top: 8px;
+}
+
+.dropdown-image_map {
+    width: 100% !important;
+}
+
+.btn-abs {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    padding: 12px 24px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.club-detail_address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 8px 16px 8px 8px;
+    width: max-content;
+}
+
+.club-icon-wrap {
+    background: var(--card-bg);
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.club-icon-wrap img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.club-detail_phone {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-weight: 600;
+    padding: 8px 24px 8px 8px;
+    width: max-content;
+    border-radius: 8px;
+}
+
+.club-detail_flex {
+    display: flex;
+    gap: 16px;
+    padding: 8px 24px 8px 8px;
+    width: max-content;
+    border-radius: 8px;
+}
+
+.club-icon-wrap_big {
+    height: 65px;
+}
+
+.club-detail_flex div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.club-detail_flex div span {
+    color: #CBD1DC;
+}
+
+.club-detail_flex div p {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+
 
 /*  */
 
