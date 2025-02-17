@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".mySwiper", {
         loop: true,
-        autoplay: { delay: 9800, disableOnInteraction: false },
+        autoplay: { delay: 10000, disableOnInteraction: false },
         on: {
             slideChangeTransitionStart: function () {
                 updateActiveTab(this.realIndex);

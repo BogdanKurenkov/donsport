@@ -819,6 +819,7 @@ a.social-media img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -829,7 +830,7 @@ a.social-media img {
     border-radius: 12px;
     max-width: 319px;
     padding: 16px;
-    min-height: 290px;
+    height: 290px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -844,6 +845,7 @@ a.social-media img {
 .love-card__title {
     font-weight: 500;
     font-size: 22px;
+    line-height: 24.2px;
 }
 
 .for-love__cards {
@@ -1573,6 +1575,9 @@ a.social-media img {
     color: var(--white);
 }
 
+.btn-primary__forlove_mobile {
+    display: none;
+}
 
 /*  */
 
@@ -1602,6 +1607,68 @@ a.social-media img {
 }
 
 @media(max-width:1440px) {
+
+    .close-card {
+        width: 49px;
+        height: 49px;
+        flex-shrink: 0;
+    }
+
+    .for-love__title {
+        margin: 0;
+    }
+
+    .icon-wrapper_heart {
+        top: -65px;
+    }
+
+    .icon-wrapper_dumbbell {
+        top: 68px;
+    }
+
+    .for-love__icons {
+        gap: 20px;
+    }
+
+    .love-card__title {
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+
+    .love-card__description {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .love-card {
+        height: 219px;
+    }
+
+    .love-card-text {
+        gap: 12px;
+    }
+
+    .for-love-left {
+        padding: 30px;
+    }
+
+    .for-love__title {
+        max-width: 351px;
+    }
+
+    .for-love__promotion {
+        font-size: 14px;
+        padding: 6px 6px 6px 13.5px;
+        gap: 12px;
+    }
+
+    .for-love__promotion span {
+        padding: 6px 12px;
+    }
+
+    .for-love__cards {
+        margin-top: 24px;
+    }
 
     .btn-primary {
         height: 46px;
@@ -1892,6 +1959,14 @@ a.social-media img {
 
 @media(max-width:1024px) {
 
+    .for-love-right {
+        display: none;
+    }
+
+    .for-love-left {
+        width: 100%;
+    }
+
     .map-club {
         padding: 18px 14px;
         font-size: 40px;
@@ -1958,6 +2033,10 @@ a.social-media img {
 }
 
 @media(max-width:768px) {
+
+    .form-politic_consultation {
+        margin-bottom: 0;
+    }
 
     .header {
         padding: 12px 0;
@@ -2158,6 +2237,80 @@ a.social-media img {
 }
 
 @media(max-width:500px) {
+
+    .slide-desc .column {
+        gap: 19px;
+        padding: 14px 13px;
+    }
+
+    h5.slide-title {
+        letter-spacing: -0.03em !important;
+    }
+
+    .for-love__promotion {
+        gap: 4px;
+    }
+
+    .for-love__title {
+        max-width: 244px;
+    }
+
+    .btn-primary__forlove_mobile {
+        display: flex;
+        height: 49px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .for-love-wrapper .btn-primary {
+        display: none;
+    }
+
+    .love-card {
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        height: max-content;
+        gap: 40px;
+        border-radius: 6px;
+    }
+
+    .for-love-left {
+        padding: 16px 8px;
+    }
+
+    .for-love__promotion>* {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        padding: 8px 12px !important;
+        border-radius: 24px;
+    }
+
+    .for-love__cards {
+        flex-direction: column;
+    }
+
+    .overlay_active .buy-card-window {
+        width: calc(100vw - 32px);
+    }
+
+    .for-love__promotion {
+        flex-direction: column;
+        background: var(--card-bg);
+    }
+
+    .for-love__promotion p,
+    .for-love__promotion span {
+        background: var(--white);
+    }
+
+    .for-love__icons .icon-wrapper {
+        display: none;
+    }
 
     input {
         padding-left: 12px;
