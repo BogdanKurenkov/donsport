@@ -104,6 +104,7 @@ a.navigate-btn {
 
 input::placeholder {
     color: #ABB2C3;
+    font-family: 'Manrope', sans-serif;
 }
 
 .error {
@@ -1302,7 +1303,7 @@ a.social-media img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 16px;
+    border-radius: 12px;
     background: var(--card-bg);
     width: 100%;
     padding: 32px 24px 24px 32px;
@@ -1355,6 +1356,7 @@ a.social-media img {
     justify-content: space-between;
     align-items: flex-start;
     padding: 12px 24px;
+    border-radius: 8px;
 }
 
 .map-card-wrapper {
@@ -1566,6 +1568,11 @@ a.social-media img {
     display: none;
 }
 
+.finik {
+    color: var(--white);
+}
+
+
 /*  */
 
 @media(max-width:1680px) {
@@ -1586,9 +1593,57 @@ a.social-media img {
     .header-col3 {
         font-size: 12px;
     }
+
+    .map-club img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media(max-width:1440px) {
+
+    .btn-primary {
+        height: 46px;
+    }
+
+    .buy-card {
+        padding-top: 0;
+    }
+
+    .details-btn {
+        border-radius: 6px;
+    }
+
+    .map-club {
+        padding: 28px 24px;
+    }
+
+    .club-preview_2,
+    .club-preview_3 {
+        top: calc(15.9% + 80px);
+    }
+
+    .club-preview_3 {
+        left: calc(50% + 45px)
+    }
+
+    .club-preview {
+        width: 75px;
+        height: 75px;
+    }
+
+    .map-club h4 {
+        font-size: 40px;
+        line-height: 36px;
+    }
+
+    .section-title_map {
+        max-width: 253px;
+    }
+
+    .team {
+        margin: 135px 0;
+    }
 
     .container_flex {
         margin: 135px auto;
@@ -1742,9 +1797,13 @@ a.social-media img {
         height: 687px;
     }
 
-
     input {
         height: 60px;
+        font-size: 14px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
     }
 
     .buy-card-window {
@@ -1820,9 +1879,41 @@ a.social-media img {
     .header-col2 {
         display: none;
     }
+
+    .map {
+        max-width: 100%;
+    }
 }
 
 @media(max-width:1024px) {
+
+    .map-club {
+        padding: 18px 14px;
+        font-size: 40px;
+        line-height: 36px;
+    }
+
+    .club-preview_4 {
+        top: 51.73%;
+        left: calc(37vw - 75px);
+    }
+
+    .club-preview_6 {
+        left: calc(60vw - 75px);
+    }
+
+    .club-preview_5 {
+        left: calc(49vw - 75px);
+    }
+
+    .map-wrapper {
+        flex-direction: column;
+    }
+
+    .map-left,
+    .map-right {
+        width: 100%;
+    }
 
     .container-slider {
         flex-direction: column-reverse;
@@ -1862,6 +1953,50 @@ a.social-media img {
 }
 
 @media(max-width:768px) {
+
+    .details-wrapper {
+        flex-direction: row;
+    }
+
+    .section-title_buy {
+        font-size: 40px;
+        line-height: 36px;
+    }
+
+    .details-btn {
+        font-size: 13.5px;
+        line-height: 18.44px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .details-wrapper p {
+        max-width: 330px;
+        font-size: 13.5px;
+        line-height: 16.2px;
+    }
+
+    .club-preview {
+        width: 68px;
+        height: 68px;
+    }
+
+    .club-preview_2,
+    .club-preview_3 {
+        top: calc(15.9% + 73px);
+    }
+
+    .club-preview_3 {
+        left: calc(50% + 40px);
+    }
+
+    .club-preview_5 {
+        left: calc(49vw - 68px);
+    }
+
+    .club-preview_6 {
+        left: calc(59vw - 68px);
+    }
 
     .container_flex {
         margin-left: 0;
@@ -1974,7 +2109,7 @@ a.social-media img {
         border-radius: 2px;
     }
 
-    .menu-item span {
+    .menu-item .span {
         width: 57px;
         height: 33px;
     }
@@ -2007,15 +2142,82 @@ a.social-media img {
         height: 341px;
         border-radius: 8px;
     }
+
+    .container_touch {
+        width: 100vw;
+    }
 }
 
 @media(max-width:500px) {
+
+    input {
+        padding-left: 12px;
+    }
+
+    .details-wrapper {
+        flex-direction: column;
+        padding: 18px;
+        gap: 6px;
+    }
+
+    .section-title_buy {
+        font-size: 24px;
+        line-height: 21.6px;
+    }
+
+    .details-wrapper p {
+        width: 100%;
+    }
+
+    .map-club img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .map-club h4 {
+        font-size: 24px;
+        line-height: 21.6px;
+    }
+
+    .club-preview {
+        width: 40px;
+        height: 40px;
+    }
+
+    .club-preview_2,
+    .club-preview_3 {
+        top: calc(15.9% + 45px);
+    }
+
+    .club-preview_3 {
+        left: calc(50% + 25px);
+    }
+
+    .club-preview_4 {
+        top: 53.73%;
+        left: calc(34vw - 40px);
+    }
+
+    .section-title_feedback,
+    .team .section-title,
+    .app-wrapper .section-title,
+    .for-love__title {
+        font-size: 52px;
+        line-height: 46.8px;
+    }
+
+    .section-title_map {
+        font-size: 36px;
+        line-height: 32.4px;
+        max-width: 125px;
+    }
 
     .news {
         width: 100vw;
     }
 
-    .container_flex {
+    .container_flex,
+    .team {
         margin: 75px 0;
     }
 
