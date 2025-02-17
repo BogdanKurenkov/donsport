@@ -726,20 +726,22 @@
                             вместе. Донспорт — ваш путь к здоровью и энергии!</p>
                         <div class="app-icons">
                             <div class="app-icon">
-                                <img src="/assets/svg/googleplay.svg" alt="google play">
+                                <img class="googleplay" src="/assets/svg/googleplay.svg" alt="google play">
                                 <p>Доступно в <br>Google Play</p>
                             </div>
                             <div class="app-icon">
-                                <img src="/assets/svg/appstore.svg" alt="App Store">
+                                <img class="appstore" src="/assets/svg/appstore.svg" alt="App Store">
                                 <p>Загрузите в<br> App Store</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-right">
-                        <div>
-                            <div class="app-card app-card_first">
+
+                        <div class="app-mobile-cards">
+                            <div class="mobilephone-wrapper">
+                                <img class="mobilephone" src="/assets/img/phone_mobile.png" alt="phone">
+                            </div>
+                            <div class="app-card transform-card_first">
                                 <div class="app-icon-wrapper">
-                                    <div class="club-icon-wrap club-icon-wrap_big">
+                                    <div class="app-icon-wrapper">
                                         <img src="/assets/svg/time.svg" alt="clock">
                                     </div>
                                 </div>
@@ -750,7 +752,38 @@
                                     </p>
                                 </div>
                             </div>
-                            <img class="mobile-phone" src="/assets/img/phone_bg.png" alt="phone">
+                            <div class="app-card transform-card_second">
+                                <div class="app-icon-wrapper">
+                                    <img src="/assets/svg/gift.svg" alt="gift">
+                                </div>
+                                <div class="app-card-info-wrapper">
+                                    <p class="app-card-title">Специальные предложения и акции</p>
+                                    <p class="app-card-description">
+                                        Будьте в курсе последних акций и специальных предложений клуба.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-right">
+                        <div>
+                            <div class="app-card app-card_first">
+                                <div class="app-icon-wrapper">
+                                    <div class="app-icon-wrapper">
+                                        <img src="/assets/svg/time.svg" alt="clock">
+                                    </div>
+                                </div>
+                                <div class="app-card-info-wrapper">
+                                    <p class="app-card-title">Удобный доступ к расписанию</p>
+                                    <p class="app-card-description">
+                                        Получите мгновенный доступ к расписанию тренировок и групповых занятий
+                                    </p>
+                                </div>
+                            </div>
+                            <picture>
+                                <source media="(max-width: 430px)" srcset="/assets/img/phone_mobile.png">
+                                <img class="mobile-phone" src="/assets/img/phone_bg.png" alt="phone">
+                            </picture>
                             <div class="app-card app-card_second">
                                 <div class="app-icon-wrapper">
                                     <img src="/assets/svg/gift.svg" alt="gift">
@@ -765,8 +798,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="app-icons app-icons_mobile">
+                    <div class="app-icon">
+                        <img class="googleplay" src="/assets/svg/googleplay.svg" alt="google play">
+                        <p>Доступно в <br>Google Play</p>
+                    </div>
+                    <div class="app-icon">
+                        <img class="appstore" src="/assets/svg/appstore.svg" alt="App Store">
+                        <p>Загрузите в<br> App Store</p>
+                    </div>
+                </div>
             </div>
         </section>
+
 
         <section class="feedback-section">
             <h3 class="section-title section-title_feedback">более 2 000 отзывов от клиентов</h3>
@@ -884,6 +928,7 @@
 
 
         </section>
+
 
         <section class="news-section">
             <div class="container container_flex container_touch">
