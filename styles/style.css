@@ -1300,8 +1300,6 @@ a.social-media img {
     line-height: 46.8px;
 }
 
-
-
 .map-club {
     display: flex;
     justify-content: space-between;
@@ -1349,6 +1347,8 @@ a.social-media img {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    max-height: 909px;
+    transition: all 0.5s ease;
 }
 
 .details-wrapper {
@@ -1360,6 +1360,37 @@ a.social-media img {
     align-items: flex-start;
     padding: 12px 24px;
     border-radius: 8px;
+}
+
+.dropdown-content_map {
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    height: 0;
+    margin: -4px;
+}
+
+.dropdown-content_map.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    height: auto;
+    pointer-events: all;
+    margin: 0;
+
+}
+
+.dropdown-content img.dropdown-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.dropdown-content p.dropdown-text {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .map-card-wrapper {
