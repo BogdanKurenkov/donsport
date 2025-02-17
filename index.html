@@ -50,40 +50,73 @@
                     <p id="phone-number" class="phone">+7 495 292 12 94</p>
                     <button data-modal-id="get-consultation" class="back-call">Обратный звонок</button>
                     <button data-modal-id="buy-card" class="buy-card__btn">Купить карту</button>
-                    <div class="burger-menu">
+                    <div class="burger-menu" id="burger-menu">
                         <img class="burger" src="/assets/svg/menu.svg" alt="burger">
                     </div>
 
-                    <nav class="header-submenu">
-                        <div class="header-submenu-col">
+                    <nav class="header-submenu" id="header-submenu">
+                        
+                        <!-- <div class="submenu-logo"></div> -->
+
+                        <div class="header-submenu-col header-submenu-col_desktop">
                             <ul>
-                                <li><a href="#">Клубы</a></li>
-                                <li><a href="#">Фитнес</a></li>
-                                <li><a href="#">Расписание</a></li>
+                                <li><a href="#">о компании</a></li>
+                                <li><a href="#">команда</a></li>
+                                <li><a href="#">партнеры</a></li>
+                                <li><a href="#">клубы</a></li>
+                                <li><a href="#">контакты</a></li>
                             </ul>
                         </div>
-                        <div class="header-submenu-col">
+                        <div class="header-submenu-col header-submenu-col_desktop">
                             <ul>
-                                <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Инвесторам</a></li>
-                                <li><a href="#">Реклама</a></li>
+                                <li><a href="#">фитнес</a></li>
+                                <li><a href="#">расписание</a></li>
+                                <li><a href="#">мероприятия</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">карты</a></li>
+                                <li><a href="#">отзывы</a></li>
                             </ul>
                         </div>
-                        <div class="header-submenu-col">
-                            <p>Дополнительная информация</p>
+                        <div class="header-submenu-col header-submenu-col_desktop">
+                            <ul>
+                                <li><a href="#">блог</a></li>
+                                <li><a href="#">новости</a></li>
+                                <li><a href="#">реклама</a></li>
+                                <li><a href="#">инвесторам</a></li>
+                            </ul>
                         </div>
-                        <div class="header-submenu-close">
+                        <div class="header-submenu-col header-submenu-col_mobile">
+                            <ul>
+                                <li><a href="#">о компании</a></li>
+                                <li><a href="#">команда</a></li>
+                                <li><a href="#">партнеры</a></li>
+                                <li><a href="#">клубы</a></li>
+                                <li><a href="#">блог</a></li>
+                                <li><a href="#">новости</a></li>
+                                <li><a href="#">контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_mobile">
+                            <ul>
+                                <li><a href="#">фитнес</a></li>
+                                <li><a href="#">расписание</a></li>
+                                <li><a href="#">мероприятия</a></li>
+                                <li><a href="#">акции</a></li>
+                                <li><a href="#">карты</a></li>
+                                <li><a href="#">отзывы</a></li>
+                                <li><a href="#">реклама</a></li>
+                                <li><a href="#">инвесторам</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-close" id="close-submenu">
                             <img class="close-submenu" src="/assets/svg/x.svg" alt="close">
                         </div>
                     </nav>
-
+                    <div class="header-overlay" id="header-overlay"></div>
                 </div>
             </div>
         </div>
     </header>
-
-    <div class="body-overlay"></div>
-
 
     <main class="main">
         <section class="video-container">
@@ -721,7 +754,8 @@
                 <div class="app-wrapper">
                     <div class="app-left">
                         <h3 class="section-title">с приложением удобнее</h3>
-                        <p class="app-desc">Записывайтесь на занятия и участвуйте в эксклюзивных акциях — всё в одном месте!
+                        <p class="app-desc">Записывайтесь на занятия и участвуйте в эксклюзивных акциях — всё в одном
+                            месте!
                             Присоединяйтесь к сообществу единомышленников, получайте мотивацию и достигайте целей
                             вместе. Донспорт — ваш путь к здоровью и энергии!</p>
                         <div class="app-icons">

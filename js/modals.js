@@ -38,8 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-
-    //
     document.addEventListener('submit', function (event) {
         if (event.target.classList.contains('buy-card-form')) {
             event.preventDefault();
