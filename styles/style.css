@@ -1590,6 +1590,10 @@ a.social-media img {
 
 @media(max-width:1440px) {
 
+    .container_flex {
+        margin: 135px auto;
+    }
+
     .header-col1 {
         padding: 7.25px 16px;
     }
@@ -1859,6 +1863,11 @@ a.social-media img {
 
 @media(max-width:768px) {
 
+    .container_flex {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .swiper-slide .slide-btn {
         display: none;
     }
@@ -2001,6 +2010,22 @@ a.social-media img {
 }
 
 @media(max-width:500px) {
+
+    .news {
+        width: 100vw;
+    }
+
+    .container_flex {
+        margin: 75px 0;
+    }
+
+    .news-card {
+        width: 85%;
+    }
+
+    .news {
+        justify-content: flex-start;
+    }
 
     .slide-desc-wrapper {
         flex-direction: column;
