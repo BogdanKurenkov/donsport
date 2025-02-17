@@ -1,6 +1,7 @@
 @import '/assets/fonts/bebas/stylesheet.css';
 @import '/assets/fonts/monrope/stylesheet.css';
 @import '/assets/fonts/inter/stylesheet.css';
+@import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 * {
     margin: 0;
