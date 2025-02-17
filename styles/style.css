@@ -1,5 +1,6 @@
 @import '/assets/fonts/bebas/stylesheet.css';
 @import '/assets/fonts/monrope/stylesheet.css';
+@import '/assets/fonts/inter/stylesheet.css';
 
 * {
     margin: 0;
@@ -1873,6 +1874,10 @@ a.social-media img {
         font-size: 76px;
         line-height: 68.4px;
     }
+
+    .header {
+        padding: 24px 0;
+    }
 }
 
 @media(max-width:1280px) {
@@ -1953,6 +1958,10 @@ a.social-media img {
 }
 
 @media(max-width:768px) {
+
+    .header {
+        padding: 12px 0;
+    }
 
     .details-wrapper {
         flex-direction: row;
@@ -2393,5 +2402,15 @@ a.social-media img {
     .dropdown-header img {
         width: 16px;
         height: 16px;
+    }
+}
+
+@media(max-width:375px) {
+    .club-preview_6 {
+        left: calc(61vw - 40px);
+    }
+
+    .club-preview_5 {
+        left: calc(49vw - 40px);
     }
 }
