@@ -2215,7 +2215,7 @@ a.social-media img {
     }
 
     .map-club {
-        padding: 18px 14px;
+        padding: 18px 24px;
         font-size: 40px;
         line-height: 36px;
     }
@@ -2280,6 +2280,9 @@ a.social-media img {
 }
 
 @media(max-width:768px) {
+    .container {
+        width: calc(100vw - 50px);
+    }
 
     .form-politic_consultation {
         margin-bottom: 0;
@@ -2501,6 +2504,7 @@ a.social-media img {
     .app-left {
         justify-content: center;
         width: 100%;
+        align-items: center;
     }
 
     .app-card_second {
@@ -2511,6 +2515,45 @@ a.social-media img {
     .app-card_first {
         left: -4%;
         top: 48%;
+    }
+
+    .app-left .section-title {
+        width: 491px;
+        text-align: center;
+    }
+
+    .app-desc {
+        text-align: center;
+    }
+
+    .app-icons {
+        margin-top: 24px;
+    }
+
+    .mobile-phone {
+        transform: translateY(-6%);
+    }
+
+    .app-card_first {
+        left: -5%;
+        top: 20%;
+    }
+
+    .app-card_second {
+        right: -5%;
+        bottom: 27%;
+    }
+
+    .app-section {
+        margin-bottom: 135px;
+    }
+
+    .app-wrapper {
+        padding-bottom: 0;
+    }
+
+    .app-right {
+        margin-bottom: -183px;
     }
 }
 
@@ -2947,8 +2990,16 @@ a.social-media img {
         transform: translateY(-68px);
     }
 
-    .transform-card_second .app-card-title{
+    .transform-card_second .app-card-title {
         width: 191px;
+    }
+
+    .app-left .section-title {
+        width: 271px;
+    }
+
+    .map-card-wrapper{
+        padding: 8px;
     }
 }
 
