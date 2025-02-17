@@ -485,13 +485,13 @@ input {
 }
 
 .news {
-    display: flex;
+    /* display: flex;
     gap: 8px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .news-card {
-    width: calc(25% - 6px);
+    /* width: calc(25% - 6px); */
     background: var(--card-bg);
     color: var(--dark-blue);
     min-height: 640px;
@@ -1707,6 +1707,12 @@ a.social-media img {
     align-items: center;
 }
 
+
+
+
+
+/* submenu */
+
 .header-col3_disabled .phone,
 .header-col3_disabled .back-call,
 .header-col3_disabled .buy-card__btn,
@@ -1716,15 +1722,6 @@ a.social-media img {
 
 .header-col3_disabled .close-submenu {
     display: flex;
-}
-
-/* Стили для скрытия элементов */
-.header-col3_disabled .phone,
-.header-col3_disabled .back-call,
-.header-col3_disabled .buy-card__btn,
-.header-col3_disabled .burger-menu {
-    opacity: 0;
-    pointer-events: none;
 }
 
 
@@ -1743,8 +1740,6 @@ a.social-media img {
     display: none;
 }
 
-
-
 .header-submenu-close {
     text-align: right;
     cursor: pointer;
@@ -1761,8 +1756,6 @@ a.social-media img {
     z-index: 10;
     display: none;
 }
-
-
 
 .header-submenu {
     display: none;
@@ -2366,8 +2359,8 @@ a.social-media img {
     }
 
     .news-card {
-        width: 40%;
-        flex-shrink: 0;
+        /* width: 40%; */
+        /* flex-shrink: 0; */
     }
 
     .news {
@@ -2426,6 +2419,10 @@ a.social-media img {
 
     .container_touch {
         width: 100vw;
+    }
+
+    .for-love-wrapper .btn-primary {
+        margin-top: 40px;
     }
 }
 
@@ -2576,13 +2573,13 @@ a.social-media img {
         margin: 75px 0;
     }
 
-    .news-card {
+    /* .news-card {
         width: 85%;
     }
 
     .news {
         justify-content: flex-start;
-    }
+    } */
 
     .slide-desc-wrapper {
         flex-direction: column;
@@ -2748,6 +2745,10 @@ a.social-media img {
     .dropdown-header img {
         width: 16px;
         height: 16px;
+    }
+
+    .container_touch {
+        width: 100vw;
     }
 }
 

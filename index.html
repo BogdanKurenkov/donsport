@@ -736,29 +736,31 @@
                         </div>
                     </div>
                     <div class="app-right">
-                        <div class="app-card app-card_first">
-                            <div class="app-icon-wrapper">
-                                <div class="club-icon-wrap club-icon-wrap_big">
-                                    <img src="/assets/svg/time.svg" alt="clock">
+                        <div>
+                            <div class="app-card app-card_first">
+                                <div class="app-icon-wrapper">
+                                    <div class="club-icon-wrap club-icon-wrap_big">
+                                        <img src="/assets/svg/time.svg" alt="clock">
+                                    </div>
+                                </div>
+                                <div class="app-card-info-wrapper">
+                                    <p class="app-card-title">Удобный доступ к расписанию</p>
+                                    <p class="app-card-description">
+                                        Получите мгновенный доступ к расписанию тренировок и групповых занятий
+                                    </p>
                                 </div>
                             </div>
-                            <div class="app-card-info-wrapper">
-                                <p class="app-card-title">Удобный доступ к расписанию</p>
-                                <p class="app-card-description">
-                                    Получите мгновенный доступ к расписанию тренировок и групповых занятий
-                                </p>
-                            </div>
-                        </div>
-                        <img class="mobile-phone" src="/assets/img/phone_bg.png" alt="phone">
-                        <div class="app-card app-card_second">
-                            <div class="app-icon-wrapper">
-                                <img src="/assets/svg/gift.svg" alt="gift">
-                            </div>
-                            <div class="app-card-info-wrapper">
-                                <p class="app-card-title">Специальные предложения и акции</p>
-                                <p class="app-card-description">
-                                    Будьте в курсе последних акций и специальных предложений клуба.
-                                </p>
+                            <img class="mobile-phone" src="/assets/img/phone_bg.png" alt="phone">
+                            <div class="app-card app-card_second">
+                                <div class="app-icon-wrapper">
+                                    <img src="/assets/svg/gift.svg" alt="gift">
+                                </div>
+                                <div class="app-card-info-wrapper">
+                                    <p class="app-card-title">Специальные предложения и акции</p>
+                                    <p class="app-card-description">
+                                        Будьте в курсе последних акций и специальных предложений клуба.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -886,82 +888,79 @@
         <section class="news-section">
             <div class="container container_flex container_touch">
                 <h3 class="section-title">Новости</h3>
-                <div class="news">
-                    <div class="news-card">
-                        <img class="news-image" src="/assets/img/news1.png" alt="image">
-                        <div class="news-content-wrapper">
-                            <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка!</p>
-                            <p class="news-description">В программе праздника были увлекательные конкурсы, творческие
-                                номера
-                                и, конечно же, встреча с
-                                Дедом Морозом и Снегурочкой. Особое внимание уделено атмосферным декорациям и
-                                праздничным
-                                угощениям, которые создали волшебное настроение.</p>
-                        </div>
-                        <div class="news-date-wrapper">
-                            <p class="news-date">25.12.24</p>
-                            <div class="arrow-wrapper">
-                                <img src="/assets/svg/arrow-up-right.svg" alt="arrow" />
-                            </div>
-                        </div>
+                <!-- Добавляем обертку для слайдера -->
+                <div class="splide" id="news-slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <!-- Каждая новость становится слайдом -->
+                            <li class="splide__slide news-card">
+                                <img class="news-image" src="/assets/img/news1.png" alt="image">
+                                <div class="news-content-wrapper">
+                                    <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка!</p>
+                                    <p class="news-description">В программе праздника были увлекательные конкурсы,
+                                        творческие номера и, конечно же, встреча с Дедом Морозом и Снегурочкой. Особое
+                                        внимание уделено атмосферным декорациям и праздничным угощениям, которые создали
+                                        волшебное настроение.</p>
+                                </div>
+                                <div class="news-date-wrapper">
+                                    <p class="news-date">25.12.24</p>
+                                    <div class="arrow-wrapper">
+                                        <img src="/assets/svg/arrow-up-right.svg" alt="arrow" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide news-card">
+                                <img class="news-image" src="/assets/img/news2.png" alt="image">
+                                <div class="news-content-wrapper">
+                                    <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка!</p>
+                                    <p class="news-description">В программе праздника были увлекательные конкурсы,
+                                        творческие номера и, конечно же, встреча с Дедом Морозом и Снегурочкой. Особое
+                                        внимание уделено атмосферным декорациям и праздничным угощениями, которые
+                                        создали волшебное настроение.</p>
+                                </div>
+                                <div class="news-date-wrapper">
+                                    <p class="news-date">25.12.24</p>
+                                    <div class="arrow-wrapper">
+                                        <img src="/assets/svg/arrow-up-right.svg" alt="arrow" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide news-card">
+                                <img class="news-image" src="/assets/img/news3.png" alt="image">
+                                <div class="news-content-wrapper">
+                                    <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка!</p>
+                                    <p class="news-description">В программе праздника были увлекательные конкурсы,
+                                        творческие номера и, конечно же, встреча с Дедом Морозом и Снегурочкой. Особое
+                                        внимание уделено атмосферным декорациям и праздничным угощениями, которые
+                                        создали волшебное настроение.</p>
+                                </div>
+                                <div class="news-date-wrapper">
+                                    <p class="news-date">25.12.24</p>
+                                    <div class="arrow-wrapper">
+                                        <img src="/assets/svg/arrow-up-right.svg" alt="arrow" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide news-card">
+                                <img class="news-image" src="/assets/img/news1.png" alt="image">
+                                <div class="news-content-wrapper">
+                                    <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка!</p>
+                                    <p class="news-description">В программе праздника были увлекательные конкурсы,
+                                        творческие номера и, конечно же, встреча с Дедом Морозом и Снегурочкой. Особое
+                                        внимание уделено атмосферным декорациям и праздничным угощениями, которые
+                                        создали волшебное настроение.</p>
+                                </div>
+                                <div class="news-date-wrapper">
+                                    <p class="news-date">25.12.24</p>
+                                    <div class="arrow-wrapper">
+                                        <img src="/assets/svg/arrow-up-right.svg" alt="arrow" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="news-card">
-                        <img class="news-image" src="/assets/img/news2.png" alt="image">
-                        <div class="news-content-wrapper">
-                            <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка!</p>
-                            <p class="news-description">В программе праздника были увлекательные конкурсы, творческие
-                                номера
-                                и, конечно же, встреча с
-                                Дедом Морозом и Снегурочкой. Особое внимание уделено атмосферным декорациям и
-                                праздничным
-                                угощениям, которые создали волшебное настроение.</p>
-                        </div>
-                        <div class="news-date-wrapper">
-                            <p class="news-date">25.12.24</p>
-                            <div class="arrow-wrapper">
-                                <img src="/assets/svg/arrow-up-right.svg" alt="arrow" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <img class="news-image" src="/assets/img/news3.png" alt="image">
-                        <div class="news-content-wrapper">
-                            <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка!</p>
-                            <p class="news-description">В программе праздника были увлекательные конкурсы, творческие
-                                номера
-                                и, конечно же, встреча с
-                                Дедом Морозом и Снегурочкой. Особое внимание уделено атмосферным декорациям и
-                                праздничным
-                                угощениям, которые создали волшебное настроение.</p>
-                        </div>
-                        <div class="news-date-wrapper">
-                            <p class="news-date">25.12.24</p>
-                            <div class="arrow-wrapper">
-                                <img src="/assets/svg/arrow-up-right.svg" alt="arrow" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <img class="news-image" src="/assets/img/news1.png" alt="image">
-                        <div class="news-content-wrapper">
-                            <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка!</p>
-                            <p class="news-description">В программе праздника были увлекательные конкурсы, творческие
-                                номера
-                                и, конечно же, встреча с
-                                Дедом Морозом и Снегурочкой. Особое внимание уделено атмосферным декорациям и
-                                праздничным
-                                угощениям, которые создали волшебное настроение.</p>
-                        </div>
-                        <div class="news-date-wrapper">
-                            <p class="news-date">25.12.24</p>
-                            <div class="arrow-wrapper">
-                                <img src="/assets/svg/arrow-up-right.svg" alt="arrow" />
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
+                <!-- Кнопка "Смотреть все" -->
                 <a href="/news" class="navigate-btn hover-effect" data-hover-text="Смотреть все">
                     <span>Смотреть все</span>
                 </a>
@@ -1016,7 +1015,7 @@
                                     <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg"
                                         alt="arrow">
                                 </div>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu" id="dd-date">
                                     <div class="menu-item menu-item_date selected" data-value="Сегодня, 10.02">Сегодня
                                         <span>10.02</span>
                                     </div>
@@ -1174,7 +1173,7 @@
                             <span class="selected-item">Сегодня 10.02</span>
                             <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
                         </div>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu" id="dd-date">
                             <div class="menu-item menu-item_date selected" data-value="Сегодня, 10.02">Сегодня
                                 <span class="span">10.02</span>
                             </div>
@@ -1233,7 +1232,7 @@
                             <span class="selected-item">Сегодня 10.02</span>
                             <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
                         </div>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu" id="dd-date">
                             <div class="menu-item menu-item_date selected" data-value="Сегодня, 10.02">Сегодня
                                 <span>10.02</span>
                             </div>
@@ -1276,6 +1275,7 @@
     <script src="/js/clubsDd.js"></script>
     <script src="/js/modals.js"></script>
     <script type="module" src="/js/feedback.js"></script>
+    <script type="module" src="/js/news.js"></script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
