@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     modals.forEach((modal) => {
-        const closeModal = modal.querySelector('#modal-close');
+        const closeModal = modal.querySelector('.close-card');
         closeModal?.addEventListener('click', () => {
             toggleModal(modal)
         })

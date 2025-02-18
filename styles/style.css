@@ -92,14 +92,7 @@ h1 span {
     color: var(--white);
 }
 
-.hover-effect:hover {
-    background-color: transparent;
-}
 
-.hover-effect:hover::after {
-    top: 0;
-    font-weight: 700;
-}
 
 a.navigate-btn {
     background: var(--card-bg);
@@ -514,7 +507,7 @@ input {
     opacity: 0;
     transform: translateY(-10px);
     pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
     padding: 8px;
     margin-top: 3px;
     display: flex;
@@ -543,10 +536,7 @@ input {
     transition: background 0.3s ease;
 }
 
-.menu-item:hover {
-    background: var(--dark-blue);
-    color: var(--white);
-}
+
 
 .menu-item.selected {
     background: var(--dark-blue);
@@ -584,18 +574,7 @@ input {
     background: var(--beige);
 }
 
-.menu-item_date:hover span {
-    background: var(--beige);
-}
-
-/* .news {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-} */
-
 .news-card {
-    /* width: calc(25% - 6px); */
     background: var(--card-bg);
     color: var(--dark-blue);
     min-height: 640px;
@@ -1838,9 +1817,7 @@ a.social-media img {
     padding-right: 20px;
 }
 
-.header-submenu .header-submenu-col_desktop ul li a:hover {
-    transform: translateX(20px);
-}
+
 
 .header-col3>* {
     cursor: pointer;
@@ -1912,6 +1889,76 @@ a.social-media img {
 
 .map-right {
     overflow-y: visible;
+}
+
+.app-icon {
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+.svg-arrow path {
+    transition: 0.3s;
+}
+
+.header-submenu .header-submenu-col_desktop ul li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 0; 
+    transition: padding-left 0.3s ease;
+}
+
+.header-submenu .header-submenu-col_desktop ul li a::before {
+    content: ' ';
+    position: absolute;
+    left: -20px; 
+    top: 50%;
+    width: 10px;
+    height: 2px;
+    background-color: none; 
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+.header-submenu .header-submenu-col_desktop ul li a:hover::before {
+    left: 0; 
+    opacity: 1;
+}
+
+
+@media (hover: hover) {
+
+    .arrow-wrapper:hover .svg-arrow path {
+        stroke: #6A6A6A;
+    }
+
+    .hover-effect:hover {
+        background-color: transparent;
+    }
+
+    .hover-effect:hover::after {
+        top: 0;
+        font-weight: 700;
+    }
+
+    .menu-item:hover {
+        background: var(--dark-blue);
+        color: var(--white);
+    }
+
+    .menu-item_date:hover span {
+        background: var(--beige);
+    }
+
+    .header-submenu .header-submenu-col_desktop ul li a:hover {
+        padding-left: 20px;
+        transition: padding-left 0.3s ease; /* Плавный переход */
+    }
+
+    .app-icon:hover {
+        background: #E5E7EB;
+    }
 }
 
 @media(max-width:1680px) {
@@ -2109,6 +2156,7 @@ a.social-media img {
 
     .header-col3>* {
         font-size: 12px;
+        line-height: 16.8px;
     }
 
     .header-col2 {
@@ -2130,7 +2178,7 @@ a.social-media img {
     }
 
     .phone {
-        padding: 5.25px 19.5px;
+        padding: 10.25px 19.5px;
     }
 
     .icon-wrapper {
