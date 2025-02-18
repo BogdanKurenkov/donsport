@@ -1876,6 +1876,28 @@ a.social-media img {
 
 @media(max-width:1440px) {
 
+    .map-card-wrapper {
+        background-image: url('/assets/img/line_map1440.png');
+        background-position: center;
+    }
+
+
+    .buy-card-window {
+        background-image: url('/assets/img/card-line1440.png');
+    }
+
+    .buy-card-window_consultation {
+        background-image: url('/assets/img/line_consultation1440.png');
+    }
+
+    .for-love-left {
+        background-image: url('/assets/img/line_forlove1440.png');
+    }
+
+    .app-wrapper {
+        background-image: url('/assets/img/line_app1440.png');
+    }
+
     .dropdown-content_map.active {
         height: 343px;
         max-height: 345px;
@@ -2403,6 +2425,20 @@ a.social-media img {
 }
 
 @media(max-width:768px) {
+
+    .map-card-wrapper {
+        background-image: url('/assets/img/line_map768.png');
+        background-position: left;
+    }
+
+    .details-wrapper {
+        height: 100px;
+    }
+
+    .app-wrapper {
+        background-image: url('/assets/img/line_app768.png');
+    }
+
     .container {
         width: calc(100vw - 50px);
     }
@@ -3029,12 +3065,44 @@ a.social-media img {
 
 @media(max-width:430px) {
 
+    .buy-card-window {
+        background-image: url('/assets/img/card-line375.png');
+        background-size: cover;
+    }
+
+    .buy-card-window_consultation {
+        background-image: url('/assets/img/line_consultation375.png');
+        background-size: contain;
+    }
+
+    .for-love-left {
+        background-image: url('/assets/img/line_forlove375.png');
+        background-position: bottom;
+    }
+
+    .app-wrapper {
+        background-image: url('/assets/img/line_app375.png');
+        background-position-y: 395px;
+        background-size: contain;
+    }
+
+
+    .map-card-wrapper {
+        background-image: url('/assets/img/line_map375.png');
+        background-position: left;
+        background-size: contain;
+    }
+
+    .details-wrapper {
+        height: 134px;
+    }
+
     .club-detail {
         bottom: 45px;
         left: 8px;
     }
 
-    .btn-abs{
+    .btn-abs {
         left: 8px;
         bottom: 0;
         right: 8px;
@@ -3193,6 +3261,10 @@ a.social-media img {
 
     .club-preview_5 {
         left: calc(49vw - 35px);
+    }
+
+    .map-card-wrapper{
+        gap: 20px;
     }
 }
 

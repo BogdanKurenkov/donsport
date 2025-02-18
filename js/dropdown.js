@@ -19,9 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextDay1 = getDateAfterDays(today, 1);
   const nextDay2 = getDateAfterDays(today, 2);
   const nextDay3 = getDateAfterDays(today, 3);
-
-  console.log(nextDay2)
-
   const d = today.toLocaleDateString().split('.').slice(0, 2).join('.');
   const nd = nextDay1.toLocaleDateString().split('.').slice(0, 2).join('.');
   const nd2 = nextDay2.toLocaleDateString().split('.').slice(0, 2).join('.');
