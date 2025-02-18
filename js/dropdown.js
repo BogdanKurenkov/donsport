@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
 
   const getDayOfWeek = (date) => {
-    console.log(date)
     return days[date.getDay()];
   };
 

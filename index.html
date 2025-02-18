@@ -142,13 +142,13 @@
                 <div class="numbers-wrapper">
                     <div class="numbers-left">
                         <div class="numbers-card">
-                            <h4 class="numbers-card__number">1 200</h4>
+                            <h4 class="numbers-card__number counter" id="counter1"  data-target="1200"></h4>
                             <p class="numbers-card__description">часов в год наши сотрудники<br> проходят обучение
                                 для<br>
                                 повышения квалификации</p>
                         </div>
                         <div class="numbers-card">
-                            <h4 class="numbers-card__number">84</h4>
+                            <h4 class="numbers-card__number counter" id="counter2"  data-target="84"></h4>
                             <p class="numbers-card__description">чемпиона мира <br>работают у нас</p>
                         </div>
                     </div>
@@ -161,12 +161,12 @@
 
                     <div class="numbers-right">
                         <div class="numbers-card">
-                            <h4 class="numbers-card__number">10</h4>
+                            <h4 class="numbers-card__number counter" id="counter3" data-target="10"></h4>
                             <p class="numbers-card__description">лет на рынке</p>
                         </div>
                         <div class="numbers-card">
                             <div class="percent">
-                                <h4 class="numbers-card__number">20</h4>
+                                <h4 class="numbers-card__number counter" data-target="20"></h4>
                                 <img src="/assets/svg/percent.svg" alt="percent">
                             </div>
                             <p class="numbers-card__description">наших клиентов - <br>это дети и <br>подростки до 16 лет
@@ -965,11 +965,9 @@
         <section class="news-section">
             <div class="container container_flex container_touch">
                 <h3 class="section-title">Новости</h3>
-                <!-- Добавляем обертку для слайдера -->
                 <div class="splide" id="news-slider">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <!-- Каждая новость становится слайдом -->
                             <li class="splide__slide news-card">
                                 <img class="news-image" src="/assets/img/news1.png" alt="image">
                                 <div class="news-content-wrapper">
@@ -1351,8 +1349,9 @@
     <script type="module" defer src="/js/clipBoard.js"></script>
     <script type="module" defer src="/js/clubsDd.js"></script>
     <script type="module" defer src="/js/modals.js"></script>
-    <script type="module" src="/js/feedback.js"></script>
-    <script type="module" src="/js/news.js"></script>
+    <script type="module" defer src="/js/feedback.js"></script>
+    <script type="module" defer src="/js/news.js"></script>
+    <script type="module" defer src="/js/count.js"></script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
