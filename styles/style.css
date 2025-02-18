@@ -1885,6 +1885,35 @@ a.social-media img {
     transform: translateY(0) !important;
 }
 
+.dropdown-content_map {
+    border-radius: 12px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    margin: -4px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.dropdown-content_map.active {
+    opacity: 1;
+    max-height: 460px;
+    pointer-events: auto;
+    margin: 0;
+    position: relative;
+}
+
+.dropdown-content_map.active.upwards {
+    transform: translateY(-100%);
+}
+
+.map-right {
+    overflow-y: visible;
+}
+
 @media(max-width:1680px) {
     .header-menu-link {
         padding: 9px 12px;
@@ -2481,6 +2510,10 @@ a.social-media img {
 }
 
 @media(max-width:768px) {
+
+    .map-right {
+        overflow-y: hidden;
+    }
 
     .map-card-wrapper {
         background-image: url('/assets/img/line_map768.png');

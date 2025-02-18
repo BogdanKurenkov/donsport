@@ -5,15 +5,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const closeAllDropdowns = () => {
         dropdownContents.forEach((dropdown) => {
-            dropdown.classList.remove('active');
+            if (dropdown.classList.contains('active')) {
+                dropdown.style.maxHeight = `${dropdown.scrollHeight}px`; 
+                setTimeout(() => {
+                    dropdown.style.maxHeight = '0';
+                }, 10);
+
+                setTimeout(() => {
+                    dropdown.classList.remove('active');
+                    dropdown.style.transform = 'translateY(0)';
+                }, 300); 
+            }
         });
+
         clubPreviews.forEach((preview) => {
             preview.classList.remove('club-preview_active');
         });
+
         mapClubs.forEach((club) => {
             club.classList.remove('active');
             club.querySelector('img').setAttribute('src', '/assets/svg/plus.svg')
         });
+    };
+
+    const showDropdown = (dropdownContent, activePreview, club) => {
+        closeAllDropdowns();
+
+        if (dropdownContent) {
+            dropdownContent.classList.add('active');
+
+            dropdownContent.style.maxHeight = '0';
+            setTimeout(() => {
+                dropdownContent.style.maxHeight = `${dropdownContent.scrollHeight}px`;
+            }, 10);
+
+            const rect = dropdownContent.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+
+            if (rect.bottom > viewportHeight) {
+                dropdownContent.style.transform = 'translateY(-100%)';
+            } else {
+                dropdownContent.style.transform = 'translateY(0)';
+            }
+        }
+
+        if (activePreview) {
+            activePreview.classList.add('club-preview_active');
+        }
+
+        if (club) {
+            club.classList.add('active');
+            club.querySelector('img').setAttribute('src', '/assets/svg/minus.svg')
+        }
     };
 
     mapClubs.forEach((club) => {
@@ -25,19 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (dropdownContent && dropdownContent.classList.contains('active')) {
                 closeAllDropdowns();
             } else {
-                closeAllDropdowns();
-
-                if (dropdownContent) {
-                    console.log(1)
-                    dropdownContent.classList.add('active');
-                }
-                if (activePreview) {
-                    console.log(2)
-                    activePreview.classList.add('club-preview_active');
-                }
-                club.classList.add('active');
-                club.querySelector('img').setAttribute('src', '/assets/svg/minus.svg')
-                console.log(3)
+                showDropdown(dropdownContent, activePreview, club);
             }
         });
     });
@@ -49,18 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const activeClub = document.querySelector(`.map-club[data-club-index="${clubIndex}"]`);
 
             if (dropdownContent && dropdownContent.classList.contains('active')) {
-                activeClub.querySelector('img').setAttribute('src', '/assets/svg/plus.svg')
                 closeAllDropdowns();
             } else {
-                closeAllDropdowns();
-
-                if (dropdownContent) {
-                    dropdownContent.classList.add('active');
-                }
-                if (activeClub) {
-                    activeClub.classList.add('active');
-                    activeClub.querySelector('img').setAttribute('src', '/assets/svg/minus.svg')
-                }
+                showDropdown(dropdownContent, null, activeClub);
                 preview.classList.add('club-preview_active');
             }
         });
