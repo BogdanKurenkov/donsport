@@ -1734,10 +1734,11 @@ a.social-media img {
     right: 16px;
     bottom: 16px;
     padding: 12px 24px;
-    border-radius: 16px;
+    border-radius: 8px;
     border: none;
     font-weight: 700;
     color: var(--dark-blue);
+    font-size: 16px;
 }
 
 .club-detail_address {
@@ -1834,6 +1835,14 @@ a.social-media img {
     transform: translateX(20px);
 }
 
+.header-col3>* {
+    cursor: pointer;
+}
+
+.dropdown-image_map {
+    border-radius: 12px;
+}
+
 @media(max-width:1680px) {
     .header-menu-link {
         padding: 9px 12px;
@@ -1866,6 +1875,11 @@ a.social-media img {
 }
 
 @media(max-width:1440px) {
+
+    .dropdown-content_map.active {
+        height: 343px;
+        max-height: 345px;
+    }
 
     .header-submenu {
         width: 696px;
@@ -2264,6 +2278,43 @@ a.social-media img {
     .app-icons {
         width: 338px;
     }
+
+    .club-detail_address {
+        padding: 6px 12px 6px 6px;
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .club-icon-wrap {
+        width: 30px;
+        height: 30px;
+    }
+
+    .club-detail_phone,
+    .club-detail_flex {
+        padding: 6px 18px 6px 6px;
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .club-icon-wrap_big {
+        height: 49px;
+        width: 30px;
+    }
+
+    .club-icon-wrap_big img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .club-detail_flex div {
+        justify-content: space-around;
+    }
+
+    .btn-abs {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
 }
 
 @media(max-width:1280px) {
@@ -2517,11 +2568,6 @@ a.social-media img {
         max-width: 240px;
     }
 
-    /* .news-card {
-         width: 40%; 
-        flex-shrink: 0; 
-    } */
-
     .news {
         overflow: hidden;
         flex-wrap: nowrap;
@@ -2649,6 +2695,17 @@ a.social-media img {
 
     .app-right {
         margin-bottom: -183px;
+    }
+
+    .dropdown-content_map.active {
+        height: 240px;
+        max-height: 240px;
+    }
+
+    .dropdown-image_map {
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -2971,6 +3028,26 @@ a.social-media img {
 }
 
 @media(max-width:430px) {
+
+    .club-detail {
+        bottom: 45px;
+        left: 8px;
+    }
+
+    .btn-abs{
+        left: 8px;
+        bottom: 0;
+        right: 8px;
+    }
+
+    .dropdown-content_map.active {
+        height: 430px;
+        max-height: 430px;
+    }
+
+    .dropdown-image_map {
+        height: 443px;
+    }
 
     .header-submenu {
         width: calc(100vw - 32px);
