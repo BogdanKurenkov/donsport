@@ -1493,10 +1493,10 @@ a.social-media img {
     margin-bottom: 10px;
 }
 
-.dropdown-content p.dropdown-text {
+/* .dropdown-content p.dropdown-text {
     font-size: 16px;
     line-height: 1.5;
-}
+} */
 
 .map-card-wrapper {
     flex-grow: 1;
@@ -1506,7 +1506,6 @@ a.social-media img {
     background: var(--card-bg);
     background-image: url('/assets/img/line_map.png');
     background-repeat: no-repeat;
-    /* background-position: top; */
     padding: 16px;
     border-radius: 16px;
 }
