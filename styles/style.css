@@ -29,7 +29,8 @@ h3,
 h4,
 h5,
 h6,
-.header-submenu ul li a {
+.header-submenu ul li a,
+h1 span {
     font-family: 'Bebas Neue Cyrillic', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
@@ -1858,6 +1859,30 @@ a.social-media img {
 .feedback-top p {
     font-size: 22px;
     font-weight: 500;
+}
+
+.page-title span {
+    display: inline-block;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.span1 {
+    transform: translateY(50px);
+}
+
+.span2 {
+    transform: translateY(0);
+    transition-delay: 2s;
+}
+
+.span3 {
+    transform: translateY(-50px);
+}
+
+.active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 @media(max-width:1680px) {
