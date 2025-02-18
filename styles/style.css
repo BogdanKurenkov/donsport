@@ -240,7 +240,8 @@ input {
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, height 0.5s ease;
     z-index: 10;
-    height: 0px;
+    height: 0;
+    overflow: hidden;
 }
 
 .header-submenu.active {
