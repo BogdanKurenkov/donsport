@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeAllDropdowns = () => {
         dropdownContents.forEach((dropdown) => {
             if (dropdown.classList.contains('active')) {
-                dropdown.style.maxHeight = `${dropdown.scrollHeight}px`; 
+                dropdown.style.maxHeight = `${dropdown.scrollHeight}px`;
                 setTimeout(() => {
                     dropdown.style.maxHeight = '0';
                 }, 10);
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     dropdown.classList.remove('active');
                     dropdown.style.transform = 'translateY(0)';
-                }, 300); 
+                }, 300);
             }
         });
 
@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         mapClubs.forEach((club) => {
             club.classList.remove('active');
-            club.querySelector('img').setAttribute('src', '/assets/svg/plus.svg')
+            club.querySelector('.plus').classList.remove('hidden')
+            club.querySelector('.minus').classList.remove('active')
         });
     };
 
@@ -55,7 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (club) {
             club.classList.add('active');
-            club.querySelector('img').setAttribute('src', '/assets/svg/minus.svg')
+            club.querySelector('.plus').classList.add('hidden')
+            club.querySelector('.minus').classList.add('active')
         }
     };
 

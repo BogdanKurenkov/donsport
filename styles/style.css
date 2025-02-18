@@ -1927,6 +1927,17 @@ a.social-media img {
     opacity: 1;
 }
 
+.minus{
+    display: none;
+}
+
+.plus.hidden{
+    display: none;
+}
+
+.minus.active{
+    display: block;
+}
 
 @media (hover: hover) {
 
