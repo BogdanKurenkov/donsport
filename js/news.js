@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
         perPage: 4,
         gap: 6,
         breakpoints: {
-            768: {
+            1024: {
                 perPage: 2,
                 padding: { left: '5%', right: '10%' },
             },
-            480: {
+            580: {
                 perPage: 1,
                 padding: { left: '7%', right: '7%' },
             },

@@ -545,7 +545,7 @@ input {
 
 .dobule-dd-wrapper {
     display: flex;
-
+    gap: 4px;
 }
 
 .dobule-dd-wrapper .dropdown-container {
@@ -1905,24 +1905,24 @@ a.social-media img {
 .header-submenu .header-submenu-col_desktop ul li a {
     position: relative;
     display: inline-block;
-    padding-left: 0; 
+    padding-left: 0;
     transition: padding-left 0.3s ease;
 }
 
 .header-submenu .header-submenu-col_desktop ul li a::before {
     content: ' ';
     position: absolute;
-    left: -20px; 
+    left: -20px;
     top: 50%;
     width: 10px;
     height: 2px;
-    background-color: none; 
+    background-color: none;
     opacity: 0;
     transition: opacity 0.3s ease, left 0.3s ease;
 }
 
 .header-submenu .header-submenu-col_desktop ul li a:hover::before {
-    left: 0; 
+    left: 0;
     opacity: 1;
 }
 
@@ -1953,7 +1953,8 @@ a.social-media img {
 
     .header-submenu .header-submenu-col_desktop ul li a:hover {
         padding-left: 20px;
-        transition: padding-left 0.3s ease; /* Плавный переход */
+        transition: padding-left 0.3s ease;
+        /* Плавный переход */
     }
 
     .app-icon:hover {

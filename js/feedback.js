@@ -8,7 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
         gap: 8,
         padding: { left: '3.5%', right: '3.5%' },
         breakpoints: {
-            768: {
+            1086: {
+                perPage: 2,
+                padding: { left: '10%', right: '10%' },
+            },
+            820: {
                 perPage: 1,
                 padding: { left: '20%', right: '20%' },
             },
