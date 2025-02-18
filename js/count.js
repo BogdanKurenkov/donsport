@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 initializeCountUp(entry.target);
-                observer.unobserve(entry.target); 
+                observer.unobserve(entry.target);
             }
         });
     }, { threshold: 0.5 });
@@ -32,14 +32,12 @@ function isElementInViewport(el) {
 
 function initializeCountUp(target) {
     if (!target || !(target instanceof HTMLElement)) {
-        console.error("Элемент не найден или недоступен:", target);
         return;
     }
 
     const endValue = parseInt(target.getAttribute('data-target'), 10);
 
     if (isNaN(endValue)) {
-        console.error(`Некорректное значение data-target для элемента: ${target}`);
         return;
     }
 
@@ -47,14 +45,14 @@ function initializeCountUp(target) {
         startVal: 0,
         duration: 2,
         useEasing: true,
-        useGrouping: false, 
-        separator: '', 
-        decimal: '.', 
+        useGrouping: false,
+        separator: '',
+        decimal: '.',
     });
 
     if (!countUp.error) {
         countUp.start();
     } else {
-        console.error(`Ошибка при инициализации CountUp: ${countUp.error}`);
+        console.error(`err: ${countUp.error}`);
     }
 }

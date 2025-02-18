@@ -40,6 +40,13 @@ h6,
     font-family: 'Manrope', sans-serif;
 }
 
+.love-card__title,
+.app-card-title,
+.news-title,
+.feedback-top p {
+    font-family: 'Inter', sans-serif;
+}
+
 :root {
     --white: #ffffff;
     --grey: #F1F2F4;
@@ -1843,6 +1850,17 @@ a.social-media img {
     border-radius: 12px;
 }
 
+.app-card-description {
+    margin-top: 16px;
+}
+
+.app-card-title,
+.news-title,
+.feedback-top p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
 @media(max-width:1680px) {
     .header-menu-link {
         padding: 9px 12px;
@@ -1875,6 +1893,12 @@ a.social-media img {
 }
 
 @media(max-width:1440px) {
+
+    .app-card-title,
+    .news-title,
+    .feedback-top p {
+        font-size: 16px;
+    }
 
     .map-card-wrapper {
         background-image: url('/assets/img/line_map1440.png');
@@ -2336,6 +2360,14 @@ a.social-media img {
     .btn-abs {
         padding: 9px 18px;
         font-size: 14px;
+    }
+
+    .app-card-title {
+        font-size: 16px;
+    }
+
+    .app-card-description {
+        margin-top: 12px;
     }
 }
 
@@ -3263,7 +3295,7 @@ a.social-media img {
         left: calc(49vw - 35px);
     }
 
-    .map-card-wrapper{
+    .map-card-wrapper {
         gap: 20px;
     }
 }
