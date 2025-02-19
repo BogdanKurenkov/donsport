@@ -46,11 +46,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (index === 2) {
         item.setAttribute('data-value', `${getDayOfWeek(nextDay2)}, ${nd2}`)
+
+        if (item) {
+          item.childNodes.forEach(node => {
+            if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === 'Четверг') {
+              node.textContent = getDayOfWeek(nextDay2);
+            }
+          });
+        }
+
         item.querySelector('span').textContent = nd2;
       }
       if (index === 3) {
         item.setAttribute('data-value', `${getDayOfWeek(nextDay3)}, ${nd3}`)
         item.querySelector('span').textContent = nd3;
+
+        if (item) {
+          item.childNodes.forEach(node => {
+            if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === 'Пятница') {
+              node.textContent = getDayOfWeek(nextDay3);
+            }
+          });
+        }
       }
 
     })
