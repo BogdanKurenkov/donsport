@@ -364,7 +364,7 @@ input {
 }
 
 .container {
-    width: calc(100vw - 48px);
+    width: calc(100vw - 64px);
     margin: 0 auto;
 }
 
@@ -1969,6 +1969,18 @@ a.social-media img {
     margin-top: 8px;
 }
 
+.arrow_black {
+    display: none;
+}
+
+.scrolled .arrow_white {
+    display: none;
+}
+
+.scrolled .arrow_black {
+    display: block;
+}
+
 @media (hover: hover) {
 
     .arrow-wrapper:hover .svg-arrow path {
@@ -2547,7 +2559,9 @@ a.social-media img {
         border-radius: 12px;
     }
 
-
+    .container {
+        width: calc(100vw - 48px);
+    }
 }
 
 @media(max-width:1280px) {

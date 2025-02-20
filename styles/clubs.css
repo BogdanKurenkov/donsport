@@ -1,0 +1,38 @@
+:root {
+    --white: #ffffff;
+    --grey: #F1F2F4;
+    --dark-blue: #383838;
+    --beige: #E1DAD7;
+    --border: 1px solid rgba(255, 255, 255, 0.4);
+    --card-bg: #F1F2F4;
+    --red: #E82525;
+}
+
+.rounded-16 {
+    border-radius: 16px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+
+
+.clubs-banner img {
+    width: 100%;
+}
+
+@media(max-width:1440px) {
+    .rounded-16 {
+        border-radius: 12px;
+    }
+
+    .text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+    }
+}
