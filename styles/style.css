@@ -1963,6 +1963,12 @@ a.social-media img {
     gap: 8px;
 }
 
+.btn-primary_black {
+    background: var(--dark-blue);
+    width: 100%;
+    margin-top: 8px;
+}
+
 @media (hover: hover) {
 
     .arrow-wrapper:hover .svg-arrow path {
@@ -3483,6 +3489,10 @@ a.social-media img {
 
     .map-card-wrapper {
         gap: 20px;
+    }
+
+    .section-title_feedback {
+        max-width: 342px;
     }
 }
 
