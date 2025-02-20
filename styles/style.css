@@ -1531,6 +1531,7 @@ a.social-media img {
     width: 100px;
     height: 100px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .club-preview_active {
@@ -1989,10 +1990,14 @@ a.social-media img {
         background: #E5E7EB;
     }
 
-    /* .header-menu-link:hover {
+    .club-preview:hover {
+        opacity: 1;
+    }
+
+    .header-menu-link:hover {
         transform: translateX(10px);
         display: inline-block;
-    } */
+    }
 }
 
 @media(max-width:1680px) {
