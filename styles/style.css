@@ -2637,6 +2637,10 @@ a.social-media img {
 
 @media(max-width:768px) {
 
+    .for-love-left {
+        margin-top: 60px;
+    }
+
     .swiper-slide {
         display: block !important;
     }
@@ -3286,7 +3290,9 @@ a.social-media img {
 
 @media(max-width:430px) {
 
-
+    .for-love-left {
+        margin-top: 0;
+    }
 
     .global-slider-controls {
         border-radius: 6px;
