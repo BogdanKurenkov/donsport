@@ -2637,6 +2637,10 @@ a.social-media img {
 
 @media(max-width:768px) {
 
+    .swiper-slide {
+        display: block !important;
+    }
+
     .map-right {
         overflow-y: hidden;
     }
