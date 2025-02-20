@@ -1953,8 +1953,14 @@ a.social-media img {
 }
 
 .header-menu-link {
-    display: inline-block;
+    display: flex;
     transition: all 0.3s ease;
+}
+
+.header-menu-link_drop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 @media (hover: hover) {
