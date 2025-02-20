@@ -2642,7 +2642,8 @@ a.social-media img {
     }
 
     .map-right {
-        overflow-y: hidden;
+        height: max-content;
+        max-height: 100%;
     }
 
     .map-card-wrapper {
