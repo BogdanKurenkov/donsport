@@ -113,7 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
         errorMessage.className = 'error-message';
         errorMessage.innerHTML = `
         <span>${message}</span>
-        <img class="close-error" alt="close" src="/assets/svg/close-error.svg" />
+        <svg class="close-error" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4.5L4 12.5" stroke="#E82525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 4.5L12 12.5" stroke="#E82525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
     `;
 
         element.insertAdjacentElement('afterend', errorMessage);
