@@ -66,6 +66,10 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: var(--dark-blue) !important;
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn-primary {
     background: var(--red);
     color: var(--white);
@@ -3331,7 +3335,7 @@ a.social-media img {
 @media(max-width:430px) {
 
     .header-col3 {
-        background: var(--card-bg);
+        background: var(--white);
     }
 
     .for-love-left {
