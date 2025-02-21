@@ -231,6 +231,17 @@
     height: 906px;
 }
 
+.header-col1_clubs,
+.header-col3_clubs {
+    background-color: var(--card-bg);
+}
+
+.header-col3_clubs .phone,
+.header-col3_clubs .back-call,
+.header-col3_clubs .burger-menu {
+    background: var(--white);
+}
+
 @media(max-width:1440px) {
 
     .btn {

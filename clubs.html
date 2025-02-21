@@ -19,16 +19,24 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <a href="/" class="header-col1">
+                <a href="/" class="header-col1 header-col1_clubs">
                     <img class="header-logo" src="/assets/img/logo.png" alt="logo">
                 </a>
                 <div class="header-col2 header-col2_clubs">
                     <nav class="header-menu">
                         <li class="header-menu-item">
-                            <a href="/clubs.html" class="header-menu-link header-menu-link_drop">Клубы
+                            <a class="header-menu-link header-menu-link_drop">Клубы
                                 <img class="arrow_white" src="/assets/svg/chevron-down_white.svg" alt="arrow down">
                                 <img class="arrow_black" src="/assets/svg/chevron-down.svg" alt="arrow down">
                             </a>
+                            <ul class="dropdown-menu_header">
+                                <li><a href="/clubs.html">атлант</a></li>
+                                <li><a href="/clubs.html">атмосфера</a></li>
+                                <li><a href="/clubs.html">алые паруса</a></li>
+                                <li><a href="/clubs.html">бирюзова</a></li>
+                                <li><a href="/clubs.html">хамовники</a></li>
+                                <li><a href="/clubs.html">юго-западная</a></li>
+                            </ul>
                         </li>
                         <li class="header-menu-item">
                             <a href="#" class="header-menu-link">Фитнес</a>
@@ -47,7 +55,7 @@
                         </li>
                     </nav>
                 </div>
-                <div class="header-col3">
+                <div class="header-col3 header-col3_clubs">
                     <p id="phone-number" class="phone">+7 495 292 12 94</p>
                     <button data-modal-id="get-consultation" class="back-call hover-effect"
                         data-hover-text="Обратный звонок">Обратный звонок</button>
@@ -337,7 +345,6 @@
             </a>
         </section>
 
-
         <section class="buy-card">
             <div class="container container_relative">
                 <div class="buy-card-window">
@@ -351,7 +358,7 @@
 
                     <form class="buy-card-form">
                         <input class="" type="text" placeholder="Имя">
-                        <input type="text" placeholder="Телефон">
+                        <input id="input-phone" type="text" placeholder="Телефон">
 
                         <div class="dropdown-container">
                             <div class="dropdown-header" data-dropdown>
@@ -512,7 +519,7 @@
 
             <form class="buy-card-form">
                 <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Телефон">
+                <input id="input-phone" type="text" placeholder="Телефон">
 
                 <div class="dropdown-container">
                     <div class="dropdown-header" data-dropdown>
@@ -599,7 +606,7 @@
 
             <form class="buy-card-form">
                 <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Телефон">
+                <input id="input-phone" type="text" placeholder="Телефон">
 
                 <div class="dobule-dd-wrapper">
                     <div class="dropdown-container">
