@@ -36,6 +36,10 @@
     color: var(--dark-blue);
 }
 
+.hover-effect_black::after {
+    background: var(--red);
+}
+
 .text_grey {
     color: #CBD1DC;
 }
