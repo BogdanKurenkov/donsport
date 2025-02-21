@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeSubmenu = document.getElementById('close-submenu');
     const headerOverlay = document.getElementById('header-overlay');
     const headerCol3 = document.querySelector('.header-col3');
+    const logo = document.querySelector('.header-col1_clubs')
     const body = document.body;
     const html = document.documentElement;
 
@@ -13,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
             headerOverlay.classList.add('active');
             headerCol3.classList.add('blurred');
             body.classList.add('body-lock');
-            html.classList.add('body-lock')
+            html.classList.add('body-lock');
+            logo.classList.add('active');
         });
 
         function closeMenu() {
@@ -23,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 body.classList.remove('body-lock');
                 html.classList.remove('body-lock')
                 headerCol3.classList.remove('blurred');
+                logo.classList.remove('active');
             }, 300);
         }
 

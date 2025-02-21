@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const phoneInput = form.querySelector('input[placeholder="Телефон"]');
             const phone = phoneInput.value.trim();
-            if (!phone) {
+            if (!phone || phone.length !== 21) {
                 if (!phoneInput.nextElementSibling?.classList.contains('error-message')) {
-                    showError(phoneInput, 'Укажите телефон');
+                    showError(phoneInput, 'Номер телефона +7 (xxx) xxx-xx-xx');
                 }
                 phoneInput.classList.add('error');
                 hasError = true;
@@ -112,14 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const errorMessage = document.createElement('div');
         errorMessage.className = 'error-message';
         errorMessage.innerHTML = `
-        <span>${message}</span>
-        <svg class="close-error" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 4.5L4 12.5" stroke="#E82525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4 4.5L12 12.5" stroke="#E82525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-
-    `;
+            <span>${message}</span>
+            <svg class="close-error" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4.5L4 12.5" stroke="#E82525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 4.5L12 12.5" stroke="#E82525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        `;
 
         element.insertAdjacentElement('afterend', errorMessage);
 
@@ -143,15 +141,36 @@ document.addEventListener('DOMContentLoaded', () => {
             const errorMessage = target.nextElementSibling;
 
             if (errorMessage && errorMessage.classList.contains('error-message')) {
-                if (target.value.trim()) {
-                    errorMessage.classList.remove('visible');
-                    setTimeout(() => {
-                        errorMessage.remove();
-                    }, 300);
-                    target.classList.remove('error');
+                if (target.placeholder === "Телефон") {
+                    const phone = target.value.trim();
+                    if (phone.length === 21) {
+                        errorMessage.classList.remove('visible');
+                        setTimeout(() => {
+                            errorMessage.remove();
+                        }, 300);
+                        target.classList.remove('error');
+                    }
+                } else {
+                    if (target.value.trim()) {
+                        errorMessage.classList.remove('visible');
+                        setTimeout(() => {
+                            errorMessage.remove();
+                        }, 300);
+                        target.classList.remove('error');
+                    }
                 }
             }
         }
+    });
+
+    const phoneInputs = document.querySelectorAll('#input-phone');
+
+    phoneInputs.forEach((input) => {
+        IMask(
+            input,
+            {
+                mask: '+{7}(000) 000 - 00 - 00'
+            })
     });
 
     document.addEventListener('click', function (event) {

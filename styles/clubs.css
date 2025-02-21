@@ -242,10 +242,15 @@
     background: var(--white);
 }
 
+.header-col1_clubs.active {
+    background: var(--white);
+}
+
 @media(max-width:1440px) {
 
     .btn {
         font-size: 14px;
+        line-height: 19.12px;
     }
 
     .page-title_lg {
@@ -477,5 +482,9 @@
 
     .club-contact-item {
         gap: 12px;
+    }
+
+    .btn-join {
+        padding: 15px 32px;
     }
 }
