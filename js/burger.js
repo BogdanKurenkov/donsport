@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             headerCol3.classList.add('blurred');
             body.classList.add('body-lock');
             html.classList.add('body-lock');
-            logo.classList.add('active');
+            logo?.classList.add('active');
         });
 
         function closeMenu() {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 body.classList.remove('body-lock');
                 html.classList.remove('body-lock')
                 headerCol3.classList.remove('blurred');
-                logo.classList.remove('active');
+                logo?.classList.remove('active');
             }, 300);
         }
 
