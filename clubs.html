@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -9,9 +9,6 @@
     <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/clubs.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
@@ -67,7 +64,7 @@
                                 <li><a href="#">о компании</a></li>
                                 <li><a href="#">команда</a></li>
                                 <li><a href="#">партнеры</a></li>
-                                <li><a href="#">клубы</a></li>
+                                <li><a href="/clubs.html">клубы</a></li>
                                 <li><a href="#">контакты</a></li>
                             </ul>
                         </div>
@@ -94,7 +91,7 @@
                                 <li><a href="#">о компании</a></li>
                                 <li><a href="#">команда</a></li>
                                 <li><a href="#">партнеры</a></li>
-                                <li><a href="#">клубы</a></li>
+                                <li><a href="/clubs.html">клубы</a></li>
                                 <li><a href="#">блог</a></li>
                                 <li><a href="#">новости</a></li>
                                 <li><a href="#">контакты</a></li>
@@ -124,15 +121,105 @@
 
     <main class="main">
 
+        <section class="club-info">
+            <div class="container">
+                <div class="page-info rounded-16">
+                    <div class="routes rounded-8">
+                        <p class="route">Главная</p>
+                        <img src="/assets/svg/chevron-right.svg" alt="arrow">
+                        <p class="route">Клубы</p>
+                        <img src="/assets/svg/chevron-right.svg" alt="arrow">
+                        <p class="route route_active">Юго-Западная</p>
+                    </div>
+                    <h1 class="page-title page-title_lg">Юго-Западная</h1>
+                    <p class="page-info_desc">Семейный клуб, расположенный в элитном жилом комплексе Корона, рядом с
+                        жилым
+                        комплексом
+                        располагается живописный Тропаревский парк.
+                    </p>
+                    <div class="btns-wrap btns-wrap_desktop">
+                        <button class="btn-join btn hover-effect rounded-8" data-hover-text="Посетить клуб">Посетить
+                            клуб</button>
+                        <button class="btn-schedule btn hover-effect rounded-8"
+                            data-hover-text="Расписание">Расписание</button>
+                    </div>
+                </div>
+
+                <div class="btns-wrap btns-wrap_mobile">
+                    <button class="btn-join btn hover-effect rounded-8" data-hover-text="Посетить клуб">Посетить
+                        клуб</button>
+                    <button class="btn-schedule btn hover-effect rounded-8"
+                        data-hover-text="Расписание">Расписание</button>
+                </div>
+            </div>
+        </section>
+
         <section class="clubs-banner">
             <div class="container">
-                <img src="/assets/img/clubs_bg.png" alt="banner">
+                <div class="banner rounded-24"></div>
             </div>
         </section>
 
         <section class="club-contacts">
             <div class="container">
+                <div class="club-contacts-wrapper rounded-16">
+                    <div class="club-contacts_left">
+                        <h3 class="section-title section-title_left">Контакты</h3>
+                        <p>Свяжитесь с нами, чтобы записаться на занятия, узнать расписание или получить консультацию по
+                            услугам.</p>
+                    </div>
+                    <div class="club-contacts_right">
 
+
+                        <div class="club-contact-item rounded-8">
+                            <div class="club-contact-item_img-wrap">
+                                <img src="/assets/svg/time.svg" alt="/icon" class="club-contact-item__image">
+                            </div>
+                            <div class="club-contact-item__info">
+                                <p class="text">Время работы</p>
+                                <div class="work-info">
+                                    <div class="work-info_top">
+                                        <span class="text text_grey">пн - пт</span>
+                                        <p class="text">07:00 - 23:00</p>
+                                    </div>
+                                    <div class="work-info_bottom">
+                                        <span class="text text_grey">сб - вс и праздники</span>
+                                        <p class="text">09:00 - 23:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="club-contact-item rounded-8">
+                            <div class="club-contact-item_img-wrap">
+                                <img src="/assets/svg/marker.svg" alt="/icon" class="club-contact-item__image">
+                            </div>
+                            <div class="club-contact-item__info">
+                                <p class="text">Адрес</p>
+                                <p class="text">г. Москва, пр-т Вернадского, 92</p>
+                            </div>
+                        </div>
+                        <div class="club-contact-item rounded-8">
+                            <div class="club-contact-item_img-wrap">
+                                <img src="/assets/svg/phone.svg" alt="/icon" class="club-contact-item__image">
+                            </div>
+                            <div class="club-contact-item__info">
+                                <p class="text">Телефон</p>
+                                <p class="text">+7 (495) 292-13-64</p>
+                            </div>
+                        </div>
+                        <div class="club-contact-item rounded-8">
+                            <div class="club-contact-item_img-wrap">
+                                <img src="/assets/svg/mail.svg" alt="/icon" class="club-contact-item__image">
+                            </div>
+                            <div class="club-contact-item__info">
+                                <p class="text">Почта</p>
+                                <p class="text">sales_yg@donsport.ru</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -192,8 +279,6 @@
                             <p class="trainer-description">Тренер тренажерного зала</p>
                         </div>
                     </div>
-
-                    <!-- double content -->
 
                     <div class="team-card">
                         <img src="/assets/img/team1.png" class="trainer" alt="trainer">
@@ -400,7 +485,7 @@
 
                 </div>
                 <div class="footer-bottom">
-                    <img class="footer-logo" src="/assets/img/footer-logo.png" alt="donsport">
+                    <img class="footer-logo" src="/assets/svg/footer-logo.svg" alt="donsport">
                     <div class="footer-info">
                         <p class="years">2003 - 2025 ДОНСПОРТ</p>
                         <a class="oferta" href="#">оферта</a>
@@ -562,8 +647,6 @@
     <script type="module" defer src="/js/burger.js"></script>
     <script type="module" defer src="/js/clipBoard.js"></script>
     <script type="module" defer src="/js/modals.js"></script>
-    <script type="module" defer src="/js/feedback.js"></script>
-    <script type="module" defer src="/js/news.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
@@ -574,4 +657,4 @@
     <script type="module" defer src="/js/dropdown.js"></script>
 </body>
 
-</html>
+</html> -->

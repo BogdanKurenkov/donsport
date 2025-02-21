@@ -1,3 +1,5 @@
+@import '/assets/fonts/inter/stylesheet.css';
+
 :root {
     --white: #ffffff;
     --grey: #F1F2F4;
@@ -8,8 +10,16 @@
     --red: #E82525;
 }
 
+.rounded-8 {
+    border-radius: 8px;
+}
+
 .rounded-16 {
     border-radius: 16px;
+}
+
+.rounded-24 {
+    border-radius: 24px;
 }
 
 .text {
@@ -19,20 +29,442 @@
     color: var(--dark-blue);
 }
 
+.text_grey {
+    color: #CBD1DC;
+}
 
+.page-title_lg {
+    font-size: 178px;
+    line-height: 142.4px;
+    color: var(--dark-blue);
+    text-align: center;
+}
 
-.clubs-banner img {
+.section-title_left {
+    margin: 0;
+    text-align: left;
+}
+
+.header-col2_clubs {
+    background: var(--card-bg);
+}
+
+.header-col2_clubs .arrow_black {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.header-col2_clubs .arrow_white {
+    display: none;
+}
+
+.header-col2_clubs a {
+    color: var(--dark-blue);
+}
+
+.btn {
+    border: none;
+    padding: 20px 48px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.6px;
+}
+
+/*  */
+
+.btns-wrap {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-schedule {
+    background: var(--white);
+}
+
+.btn-join {
+    background: var(--dark-blue);
+    color: var(--white)
+}
+
+.routes {
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 4px;
+    margin-bottom: 64px;
+}
+
+.route {
+    color: #B8BFCD;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.86px;
+    padding: 4px 12px;
+}
+
+.route_active {
+    background: var(--white);
+    padding: 8px 12px;
+    color: var(--dark-blue);
+}
+
+.page-info {
+    background: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 74px 0 56px;
+}
+
+.page-info_desc {
+    max-width: 516px;
+    text-align: center;
+    line-height: 21.86px;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.clubs-banner {
+    margin: 32px 0;
+}
+
+.club-info {
+    margin-top: 130px;
+}
+
+.club-contacts-wrapper {
+    background: var(--card-bg);
+    display: flex;
+    padding: 16px;
+}
+
+.club-contacts_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    width: 52.3%;
+}
+
+.club-contacts_right {
+    width: 48.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.club-contacts_left p {
+    font-size: 16px;
+    line-height: 19.36px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    max-width: 361px;
+    color: #000000;
+}
+
+.club-contact-item {
+    padding: 8px 32px 8px 8px;
+}
+
+.club-contact-item__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.club-contact-item {
+    background: var(--white);
+    display: flex;
+    gap: 16px;
+}
+
+.club-contact-item_img-wrap {
+    width: 70px;
+    height: 70px;
+    background: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 2px;
+}
+
+.club-contact-item_img-wrap img {
+    width: 20px;
+    height: 20px;
+}
+
+.work-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.work-info_bottom,
+.work-info_top {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.routes img {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.btns-wrap_mobile {
+    display: none;
+}
+
+.banner {
+    background-image: url(/assets/img/clubs_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
+    height: 906px;
 }
 
 @media(max-width:1440px) {
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .page-title_lg {
+        font-size: 130px;
+        line-height: 104px;
+    }
+
+    .page-info_desc {
+        font-size: 14px;
+        line-height: 16.8px;
+        max-width: 434px;
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+
+    .page-info {
+        padding: 55px 0 39px;
+    }
+
     .rounded-16 {
         border-radius: 12px;
+    }
+
+    .rounded-24 {
+        border-radius: 18px;
+    }
+
+    .rounded-8 {
+        border-radius: 6px;
     }
 
     .text {
         font-size: 14px;
         font-weight: 500;
         line-height: 16.8px;
+    }
+
+    .btn {
+        padding: 15px 36px;
+    }
+
+    /*  */
+
+    .clubs-banner {
+        margin: 24px 0;
+    }
+
+    .banner {
+        height: 687px;
+    }
+
+    .route {
+        font-size: 14px;
+        line-height: 16.8px;
+        padding: 6px 8px;
+    }
+
+    .routes {
+        margin-bottom: 48px;
+    }
+
+    .route_active {
+        padding: 6px 8px;
+    }
+
+    .club-info {
+        margin-top: 98px;
+    }
+
+    .club-contact-item_img-wrap {
+        border-radius: 1.5px;
+    }
+
+    .club-contact-item_img-wrap img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .club-contact-item {
+        padding: 6px 24px 6px 6px;
+    }
+
+
+    .work-info_bottom,
+    .work-info_top {
+        gap: 12px;
+    }
+
+    .club-contact-item_img-wrap {
+        width: 53px;
+        height: 53px;
+    }
+
+    .work-info {
+        gap: 9px;
+    }
+
+    .club-contacts_left p {
+        font-size: 14px;
+        line-height: 16.8px;
+        font-weight: 500;
+        max-width: 271px;
+    }
+
+    .club-contacts_left {
+        padding: 6px;
+    }
+
+    .club-contacts-wrapper {
+        padding: 12px;
+    }
+}
+
+@media(max-width:1024px) {
+    .club-contacts_right {
+        width: 60%;
+    }
+
+    .club-contacts_left {
+        width: 40%;
+    }
+}
+
+@media(max-width:768px) {
+
+    .banner {
+        height: 800px;
+        background-position-x: 7%;
+    }
+
+    .club-info {
+        margin-top: 81px;
+    }
+
+    .club-contacts-wrapper {
+        flex-direction: column;
+    }
+
+    .club-contacts_right {
+        width: 100%;
+    }
+
+    .club-contacts_left {
+        width: 100%;
+        flex-direction: row;
+        padding-left: 0;
+        padding-bottom: 40px;
+        justify-content: flex-start;
+        gap: 112px;
+    }
+}
+
+
+@media(max-width:430px) {
+    .rounded-24 {
+        border-radius: 12px;
+    }
+
+    .page-title_lg {
+        font-size: 68px;
+        line-height: 61.2px;
+    }
+
+    .btn {
+        width: 50%;
+    }
+
+    /*  */
+
+    .banner {
+        height: 543px;
+        background-position-x: 0;
+    }
+
+    .clubs-banner {
+        margin: 16px 0;
+    }
+
+    .routes {
+        margin-bottom: 70px;
+    }
+
+    .btns-wrap_mobile {
+        margin-top: 8px;
+        display: flex;
+    }
+
+    .page-info_desc {
+        margin-bottom: 0;
+        max-width: 336px;
+        margin-top: 0;
+    }
+
+    .page-info {
+        padding: 16px 0 103px;
+    }
+
+    .btns-wrap_mobile .btn-schedule {
+        background: var(--card-bg);
+    }
+
+    .btns-wrap_desktop {
+        display: none;
+    }
+
+    .section-title_left {
+        font-size: 36px;
+        line-height: 32.4px;
+    }
+
+    .club-contacts_left {
+        flex-direction: column;
+        gap: 13px;
+        padding-bottom: 20px;
+    }
+
+
+    .club-contact-item {
+        padding-right: 16px;
+    }
+
+    .club-contact-item__info p:first-child {
+        display: none;
+    }
+
+    .club-contact-item__info {
+        justify-content: flex-end;
+    }
+
+    .club-contact-item {
+        gap: 12px;
     }
 }
