@@ -223,6 +223,119 @@
     height: 20px;
 }
 
+.club-slider-wrapper {
+    display: flex;
+    gap: 4px ;
+    overflow: hidden ;
+}
+.club-slider-left {
+    width: 50%;
+    background-image: url('../assets/img/line_slider1920.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 16px;
+}
+.club-slider-right {
+    width: 50%;
+    border-radius: 16px;
+}
+.club-slider-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.club-slider-card {
+    background-color: var(--white);
+    width: 80%;
+    height: 85%;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.club-slider-page {
+    font-weight: 600;
+}
+.club-slider-title {
+    font-size: 180px;
+    display: inline-block;
+}
+.shadow-text {
+    text-shadow: 
+        -190px 0px 4px rgba(0, 0, 0, 0.05), 
+        190px 0px 4px rgba(0, 0, 0, 0.05);  
+    font-family: 'Bebas Neue Cyrillic', sans-serif;
+
+}
+.club-slider-title p {
+    font-size: 30px;
+    line-height: 0;
+    text-align: center;
+    font-family: 'Bebas Neue Cyrillic', sans-serif;
+    letter-spacing: normal;
+
+}
+.club-slider-info {
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+}
+.club-slider-info:after {
+    content: " ";
+    display: block;
+    text-align: center;
+}
+.club-slider-info span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* выаваы */
+.club-slider {
+    position: relative;
+    height: 100vh; 
+}
+
+.custom-swiper-container {
+    height: 100%; 
+    position: relative;
+}
+
+.custom-swiper-wrapper {
+    display: block; 
+}
+
+.custom-swiper-slide {
+    height: 100vh; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.custom-swiper-slide:first-child {
+    opacity: 1; 
+}
+
+.swiper-slide-active {
+    opacity: 1 !important; 
+}
+
+/* выавыа */
 .work-info {
     display: flex;
     flex-direction: column;
@@ -377,6 +490,8 @@
 .section-title_photos {
     margin-bottom: 44px;
 }
+
+
 
 @media (hover: hover) {
     .splide_hover:hover .club-photo-desc {
