@@ -222,11 +222,19 @@
     width: 20px;
     height: 20px;
 }
-
+.club-slider {
+    position: relative;
+    overflow: hidden; 
+}
 .club-slider-wrapper {
     display: flex;
     gap: 4px ;
     overflow: hidden ;
+    height: 100%;
+    width: 100%;
+    opacity: 0; 
+    pointer-events: none;
+    position: absolute;
 }
 .club-slider-left {
     width: 50%;
@@ -240,12 +248,15 @@
     background-color: var(--card-bg);
     padding: 40px;
     border-radius: 16px;
+    transform: translateY(100%);
 }
 .club-slider-right {
     width: 50%;
     border-radius: 16px;
+    transform: translateY(-100%);
 }
 .club-slider-right img {
+    border-radius: 16px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -300,42 +311,17 @@
     width: 100%;
     text-align: center;
 }
-
+.club-slider-media {
+    display: none;
+}
 
 /* выаваы */
 .club-slider {
     position: relative;
-    height: 100vh; 
+    height: 100vh;
 }
 
-.custom-swiper-container {
-    height: 100%; 
-    position: relative;
-}
 
-.custom-swiper-wrapper {
-    display: block; 
-}
-
-.custom-swiper-slide {
-    height: 100vh; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.custom-swiper-slide:first-child {
-    opacity: 1; 
-}
-
-.swiper-slide-active {
-    opacity: 1 !important; 
-}
-
-/* выавыа */
 .work-info {
     display: flex;
     flex-direction: column;
@@ -517,7 +503,26 @@
 }
 
 @media(max-width:1440px) {
-
+    .club-slider {
+        display: flex;
+    }
+    .club-slider-media {
+        display: none;
+    }
+    .club-slider-card {
+        width: 75%;
+        height: 60%;
+    }
+    .club-slider-title {
+        font-size: 140px;
+        display: inline-block;
+    }
+    .club-slider-title p {
+        font-size: 25px;
+    }
+    .club-slider-info {
+        font-size: 14px;
+    }
     .block-title {
         font-size: 40px;
         line-height: 36px;
@@ -716,6 +721,46 @@
         gap: 112px;
     }
 
+    .club-slider {
+        display: none;
+    }
+    .club-slider-media {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 18px;
+    }
+    .club-media-card {
+        width: 100%;
+        border-radius: 16px;
+        position: relative;
+    }
+    .club-media-card img {
+        width: 100%;
+        height: 417px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    .card-media-info {
+        border-radius: 6px;
+        background-color: var(--card-bg);
+        padding: 8px 16px 8px 8px;
+        position: absolute;
+        bottom: 3%;
+        left: 1%;
+        
+    }
+    .card-media-title {
+        font-size: 40px;
+        font-family: 'Bebas Neue Cyrillic', sans-serif;
+        margin-bottom: 25px;
+    }
+    .card-media-desc {
+        font-size: 14px;
+        font-weight: 500;
+        white-space: pre-line;
+    }
+
     .splide-arrow-wrap p {
         display: block;
     }
@@ -822,7 +867,21 @@
     .club-info {
         margin-bottom: 8px;
     }
-
+    .club-slider-media {
+        gap: 8px;
+    }
+    .club-media-card img {
+        height: 194px;
+    }
+    .card-media-info {
+        position: relative;
+        top: -10px;
+        width: 100%;
+        border-radius: 16px;
+    }
+    .card-media-title {
+        margin-bottom: 10px;
+    }
     .banner {
         height: 543px;
         background-position-x: 0;
