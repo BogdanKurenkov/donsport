@@ -4,14 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentIndex = 0;
   let isAnimating = false;
   let sliderSection = document.getElementById("slider-section");
-  let allowScroll = true;
-
-  function isElementInViewport(el) {
-    let rect = el.getBoundingClientRect();
-    let windowHeight =
-      window.innerHeight || document.documentElement.clientHeight;
-    return rect.top <= windowHeight && rect.bottom >= windowHeight;
-  }
+  let observerActive = false;
 
   function showSlide(index, direction) {
     if (isAnimating || index < 0 || index >= sections.length) return;
@@ -31,29 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let leftPanel = sections[index].querySelector(".club-slider-left");
     let rightPanel = sections[index].querySelector(".club-slider-right");
 
-    if (direction === "down") {
-      gsap.fromTo(
-        leftPanel,
-        { y: "100%" },
-        { y: "0%", duration: 1.5, ease: "power2.out" }
-      );
-      gsap.fromTo(
-        rightPanel,
-        { y: "-100%" },
-        { y: "0%", duration: 1.5, ease: "power2.out" }
-      );
-    } else {
-      gsap.fromTo(
-        leftPanel,
-        { y: "100%" },
-        { y: "0%", duration: 1.5, ease: "power2.out" }
-      );
-      gsap.fromTo(
-        rightPanel,
-        { y: "-100%" },
-        { y: "0%", duration: 1.5, ease: "power2.out" }
-      );
-    }
+    gsap.fromTo(
+      leftPanel,
+      { y: "100%" },
+      { y: "0%", duration: 1.5, ease: "power2.out" }
+    );
+    gsap.fromTo(
+      rightPanel,
+      { y: "-100%" },
+      { y: "0%", duration: 1.5, ease: "power2.out" }
+    );
 
     currentIndex = index;
     setTimeout(() => (isAnimating = false), 1500);
@@ -61,23 +41,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showSlide(0, "down");
 
-  document.addEventListener(
-    "wheel",
-    function (event) {
-      if (!isElementInViewport(sliderSection)) return;
-      if (isAnimating) {
-        event.preventDefault();
-        return;
-      }
+  function handleScroll(event) {
+    if (!observerActive) return;
+    if (isAnimating) {
+      event.preventDefault();
+      return;
+    }
 
-      if (event.deltaY > 0 && currentIndex < sections.length - 1) {
-        showSlide(currentIndex + 1, "down");
-        event.preventDefault();
-      } else if (event.deltaY < 0 && currentIndex > 0) {
-        showSlide(currentIndex - 1, "up");
-        event.preventDefault();
-      }
+    if (event.deltaY > 0 && currentIndex < sections.length - 1) {
+      showSlide(currentIndex + 1, "down");
+      event.preventDefault();
+    } else if (event.deltaY < 0 && currentIndex > 0) {
+      showSlide(currentIndex - 1, "up");
+      event.preventDefault();
+    }
+  }
+
+  document.addEventListener("wheel", handleScroll, { passive: false });
+
+  let observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        observerActive = entry.isIntersecting;
+      });
     },
-    { passive: false }
+    { threshold: 0.5 }
   );
+
+  observer.observe(sliderSection);
 });
