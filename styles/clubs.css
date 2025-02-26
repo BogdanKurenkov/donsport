@@ -160,7 +160,7 @@
     position: relative;
     border-radius: 16px;
     overflow: hidden; 
-    z-index: 10;
+    /* z-index: 10; */
     margin-bottom: 20px;
     padding-right: 26px;
     padding-left: 26px;
