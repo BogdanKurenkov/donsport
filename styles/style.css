@@ -1170,6 +1170,7 @@ a.social-media img {
 
 .team-card {
     width: calc(20% - 8px);
+    
 }
 
 .navigate-btn_center {
@@ -1203,6 +1204,7 @@ a.social-media img {
 .trainer {
     border-radius: 8px;
     width: 100%;
+    max-height: 519px;
     height: 100%;
 }
 
@@ -2454,7 +2456,9 @@ a.social-media img {
         font-size: 32px;
         line-height: 28.8px;
     }
-
+    .trainer {
+        max-height: 388px;
+    }
     .trainer-description {
         font-size: 14px;
         line-height: 16.8px;
@@ -3013,6 +3017,9 @@ a.social-media img {
         height: 240px;
         width: 100%;
         object-fit: cover;
+    }
+    .trainer {
+        max-height: 294px;
     }
 }
 

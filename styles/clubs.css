@@ -368,7 +368,6 @@
 }
 
 .banner {
-    background-image: url(/assets/img/clubs_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -378,7 +377,15 @@
     z-index: 3;
     transform-origin: top;
 }
-
+.banner-atlant {
+    background-image: url(/assets/img/banner-atlant.jpg);
+}
+.banner-hamovniki {
+    background-image: url(/assets/img/banner-hamovniki.jpg);
+}
+.banner-yg {
+    background-image: url(/assets/img/banner-yg.png);
+}
 .header-col1_clubs {
     background-color: var(--card-bg);
 }
