@@ -1,0 +1,141 @@
+.trainers-section {
+  margin-bottom: 100px;
+}
+.trainers-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.trainers-dropdown__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.dropdown-container-trainers {
+  background-color: var(--grey);
+}
+.trainers-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.page-team-card {
+  width: calc(20% - 8px);
+}
+.page-team-card img {
+  width: 100%;
+  max-height: 414px;
+  max-width: 367px;
+}
+.team-card-wrapper-page {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 8px;
+  background-color: var(--grey);
+  padding: 16px 16px 26px 16px;
+  width: 100%;
+  max-width: 367px;
+}
+.trainer-name-title {
+  font-size: 48px;
+  line-height: 46.8px;
+  text-wrap: wrap;
+}
+.trainer-description-text {
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+
+@media (max-width: 1440px) {
+  .page-team-card img {
+    max-height: 307px;
+    max-width: 272px;
+  }
+  .trainer-name-title  {
+    font-size: 32px;
+  }
+  .team-card-wrapper-page {
+    max-width: 272px;
+    padding: 12px 10px 26px 12px;
+    /* padding-bottom: 20px; */
+  }
+}
+@media (max-width: 1140px) {
+  .page-team-card img {
+    max-height: 307px;
+    max-width: 272px;
+  }
+  .team-card-wrapper-page {
+    max-width: 272px;
+    padding: 12px 10px 26px 12px;
+   
+  }
+  .page-team-card {
+    width: calc(25% - 8px);
+  }
+  .trainer-description-text {
+    font-size: 14px;
+    
+  }
+  .trainer-name-title  {
+    font-size: 32px;
+    line-height: 28.8px;
+  }
+} 
+
+@media (max-width:900px) {
+  .page-team-card {
+    width: calc(33.33% - 4px);
+  }
+  .trainers-container {
+    gap: 4px;
+  }
+}
+
+@media (max-width:768px) {
+  .page-team-card img {
+    max-height: 270px;
+    max-width: 240px;
+  }
+  .team-card-wrapper-page {
+    max-width: 240px;
+   
+  }
+}
+@media (max-width:475px) {
+  .page-team-card {
+    width: calc(50% - 4px);
+  }
+  .page-team-card img {
+    max-height: 249px;
+    max-width: 218px;
+  }
+  .team-card-wrapper-page {
+    max-width: 218px;
+   
+  }
+  .btn-trainer-see {
+    width: 100% !important;
+  }
+  .trainer-dropdow-media {
+    width: 100%;
+    
+  }
+}
+@media (max-width:375px) {
+  .page-team-card {
+    width: calc(50% - 4px);
+  }
+  .page-team-card img {
+    max-height: 189px;
+    max-width: 168px;
+  }
+  .team-card-wrapper-page {
+    max-width: 168px;
+    padding-bottom: 16px;
+  }
+  
+}

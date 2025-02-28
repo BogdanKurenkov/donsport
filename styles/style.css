@@ -2445,7 +2445,9 @@ a.social-media img {
 
     .team-card,
     .team-card-wrapper {
-        width: 275px;
+        /* width: 275px; */
+        width: 100%;
+        max-width: 275px;
     }
 
     .team-card img {
@@ -2647,7 +2649,9 @@ a.social-media img {
     .map-right {
         width: 100%;
     }
-
+    .trainer-description {
+        font-size: 10px;
+    }
     .container-slider {
         flex-direction: column-reverse;
     }
@@ -2871,7 +2875,8 @@ a.social-media img {
 
     .team-card,
     .team-card-wrapper {
-        width: 240px;
+        max-width: 240px;
+        width: 100%;
         padding: 12px 16px;
     }
 
@@ -3020,6 +3025,7 @@ a.social-media img {
     }
     .trainer {
         max-height: 294px;
+
     }
 }
 

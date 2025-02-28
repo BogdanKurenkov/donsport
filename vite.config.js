@@ -14,6 +14,8 @@ export default defineConfig({
         clubsBirusova: "clubs-birusova.html",
         clubsHamovniki: "clubs-hamovniki.html",
         clubsSails: "clubs-sails.html",
+        ourClubs: "our-clubs.html",
+        team: "team.html",
       },
     },
   },
