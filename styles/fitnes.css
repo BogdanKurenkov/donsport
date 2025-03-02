@@ -1,0 +1,236 @@
+.fitness-marquee .container {
+  background-color: var(--grey);
+  border-radius: 16px;
+  padding-top: 24px;
+  padding-bottom: 60px;
+}
+.marquee-content-fitnes {
+  display: flex;
+  gap: 8px;
+}
+.fitnes-card-mq {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 8px);
+}
+.fitnes-card-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+.fitnes-desc {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+.fitnes-species .container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.species-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  min-height: 280px;
+
+}
+.species-card-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.fitnes-section {
+  margin-bottom: 60px;
+}
+.fitnes-section .container {
+  display: flex;
+  gap: 4px;
+}
+.fitnes-section-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 25%;
+}
+.dropdown-container-fitnes {
+  /* width: 100%; */
+  border-radius: 16px;
+}
+.fitnes-dropdown-header {
+  background-color: var(--grey);
+  border-radius: 16px;
+}
+
+.fitnes-section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 75%;
+}
+.fitnes-card {
+  width: calc(33.33% - 8px);
+  display: flex;
+  flex-direction: column;
+}
+.fitnes-card img {
+  width: 100%;
+  height: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.fitnes-card-lower {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 8px;
+}
+.fitnes-text {
+  font-weight: 500;
+  font-size: 20px;
+}
+.fitnes-card-lower img {
+  width: 100%;
+  height: 100%;
+  
+  max-width: 32px;
+  max-height: 32px;
+}
+.fitnes-seemoree__container {
+  width: 100%;
+}
+/* .btn-fitnes-see {
+
+} */
+.fitnes-section-filter-mobile {
+  display: none;
+}
+@media (max-width: 1440px) {
+
+  .fitnes-desc {
+    font-size: 14px;
+  }
+  .fitnes-card-info {
+    align-items: center;
+  }
+  .fitnes-card-info img  {
+    max-width: 32px;
+    max-height: 32px;
+  }
+
+  .fitnes-species .container {
+    justify-content: space-between;
+  }
+  .species-card {
+    min-height: 220px;
+    width: calc(12.5% - 8px);
+  }
+  .species-card  img{
+    max-width: 135px;
+    max-height: 135px;
+  }
+  .species-card-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1040px) {
+  .species-card {
+    min-height: 160px;
+  }
+  .species-card img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .species-card-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .fitness-marquee .container {
+    padding-bottom: 20px;
+  }
+  .fitnes-card-mq {
+    width: calc(33.33% - 8px);
+  }
+  .fitnes-card-info img{
+    max-width: 24px;
+    max-height: 24px;
+  }
+
+  .fitnes-section .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .fitnes-section-filter {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .fitnes-section-cards {
+    width: 100%;
+  }
+  .fitnes-card-lower img {
+    max-width: 18px;
+    max-height: 18px;
+  }
+  .fitnes-text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fitnes-section-filter {
+    display: flex;
+  }
+  .fitnes-section-filter-mobile {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+
+  .fitnes-card-mq {
+    width: calc(100% - 8px);
+  }
+  .species-card {
+    width: calc(25% - 16px);
+    flex-wrap: wrap;
+    min-height: 140px;
+  }
+  .species-card img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .species-card-text {
+    font-size: 12px;
+  }
+  .fitnes-card {
+    width: calc(50% - 8px);
+  }
+  .fitnes-seemoree__container {
+    width: 100%;
+  }
+  .btn-fitnes-see {
+    width: 100% !important;
+  }
+  .fitnes-section-filter {
+    display: none;
+  }
+  .fitnes-section-filter-mobile {
+    display: flex;
+  }
+  .dropdown-container-fitnes-mobile {
+    width: 100%;
+  }
+  .fitnes-dropdown-header-mobile {
+    width: 100% ;
+    background-color: var(--grey);
+    border-radius: 16px;
+  }
+}

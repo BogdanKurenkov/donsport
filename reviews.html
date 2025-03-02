@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Донспорт</title>
+    <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/clubs.css">
+    <link rel="stylesheet" href="/styles/reviews.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="/" class="header-col1 header-col1_clubs">
+                    <img class="header-logo" src="/assets/img/logo.png" alt="logo">
+                </a>
+                <div class="header-col2 header-col2_clubs">
+                    <nav class="header-menu">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link header-menu-link_drop">Клубы
+                                <img class="arrow_white" src="/assets/svg/chevron-down_white.svg" alt="arrow down">
+                                <img class="arrow_black" src="/assets/svg/chevron-down.svg" alt="arrow down">
+                            </a>
+                            <ul class="dropdown-menu_header">
+                                <li><a href="/clubs-atlant.html">атлант</a></li>
+                                <li><a href="/clubs-atmosphere.html">атмосфера</a></li>
+                                <li><a href="/clubs-sails.html">алые паруса</a></li>
+                                <li><a href="/clubs-birusova.html">бирюзова</a></li>
+                                <li><a href="/clubs-hamovniki.html">хамовники</a></li>
+                                <li><a href="/clubs.html">юго-западная</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#" class="header-menu-link">Фитнес</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#" class="header-menu-link">Расписание</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#" class="header-menu-link">мероприятия</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#" class="header-menu-link">инвесторам</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="#" class="header-menu-link">реклама</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="header-col3 header-col3_clubs">
+                    <p id="phone-number" class="phone">+7 495 292 12 94</p>
+                    <button data-modal-id="get-consultation" class="back-call hover-effect"
+                        data-hover-text="Обратный звонок">Обратный звонок</button>
+                    <button data-modal-id="buy-card" class="buy-card__btn hover-effect"
+                        data-hover-text="Купить карту">Купить карту</button>
+                    <div class="burger-menu" id="burger-menu">
+                        <img class="burger" src="/assets/svg/menu.svg" alt="burger">
+                    </div>
+
+                    <nav class="header-submenu" id="header-submenu">
+
+                        <div class="header-submenu-col header-submenu-col_desktop">
+                            <ul>
+                                <li><a href="#">о компании</a></li>
+                                <li><a href="/team.html">команда</a></li>
+                                <li><a href="#">партнеры</a></li>
+                                <li><a href="/our-clubs.html">клубы</a></li>
+                                <li><a href="#">контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_desktop">
+                            <ul>
+                                <li><a href="#">фитнес</a></li>
+                                <li><a href="#">расписание</a></li>
+                                <li><a href="#">мероприятия</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">карты</a></li>
+                                <li><a href="/reviews.html">отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_desktop">
+                            <ul>
+                                <li><a href="#">блог</a></li>
+                                <li><a href="#">новости</a></li>
+                                <li><a href="#">реклама</a></li>
+                                <li><a href="#">инвесторам</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_mobile">
+                            <ul>
+                                <li><a href="#">о компании</a></li>
+                                <li><a href="/team.html">команда</a></li>
+                                <li><a href="#">партнеры</a></li>
+                                <li><a href="/our-clubs.html">клубы</a></li>
+                                <li><a href="#">блог</a></li>
+                                <li><a href="#">новости</a></li>
+                                <li><a href="#">контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_mobile">
+                            <ul>
+                                <li><a href="#">фитнес</a></li>
+                                <li><a href="#">расписание</a></li>
+                                <li><a href="#">мероприятия</a></li>
+                                <li><a href="#">акции</a></li>
+                                <li><a href="#">карты</a></li>
+                                <li><a href="/reviews.html">отзывы</a></li>
+                                <li><a href="#">реклама</a></li>
+                                <li><a href="#">инвесторам</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-close" id="close-submenu">
+                            <img class="close-submenu" src="/assets/svg/x.svg" alt="close">
+                        </div>
+                    </nav>
+                    <div class="header-overlay" id="header-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="club-info ">
+            <div class="container">
+                <div class="page-info_bg rounded-16">
+                    <div class="page-info rounded-16">
+                        <div class="routes rounded-8">
+                            <p class="route">Главная</p>
+                            <img src="/assets/svg/chevron-right.svg" alt="arrow">
+                            <p class="route route_active">Отзывы</p>
+                        </div>
+                        <h1 class="page-title page-title_lg">отзывы </h1>
+                        <p class="page-info_desc">Похудеть, набрать массу или всегда оставаться в форме — выбирай то, что подходит именно тебе!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section clubs-banner">
+          <div class="container">
+            <div class="reviews-filter">
+              <button class="filter-btn filter-btn--active">Все</button>
+              <button class="filter-btn">Юго-Западная</button>
+              <button class="filter-btn">Бирюзова</button>
+              <button class="filter-btn">Хамовники</button>
+              <button class="filter-btn">Алые Паруса</button>
+              <button class="filter-btn">Атлант</button>
+              <button class="filter-btn">Атмосфера</button>
+            </div>
+            <div class="reviews-container">
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-upper">
+                  <img src="/assets/svg/review.svg" alt="review">
+                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
+                </div>
+                <div class="review-lower">
+                  <img src="/assets/img/review-user.png" alt="review-user">
+                  <p class="review-user">Анастасия Б.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-seemore">
+              <a  class="navigate-btn btn-review-see hover-effect navigate-btn_center" data-hover-text="Показать ещё">
+                <span>Показать ещё</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+
+                    <div class="footer-col footer-col_col1">
+                        <h3 class="footer-title">
+                            подписывайся <br> на нас в соцсетях
+                        </h3>
+                        <div class="social-media-wrapper">
+                            <a href="tg://resolve?phone=74954775781" target="_blank" class="social-media">
+                                <div class="social-media__text">TELEGRAM</div>
+                                <img class="social-media__icon" src="/assets/svg/tg.svg" alt="plane">
+                            </a>
+                            <a href="https://vk.com/donsport?roistat_visit=3915940" class="social-media">
+                                <div class="social-media__text">ВКОНТАКТЕ</div>
+                                <img class="social-media__icon" src="/assets/svg/vk.svg" alt="vk">
+                            </a>
+                        </div>
+                    </div>
+
+                    <nav class="footer-menu">
+                        <div class="footer-col">
+                            <a href="/clubs.html" class="footer-menu__item">клубы</a>
+                            <a href="#" class="footer-menu__item">фитнес</a>
+                            <a href="#" class="footer-menu__item">расписание</a>
+                            <a href="#" class="footer-menu__item">мероприятия</a>
+                            <a href="#" class="footer-menu__item">карты</a>
+                            <a href="#" class="footer-menu__item">Акции</a>
+                        </div>
+
+                        <div class="footer-col">
+                            <a href="#" class="footer-menu__item">о компании</a>
+                            <a href="#" class="footer-menu__item">команда</a>
+                            <a href="#" class="footer-menu__item">блог</a>
+                            <a href="#" class="footer-menu__item">новости</a>
+                        </div>
+
+                        <div class="footer-col">
+
+                            <a href="#" class="footer-menu__item">контакты</a>
+                            <a href="#" class="footer-menu__item">отзывы</a>
+                            <a href="#" class="footer-menu__item">партнеры</a>
+                            <a href="#" class="footer-menu__item">реклама</a>
+                            <a href="#" class="footer-menu__item">инвесторам</a>
+                        </div>
+
+                        <div class="footer-col">
+                            <a href="tel:+74954775781" class="footer-menu__item">+ 7 (495) 477-57-81</a>
+                            <a href="mailto:info@donsport.ru" class="footer-menu__item">info@donsport.ru</a>
+                            <a href="mailto:press@donsport.ru" class="footer-menu__item">press@donsport.ru</a>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="footer-bottom">
+                    <img class="footer-logo" src="/assets/svg/footer-logo.svg" alt="donsport">
+                    <div class="footer-info">
+                        <p class="years">2003 - 2025 ДОНСПОРТ</p>
+                        <a class="oferta" href="#">оферта</a>
+                        <p class="finik">сайт сделан в <a href="https://finik.org/">finik</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="buy-card" class="buy-card-overlay overlay">
+        <div class="buy-card-window overlay__content ">
+            <div class="buy-card-heading">
+                <div class="heading_left">
+                    <h4>купить карту</h4>
+                    <p>Оставьте свой контакт. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты
+                    </p>
+                </div>
+                <div class="close-card">
+                    <img src="/assets/svg/x.svg" alt="x" id="modal-close">
+                </div>
+            </div>
+
+            <form class="buy-card-form">
+                <input type="text" placeholder="Имя">
+                <input id="input-phone" type="text" placeholder="Телефон" id="input-phone">
+
+                <div class="dropdown-container">
+                    <div class="dropdown-header" data-dropdown>
+                        <span class="selected-item">Клуб</span>
+                        <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="menu-item" data-value="Атлант">Атлант <span>Подольск, ул. Ленинградская,
+                                д.5</span></div>
+                        <div class="menu-item" data-value="Амосфера">Амосфера
+                            <span>Подольск, ул. Ленинградская, д.5</span>
+                        </div>
+                        <div class="menu-item" data-value="Алые паруса">Алые паруса
+                            <span>г. Москва, Ул. Авиационная, 79</span>
+                        </div>
+                        <div class="menu-item" data-value="Бирюзова">Бирюзова
+                            <span>г. Москва, ул. Маршала Бирюзова, 32 к. 1</span>
+                        </div>
+                        <div class="menu-item" data-value="Хамовники">Хамовники
+                            <span>г. Москва, ул. Малая Пироговская, 8</span>
+                        </div>
+                        <div class="menu-item" data-value="Юго-Западная">Юго-Западная
+                            <span>г. Москва, пр-т Вернадского, 92</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dobule-dd-wrapper">
+                    <div class="dropdown-container">
+                        <div class="dropdown-header" data-dropdown>
+                            <span class="selected-item" id="insert">Сегодня 10.02</span>
+                            <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                        </div>
+                        <div class="dropdown-menu" id="dd-date">
+                            <div class="menu-item menu-item_date selected" data-value="Сегодня, 10.02">Сегодня
+                                <span class="span">10.02</span>
+                            </div>
+                            <div class="menu-item menu-item_date" data-value="Завтра, 11.02">Завтра
+                                <span class="span">11.02</span>
+                            </div>
+                            <div class="menu-item menu-item_date" data-value="Четверг, 12.02">Четверг
+                                <span class="span">12.02</span>
+                            </div>
+                            <div class="menu-item menu-item_date" data-value="Пятница, 13.03">Пятница
+                                <span class="span">13.03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="dropdown-header" data-dropdown>
+                            <span class="selected-item">10:00 - 17:00</span>
+                            <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="menu-item selected" data-value="10:00 - 17:00">10:00 - 17:00</div>
+                            <div class="menu-item" data-value="17:00 - 22:00">17:00 - 22:00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-primary hover-effect" data-hover-text="Отправить">
+                    <span>Отправить</span>
+                </button>
+            </form>
+
+            <p class="form-politic">Нажимая на кнопку “Отправить” я соглашаюсь с условиями политики
+                конфиденциальности</p>
+
+        </div>
+    </div>
+
+    <div id="get-consultation" class="consultation-overlay overlay">
+        <div class="buy-card-window overlay__content buy-card-window_consultation">
+            <div class="buy-card-heading">
+                <div class="heading_left">
+                    <h4>получить консультацию</h4>
+                    <p>Оставьте свой контакт. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты
+                    </p>
+                </div>
+                <div class="close-card">
+                    <img src="/assets/svg/x.svg" alt="x" id="modal-close">
+                </div>
+            </div>
+
+            <form class="buy-card-form">
+                <input type="text" placeholder="Имя">
+                <input id="input-phone" type="text" placeholder="Телефон" id="input-phone">
+
+                <div class="dobule-dd-wrapper">
+                    <div class="dropdown-container">
+                        <div class="dropdown-header" data-dropdown>
+                            <span class="selected-item" id="insert">Сегодня 10.02</span>
+                            <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                        </div>
+                        <div class="dropdown-menu" id="dd-date">
+                            <div class="menu-item menu-item_date selected" data-value="Сегодня, 10.02">Сегодня
+                                <span class="test">10.02</span>
+                            </div>
+                            <div class="menu-item menu-item_date" data-value="Завтра, 11.02">Завтра
+                                <span>11.02</span>
+                            </div>
+                            <div class="menu-item menu-item_date" data-value="Четверг, 12.02">Четверг
+                                <span>12.02</span>
+                            </div>
+                            <div class="menu-item menu-item_date" data-value="Пятница, 13.03">Пятница
+                                <span>13.03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="dropdown-header" data-dropdown>
+                            <span class="selected-item">10:00 - 17:00</span>
+                            <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="menu-item selected" data-value="10:00 - 17:00">10:00 - 17:00</div>
+                            <div class="menu-item" data-value="17:00 - 22:00">17:00 - 22:00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary hover-effect" data-hover-text="Отправить">Отправить</button>
+            </form>
+
+            <p class="form-politic form-politic_consultation">Нажимая на кнопку “Отправить” я соглашаюсь с условиями
+                политики
+                конфиденциальности</p>
+
+        </div>
+    </div>
+
+    <!-- <script type="module" defer src="/js/clubPhotos.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js"
+        integrity="sha512-+3RJc0aLDkj0plGNnrqlTwCCyMmDCV1fSYqXw4m+OczX09Pas5A/U+V3pFwrSyoC1svzDy40Q9RU/85yb/7D2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" defer src="/js/hideBlock.js"></script>
+    <script type="module" defer src="/js/burger.js"></script>
+    <script type="module" defer src="/js/clipBoard.js"></script>
+    <script type="module" defer src="/js/modals.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script type="module" defer src="/js/dropdown.js"></script>
+    <!-- <script type="module" src="./js/sliderClub.js"></script> -->
+</body>
+
+</html>
