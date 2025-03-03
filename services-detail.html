@@ -9,8 +9,9 @@
     <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/clubs.css">
-    <link rel="stylesheet" href="/styles/reviews.css">
-
+    <link rel="stylesheet" href="/styles/fitnes.css">
+    <link rel="stylesheet" href="/styles/services-detail.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
 </head>
@@ -130,134 +131,319 @@
 
     <main class="main">
 
-        <section class="club-info ">
+        <section class="club-info">
             <div class="container">
                 <div class="page-info_bg rounded-16">
                     <div class="page-info rounded-16">
                         <div class="routes rounded-8">
                             <p class="route">Главная</p>
                             <img src="/assets/svg/chevron-right.svg" alt="arrow">
-                            <p class="route route_active">Отзывы</p>
+                            <p class="route">Услуги</p>
+                            <img src="/assets/svg/chevron-right.svg" alt="arrow">
+                            <p class="route route_active">Пилатес</p>
                         </div>
-                        <h1 class="page-title page-title_lg">отзывы </h1>
-                        <p class="page-info_desc">Похудеть, набрать массу или всегда оставаться в форме — выбирай то, что подходит именно тебе!</p>
+                        <h1 class="page-title page-title_lg">Пилатес</h1>
+                        <p class="page-info_desc"> 
+                            Пилатес – это система фитнес-тренировок, направленных на развитие всех групп мышц, координации и достижения гармонии между телом, духом и разумом. Метод был разработан в начале XX века и к сегодняшнему дню приобрел колоссальную популярность.
+                        </p>
+                        <div class="detail-services-info">
+                            <div class="services-info-block">
+                                от 18 до 60 лет
+                            </div>
+                            <div class="services-info-block">
+                                Сложность: Средняя
+                            </div>
+                            <div class="services-info-block">
+                                Здоровая осанка
+                            </div>
+                        </div>
+                        <div class="btns-wrap btns-wrap_desktop">
+                            <button class="btn-join btn hover-effect hover-effect_black rounded-8" data-hover-text="Записаться на занятие">Записаться на занятие</button>
+                            <button class="btn-schedule btn hover-effect rounded-8"
+                                data-hover-text="Смотреть расписание">Смотреть расписание</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btns-wrap btns-wrap_mobile">
+                    <button class="btn-join btn hover-effect rounded-8" data-hover-text="Записаться на занятие">
+                        Записаться на занятие
+                    </button>
+                    <button class="btn-schedule btn hover-effect rounded-8"
+                        data-hover-text="Смотреть расписание">
+                        Смотреть расписание
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="clubs-banner">
+            <div class="container">
+                <div class="banner banner-detail-services rounded-24"></div>
+            </div>
+        </section>
+
+        <section class="services-detail-section">
+            <div class="container">
+                <div class="services-detail-container">
+                    <div class="services-left">
+                        <h2 class="services-left-title">преимущества</h2>
+                        <p class="services-left-text">В стремительном ритме современной жизни многие ищут способы поддержания здоровья и гармонии тела и духа. Один из таких методов — пилатес, который набирает популярность среди жителей Москвы и Подольска.</p>
+                        <div class="services-card-btn">
+                            <button class="btn-join btn btn-small hover-effect hover-effect_black rounded-8" data-hover-text="Записаться на занятие">
+                              Записаться на занятие
+                            </button>
+                        </div>
+                    </div>
+                    <div class="services-right">
+                        <div class="services-right-card">
+                            <div class="right-card-upper">
+                                <img src="/assets/svg/services-accept.svg" alt="accept">
+                            </div>
+                            <div class="right-card-lower">
+                                <p class="right-card-lower-subtitle">Укрепление мышц и улучшение осанки</p>
+                                <p class="right-card-lower-text">Регулярные занятия пилатесом помогают укрепить мышцы спины, живота и тазового дна, что положительно сказывается на общем физическом состоянии и самочувствии.</p>
+                            </div>
+                        </div>
+                        <div class="services-right-card">
+                            <div class="right-card-upper">
+                                <img src="/assets/svg/services-accept.svg" alt="accept">
+                            </div>
+                            <div class="right-card-lower">
+                                <p class="right-card-lower-subtitle">Укрепление мышц и улучшение осанки</p>
+                                <p class="right-card-lower-text">Регулярные занятия пилатесом помогают укрепить мышцы спины, живота и тазового дна, что положительно сказывается на общем физическом состоянии и самочувствии.</p>
+                            </div>
+                        </div>
+                        <div class="services-right-card">
+                            <div class="right-card-upper">
+                                <img src="/assets/svg/services-accept.svg" alt="accept">
+                            </div>
+                            <div class="right-card-lower">
+                                <p class="right-card-lower-subtitle">Укрепление мышц и улучшение осанки</p>
+                                <p class="right-card-lower-text">Регулярные занятия пилатесом помогают укрепить мышцы спины, живота и тазового дна, что положительно сказывается на общем физическом состоянии и самочувствии.</p>
+                            </div>
+                        </div>
+                        <div class="services-right-card">
+                            <div class="right-card-upper">
+                                <img src="/assets/svg/services-accept.svg" alt="accept">
+                            </div>
+                            <div class="right-card-lower">
+                                <p class="right-card-lower-subtitle">Укрепление мышц и улучшение осанки</p>
+                                <p class="right-card-lower-text">Регулярные занятия пилатесом помогают укрепить мышцы спины, живота и тазового дна, что положительно сказывается на общем физическом состоянии и самочувствии.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="services-card-btn-mobile">
+                <button class="btn-join btn btn-services-mobile btn-small hover-effect hover-effect_black rounded-8" data-hover-text="Записаться на занятие">
+                  Записаться на занятие
+                </button>
+            </div>
         </section>
 
-        <section class="reviews-section clubs-banner">
-          <div class="container">
-            <div class="reviews-filter">
-              <button class="filter-btn filter-btn--active">Все</button>
-              <button class="filter-btn">Юго-Западная</button>
-              <button class="filter-btn">Бирюзова</button>
-              <button class="filter-btn">Хамовники</button>
-              <button class="filter-btn">Алые Паруса</button>
-              <button class="filter-btn">Атлант</button>
-              <button class="filter-btn">Атмосфера</button>
+        <section class="buy-card">
+            <div class="container container_relative">
+                <div class="buy-card-window">
+                    <div class="buy-card-heading">
+                        <div class="heading_left">
+                            <h4>получить консультацию</h4>
+                            <p>Оставьте свой контакт. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты
+                            </p>
+                        </div>
+                    </div>
+
+                    <form class="buy-card-form">
+                        <input class="" type="text" placeholder="Имя">
+                        <input id="input-phone" type="text" placeholder="Телефон" id="input-phone">
+
+                        <div class="dropdown-container">
+                            <div class="dropdown-header" data-dropdown>
+                                <span class="selected-item">Клуб</span>
+                                <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                            </div>
+                            <div class="dropdown-menu">
+                                <div class="menu-item" data-value="Атлант">Атлант <span>Подольск, ул. Советская, 41/5</span></div>
+                                <div class="menu-item" data-value="Амосфера">Атмосфера
+                                    <span>Подольск, ул. Ленинградская, д.5</span>
+                                </div>
+                                <div class="menu-item" data-value="Алые паруса">Алые паруса
+                                    <span>г. Москва, Ул. Авиационная, 79</span>
+                                </div>
+                                <div class="menu-item" data-value="Бирюзова">Бирюзова
+                                    <span>г. Москва, ул. Маршала Бирюзова, 32 к. 1</span>
+                                </div>
+                                <div class="menu-item" data-value="Хамовники">Хамовники
+                                    <span>г. Москва, ул. Малая Пироговская, 8</span>
+                                </div>
+                                <div class="menu-item" data-value="Юго-Западная">Юго-Западная
+                                    <span>г. Москва, пр-т Вернадского, 92</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dobule-dd-wrapper">
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" data-dropdown>
+                                    <span class="selected-item" id="insert">Сегодня 10.02</span>
+                                    <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg"
+                                        alt="arrow">
+                                </div>
+                                <div class="dropdown-menu" id="dd-date">
+                                    <div class="menu-item menu-item_date selected" data-value="Сегодня, 10.02">Сегодня
+                                        <span>10.02</span>
+                                    </div>
+                                    <div class="menu-item menu-item_date" data-value="Завтра, 11.02">Завтра
+                                        <span>11.02</span>
+                                    </div>
+                                    <div class="menu-item menu-item_date" data-value="Четверг, 12.02">Четверг
+                                        <span>12.02</span>
+                                    </div>
+                                    <div class="menu-item menu-item_date" data-value="Пятница, 13.03">Пятница
+                                        <span>13.03</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" data-dropdown>
+                                    <span class="selected-item">10:00 - 17:00</span>
+                                    <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg"
+                                        alt="arrow">
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div class="menu-item selected" data-value="10:00 - 17:00">10:00 - 17:00</div>
+                                    <div class="menu-item" data-value="17:00 - 22:00">17:00 - 22:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary hover-effect" data-hover-text="Отправить">
+                            <span>Отправить</span>
+                        </button>
+                    </form>
+
+                    <p class="form-politic">Нажимая на кнопку “Отправить” я соглашаюсь с условиями политики
+                        конфиденциальности</p>
+
+                </div>
             </div>
-            <div class="reviews-container">
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-              <div class="review-card">
-                <div class="review-upper">
-                  <img src="/assets/svg/review.svg" alt="review">
-                  <p class="review-description">Превосходное место для фитнеса. ДОНСПОРТ - это лучшее место для тренировок, которое я нашел в Москве. Атмосфера в клубе приятная и мотивирующая, всегда хочется возвращаться</p>
-                </div>
-                <div class="review-lower">
-                  <img src="/assets/img/review-user.png" alt="review-user">
-                  <p class="review-user">Анастасия Б.</p>
-                </div>
-              </div>
-            </div>
-            <div class="reviews-seemore">
-              <a  class="navigate-btn btn-review-see hover-effect navigate-btn_center" data-hover-text="Показать ещё">
-                <span>Показать ещё</span>
-              </a>
-            </div>
-          </div>
         </section>
 
+        <section class="services-detail-mq clubs-banner">
+            <div class="container">
+                <div class="services-detail-heading">
+                    <h2>Другие программы</h2>
+                </div>
+                <div class="marquee">
+                    <div class="marquee-content marquee-content-fitnes">
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card1.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Lower body</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card2.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Upper Body</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card3.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Zumba Toning</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card4.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Bodypump</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card5.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Круговая тренировка</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card6.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Iron</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card6.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Fitbox</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <!-- Double content -->
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card1.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Lower body</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card2.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Upper Body</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card3.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Zumba Toning</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card4.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Bodypump</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card5.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Круговая тренировка</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card6.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Iron</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                        <div class="fitnes-card-mq">
+                            <img src="/assets/img/fitnes-card6.png" alt="fitnes">
+                            <div class="fitnes-card-info">
+                                <p class="fitnes-desc">Fitbox</p>
+                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fitnes-seemoree__container">
+                    <a  class="navigate-btn btn-fitnes-see hover-effect navigate-btn_center" data-hover-text="Смотреть всех">
+                      <span>Смотреть всех</span>
+                    </a>
+                </div>  
+            </div> 
 
+        </section>
     </main>
 
     <footer class="footer">

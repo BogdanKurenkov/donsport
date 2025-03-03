@@ -46,7 +46,10 @@
   display: flex;
   gap: 4px;
 }
-
+.btn-club-details {
+  color: var(--black);
+  background-color: var(--white);
+}
 
 
 @media (max-width: 1440px) {
