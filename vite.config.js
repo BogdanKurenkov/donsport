@@ -18,6 +18,8 @@ export default defineConfig({
         team: "team.html",
         reviews: "reviews.html",
         fitnes: "fitnes.html",
+        servicesDetail: "services-detail.html",
+        widget: "widget.html", // test widget
       },
     },
   },
