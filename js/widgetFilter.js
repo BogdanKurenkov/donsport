@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".widget-filter-btn");
+  const scriptContainer = document.querySelector(".widget-section");
 
   const dataIdMap = {
     "Алые Паруса": 1,
@@ -13,13 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateWidget(button) {
     const newDataId = dataIdMap[button.textContent.trim()];
 
-    let currentScript = document.getElementById("fitnesskit_lesson");
-    if (!currentScript) {
-      console.error("Script tag not found");
-      return;
+    const oldWidget = document.querySelector(
+      "iframe[src*='donsport.fitnesskit-admin.ru']"
+    );
+    if (oldWidget) {
+      oldWidget.remove();
     }
 
-    currentScript.setAttribute("data-id", newDataId);
+    let oldScript = document.getElementById("fitnesskit_lesson");
+    if (oldScript) {
+      oldScript.remove();
+    }
+
     console.log(`data-id изменён на: ${newDataId}`);
 
     buttons.forEach((btn) => btn.classList.remove("widget-filter-btn--active"));
@@ -33,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "https://donsport.fitnesskit-admin.ru/widget/mount/widget-lesson.js";
     newScript.async = true;
 
-    currentScript.parentNode.replaceChild(newScript, currentScript);
+    scriptContainer.appendChild(newScript);
   }
 
   buttons.forEach((button) => {

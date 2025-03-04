@@ -102,7 +102,9 @@
     background: var(--dark-blue);
     color: var(--white)
 }
-
+.btn-clubs-schedule {
+    color: var(--dark-blue);
+}
 .routes {
     background: rgba(255, 255, 255, 0.5);
     display: flex;
