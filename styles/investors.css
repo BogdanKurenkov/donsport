@@ -1,0 +1,90 @@
+.investors-section .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.investors-card-desktop {
+  width: 100%;
+  position: relative;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.investors-card-desktop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.investors-detail {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  padding: 24px;
+  /* padding-right: 70px; */
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  min-width: 605px;
+}
+.investors-detail-upper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.investors-detail-upper-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #929AAA;
+}
+.investors-detail-upper-title {
+  font-size: 68px;
+  white-space: pre-line;
+  line-height: 1;
+}
+.investors-detail-lower-text {
+  font-size: 16px;
+  font-weight: 600;
+  white-space: pre-line;
+}
+
+@media (max-width: 1440px) {
+  .investors-detail {
+    min-width: 450px;
+    gap: 40px;
+  }
+  .investors-detail-upper {
+    gap: 10px;
+  }
+  .investors-detail-upper-text{
+    font-size: 14px;
+  }
+  .investors-detail-upper-title {
+    font-size: 51px;
+  }
+  .investors-detail-lower-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .investors-card-desktop {
+    padding: 8px 0;
+  }
+  .investors-detail {
+    position: static;
+    min-width: 100%;
+    gap: 20px;
+  }
+  .investors-detail-upper-title {
+    white-space: normal;
+    font-size: 42px;
+  }
+}
+@media (max-width: 480px) {
+  .investors-detail-lower-text {
+    white-space: normal;
+  }
+}
