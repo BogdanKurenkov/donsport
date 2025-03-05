@@ -13,6 +13,42 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
+     <!-- calltouch -->
+     <script>
+        (function (w, d, n, c) {
+        w.CalltouchDataObject = n;
+        w[n] = function () {
+            w[n]["callbacks"].push(arguments);
+        };
+        if (!w[n]["callbacks"]) {
+            w[n]["callbacks"] = [];
+        }
+        w[n]["loaded"] = false;
+        if (typeof c !== "object") {
+            c = [c];
+        }
+        w[n]["counters"] = c;
+        for (var i = 0; i < c.length; i += 1) {
+            p(c[i]);
+        }
+    
+        function p(cId) {
+            var a = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            i = function () {
+                a.parentNode.insertBefore(s, a);
+            };
+            s.async = true;
+            s.src = "https://mod.calltouch.ru/init.js?id=" + cId;
+            if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", i, false);
+            } else {
+            i();
+            }
+        }
+        })(window, document, "ct", "ls659mh5");
+    </script>
+    <!--calltouch -->
 </head>
 
 <body>
@@ -72,7 +108,7 @@
                             <ul>
                                 <li><a href="#">о компании</a></li>
                                 <li><a href="/team.html">команда</a></li>
-                                <li><a href="#">партнеры</a></li>
+                                <li><a href="/partners.html">партнеры</a></li>
                                 <li><a href="/our-clubs.html">клубы</a></li>
                                 <li><a href="#">контакты</a></li>
                             </ul>
@@ -99,7 +135,7 @@
                             <ul>
                                 <li><a href="#">о компании</a></li>
                                 <li><a href="/team.html">команда</a></li>
-                                <li><a href="#">партнеры</a></li>
+                                <li><a href="/partners.html">партнеры</a></li>
                                 <li><a href="/our-clubs.html">клубы</a></li>
                                 <li><a href="#">блог</a></li>
                                 <li><a href="#">новости</a></li>
@@ -255,7 +291,7 @@
 
                             <a href="#" class="footer-menu__item">контакты</a>
                             <a href="/reviews.html" class="footer-menu__item">отзывы</a>
-                            <a href="#" class="footer-menu__item">партнеры</a>
+                            <a href="/partners.html" class="footer-menu__item">партнеры</a>
                             <a href="#" class="footer-menu__item">реклама</a>
                             <a href="#" class="footer-menu__item">инвесторам</a>
                         </div>
