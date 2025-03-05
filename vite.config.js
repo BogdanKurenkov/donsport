@@ -21,6 +21,7 @@ export default defineConfig({
         servicesDetail: "services-detail.html",
         widget: "widget.html", // test widget
         partners: "partners.html",
+        investors: "investors.html",
       },
     },
   },
