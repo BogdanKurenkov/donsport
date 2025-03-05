@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
         fields,
         requestCallback,
         // scheduleTime,
-        tags,
+        // tags,
         unitId
       );
     }
