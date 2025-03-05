@@ -22,6 +22,8 @@
 }
 .page-team-card {
   width: calc(20% - 8px);
+  margin-bottom: 40px;
+  
 }
 .page-team-card img {
   width: 100%;
@@ -34,9 +36,10 @@
   gap: 12px;
   border-radius: 8px;
   background-color: var(--grey);
-  padding: 16px 16px 26px 16px;
+  padding: 16px;
   width: 100%;
-  max-width: 367px;
+  
+  
 }
 .trainer-name-title {
   font-size: 48px;
@@ -46,7 +49,11 @@
 .trainer-description-text {
   font-size: 14px;
   font-weight: 500;
-  
+  line-height: 16.8px;
+  /* white-space: nowrap; */
+}
+.trainer-item {
+  color: var(--dark-blue);
 }
 
 @media (max-width: 1440px) {
@@ -59,7 +66,7 @@
   }
   .team-card-wrapper-page {
     max-width: 272px;
-    padding: 12px 10px 26px 12px;
+    padding: 12px;
     /* padding-bottom: 20px; */
   }
 }
@@ -70,7 +77,7 @@
   }
   .team-card-wrapper-page {
     max-width: 272px;
-    padding: 12px 10px 26px 12px;
+    padding: 12px;
    
   }
   .page-team-card {
@@ -125,7 +132,7 @@
     
   }
 }
-@media (max-width:375px) {
+@media (max-width:425px) {
   .page-team-card {
     width: calc(50% - 4px);
   }
@@ -135,7 +142,7 @@
   }
   .team-card-wrapper-page {
     max-width: 168px;
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
   }
   
 }
