@@ -515,7 +515,10 @@ document.addEventListener("DOMContentLoaded", () => {
         .querySelector(".menu-item.selected")
         .getAttribute("data-value");
 
-      const fields = [{ name: name }, { club: clubCall }];
+      const fields = [
+        { name: "name", value: name },
+        { name: "club", value: clubCall },
+      ];
       function requestCallback(data) {
         console.log(data);
       }

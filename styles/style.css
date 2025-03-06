@@ -1219,13 +1219,14 @@ a.social-media img {
     border-radius: 8px;
 }
 
+/* изменения по котакт дропдауну z-index */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 5;
+    z-index: 10;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(16.5px);
     display: flex;

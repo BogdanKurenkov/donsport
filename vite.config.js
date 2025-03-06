@@ -22,6 +22,7 @@ export default defineConfig({
         widget: "widget.html", // test widget
         partners: "partners.html",
         investors: "investors.html",
+        contacts: "contacts.html",
       },
     },
   },
