@@ -12,10 +12,8 @@
 .subscription-detail-right {
   width: 75%;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 8px;
-  /* max-height: 55dvh; */
 }
 .subscription-detail-right-elem {
   width: calc(33.33%  - 8px);

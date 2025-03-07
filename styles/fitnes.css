@@ -27,8 +27,9 @@
 .fitnes-species .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
 }
 
 .species-card {
@@ -36,15 +37,22 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-
   min-height: 280px;
 
+}
+.species-card img {
+  width: 100%;
+  height: 100%;
+  max-width: 207px;
+  max-width: 207px;
+  object-fit: cover;
 }
 .species-card-text {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+  line-height: 120%;
 }
 
 .fitnes-section {
@@ -146,14 +154,27 @@
     min-height: 160px;
   }
   .species-card img {
-    max-width: 80px;
-    max-height: 80px;
+    min-width: 80px;
+    min-height: 80px;
   }
   .species-card-text {
     font-size: 14px;
   }
 }
 @media (max-width: 768px) {
+
+  .fitnes-species .container {
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding-bottom: 10px; 
+    -webkit-overflow-scrolling: touch; 
+    gap: 24px;
+  }
+  .species-card-text {
+    white-space: normal; 
+  }
   .fitness-marquee .container {
     padding-bottom: 20px;
   }
@@ -194,18 +215,19 @@
   }
 }
 @media (max-width: 500px) {
-
+  .fitnes-species .container {
+    gap: 20px;
+  }
   .fitnes-card-mq {
     width: calc(100% - 8px);
   }
+
   .species-card {
     width: calc(25% - 16px);
-    flex-wrap: wrap;
-    min-height: 140px;
   }
   .species-card img {
-    max-width: 70px;
-    max-height: 70px;
+    width: 72px;
+    height: 72px;
   }
   .species-card-text {
     font-size: 12px;

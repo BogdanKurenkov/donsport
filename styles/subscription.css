@@ -1,0 +1,241 @@
+.subscription-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.subscribtion-card {
+  width: calc(33.3% - 16px);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: var(--grey);
+  border-radius: 12px;
+}
+.subscribtion-card-upper {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+  border-radius: 8px;
+  position: relative;
+}
+.subscr-card__icon {
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 100px;
+}
+.subscribtion-card:hover .subscr-card__icon {
+  opacity: 1;
+}
+.subscr__icon1 {
+  left: 0;
+  top: calc(50% - 35px);
+  transform: rotate(-15deg);
+}
+.subscr__icon2 {
+  top: calc(50% - 35px);
+  right: 0;
+  transform: rotate(15deg);
+}
+.subscr__icon3 {
+  left: calc(50% - 35px);
+  bottom: 0;
+  transform: rotate(15deg);
+}
+.subscribtion-card-lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.subscribtion-card-upper-title {
+  font-size: 52px;
+}
+.subscribtion-card-lower-desc {
+  padding: 12px 8px;
+}
+.subscribtion-card-lower-desc p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.subscribtion-card-lower-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 24px;
+}
+.subscribtion-card-lower-elem {
+  display: flex;
+  gap: 8px;
+}
+.subscribtion-card-lower-elem p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.subscribtion-card-lower-list-btns {
+  display: flex;
+  gap: 8px;
+}
+.subscribe-btn {
+  color: var(--dark-blue);
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 12px 16px;
+  max-height: 56px;
+}
+.subscribe-btn--img {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-section .container {
+  display: flex;
+  background-color: var(--grey);
+  background-image: url(/assets/img/certificate-line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+
+}
+.certificate-left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0 24px 24px;
+}
+.certificate-right {
+  width: 65%;
+}
+.certificate-left-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.certificate-left-description-title {
+  font-size: 68px;
+  line-height: 90%;
+  white-space: pre-line;
+}
+.certificate-left-description-text {
+  font-weight: 500;
+  font-size: 16px;
+}
+.certificate-right {
+  position: relative;
+}
+.certificate-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn-certificate-mobile {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .subscribtion-card-upper {
+    min-height: 210px;
+  }
+  .subscribtion-card-upper-title {
+    font-size: 39px;
+  }
+  .subscr-card__icon {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .subscribtion-card-lower-desc p {
+    font-size: 14px;
+  }
+  .subscribtion-card-lower-elem p {
+    font-size: 14px;
+  }
+  .certificate-left-description-title {
+    font-size: 51px;
+  }
+  .certificate-left-description-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .subscribtion-card {
+    width: calc(50% - 8px);
+  }
+  .subscr-card__icon {
+    opacity: 1;
+    max-width: 60px;
+    max-height: 60px;
+  }
+  .subscribtion-card-upper {
+    min-height: 167px;
+  }
+  .subscribtion-card-upper-title {
+    font-size: 32px;
+  }
+  .certificate-section .container {
+    background-image:none;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .certificate-left,
+  .certificate-right {
+    width: 100%;
+  }
+  .certificate-left {
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+  }
+  .certificate-left-description {
+    align-items: center;
+  }
+  .certificate-left-description-title {
+    text-align: center;
+  }
+  .certificate-left-description-text {
+    text-align: center;
+    padding: 0 120px;
+    font-size: 14px;
+  }
+  .btn-certificate-desk {
+    display: flex;
+  }
+  .btn-certificate-mobile {
+    display: none;
+  }
+}
+@media (max-width: 475px) {
+  .certificate-section .container {
+    gap: 10px;
+  }
+  .subscribtion-card {
+    width: 100%;
+  }
+  .certificate-left-description-title {
+    font-size: 42px;
+  }
+  .certificate-left-description-text {
+    padding: 0 20px;
+  }
+  .btn-certificate-desk {
+    display: none;
+  }
+  .certificate-btns-mobile__container {
+    padding: 0 12px;
+  }
+  .btn-certificate-mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

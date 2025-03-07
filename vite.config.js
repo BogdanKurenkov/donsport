@@ -23,6 +23,7 @@ export default defineConfig({
         partners: "partners.html",
         investors: "investors.html",
         contacts: "contacts.html",
+        subscription: "subscription.html",
         subscriptionDetail: "subscription-detail.html",
       },
     },
