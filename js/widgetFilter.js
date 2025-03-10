@@ -26,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
       oldScript.remove();
     }
 
-    console.log(`data-id изменён на: ${newDataId}`);
-
     buttons.forEach((btn) => btn.classList.remove("widget-filter-btn--active"));
     button.classList.add("widget-filter-btn--active");
 
@@ -43,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   buttons.forEach((button) => {
-    if (dataIdMap[button.textContent.trim()] === 1) {
+    if (dataIdMap[button.textContent.trim()] === 8) {
       button.classList.add("widget-filter-btn--active");
     }
     button.addEventListener("click", function () {

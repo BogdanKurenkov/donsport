@@ -508,7 +508,48 @@
     margin-bottom: 44px;
 }
 
-
+.club-virtual .container {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.club-virtual-left {
+    width: 35%;
+    background-color: var(--grey);
+    border-radius: 16px;
+}
+.club-virtual-right {
+    width: 65%;
+}
+.club-virtual-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.club-virtual-left-upper {
+    padding: 16px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.club-virtual-left-upper-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.club-virtual-left-upper-title h2 {
+    font-size: 100px;
+    line-height: 90%;
+}
+.club-virtual-left-upper-title p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn-virtual-club-mobile {
+    display: none;
+}
 
 @media (hover: hover) {
     .splide_hover:hover .club-photo-desc {
@@ -707,6 +748,14 @@
     .club-contacts-wrapper {
         padding: 12px;
     }
+    .club-virtual-left-upper-title h2 {
+        font-size: 76px;
+        
+    }
+    .club-virtual-left-upper-title p {
+        font-size: 14px;
+       
+    }
 }
 
 @media(max-width:1024px) {
@@ -716,6 +765,33 @@
 
     .club-contacts_left {
         width: 40%;
+    }
+    .club-virtual .container {
+        flex-direction: column;
+    }
+    .club-virtual-left {
+        width: 100%;
+        padding: 0 160px;
+    }
+    .club-virtual-right {
+        width: 100%;
+    }
+    .club-virtual-left-upper-title {
+        gap: 20px;
+    }
+    .club-virtual-left-upper-title h2 {
+        text-align: center;
+        
+    }
+    .club-virtual-left-upper-title p {
+        text-align: center;
+    }
+    .btn-virtual-club {
+        display: none;
+    }
+    .btn-virtual-club-mobile {
+        display: block;
+        
     }
 }
 
@@ -869,6 +945,9 @@
         font-weight: 600;
         line-height: 12.6px;
     }
+    .club-virtual-left {
+        padding: 0 40px;
+    }
 }
 
 
@@ -1006,5 +1085,16 @@
         font-size: 36px;
         line-height: 32.4px;
         max-width: 248px;
+    }
+    .club-virtual-left-upper-title h2 {
+        font-size: 52px;
+        
+    }
+
+    .club-virtual-left {
+        padding: 0 10px;
+    }
+    .btn-virtual-club-mobile {
+        width: 100%;
     }
 }
