@@ -83,7 +83,8 @@
   gap: 8px;
 }
 .subscribe-btn {
-  color: var(--dark-blue);
+  color: var(--white);
+  background-color: var(--red);
   flex: 1 1 auto;
   text-align: center;
   padding: 12px 16px;

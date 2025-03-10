@@ -104,6 +104,8 @@
 .fitnes-text {
   font-weight: 500;
   font-size: 20px;
+  color: var(--dark-blue);
+  cursor: pointer;
 }
 .fitnes-card-lower img {
   width: 100%;

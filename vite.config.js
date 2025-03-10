@@ -20,7 +20,7 @@ export default defineConfig({
         fitnes: "fitnes.html",
         servicesDetail: "services-detail.html",
         widget: "widget.html", // test widget
-        partners: "partners.html",
+        // partners: "partners.html",
         investors: "investors.html",
         contacts: "contacts.html",
         subscription: "subscription.html",

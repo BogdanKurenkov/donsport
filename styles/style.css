@@ -209,6 +209,7 @@ input {
     border: none;
     font-weight: 700;
     font-size: 16px;
+    color: var(--dark-blue);
 }
 
 .burger-menu {
@@ -381,7 +382,7 @@ input {
 }
 
 .page-title {
-    font-size: 130px;
+    font-size: 135px;
     line-height: 117px;
     color: var(--white);
 }
@@ -927,24 +928,27 @@ a.social-media img {
 .love-card {
     background: var(--white);
     border-radius: 12px;
-    max-width: 319px;
+    /* max-width: 319px; */
+    width: 50%;
     padding: 16px;
     height: 290px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .love-card__description {
     color: #CBD1DC;
     font-size: 18px;
     font-weight: 600;
+    text-align: center;
 }
 
 .love-card__title {
     font-weight: 500;
     font-size: 22px;
     line-height: 24.2px;
+    text-align: center;
 }
 
 .for-love__cards {
@@ -3065,11 +3069,13 @@ a.social-media img {
     }
 
     .love-card {
+        padding: 16px;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
-        max-width: 100%;
+        max-width: 297px;
         height: max-content;
-        gap: 40px;
+        /* gap: 40px; */
         border-radius: 6px;
     }
 
@@ -3086,6 +3092,7 @@ a.social-media img {
 
     .for-love__cards {
         flex-direction: column;
+        align-items: center;
     }
 
     .overlay_active .buy-card-window {
