@@ -56,12 +56,13 @@ function initializeCountUp(target) {
     decimal: ".",
     // add format
     formattingFn: function (n) {
-      return n + suffix;
+      return `${n} <span class="counter-suffix">${suffix}</span>`;
     },
   });
 
   if (!countUp.error) {
     countUp.start();
+    target.innerHTML = target.innerHTML;
   } else {
     console.error(`err: ${countUp.error}`);
   }
