@@ -1,0 +1,17 @@
+.news-detail-article-text {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1440px) {
+  .news-detail-article-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .news-detail-btn-see {
+    width: 100% !important;
+    padding: 0 16px;
+  }
+}

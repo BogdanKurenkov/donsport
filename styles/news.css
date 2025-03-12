@@ -1,0 +1,109 @@
+.news-page-section {
+  margin-bottom: 20px;
+}
+.news-page-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.news-page-card {
+  width: calc(25% - 8px);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.news-page-card img {
+  /* object-fit: cover; */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.news-page-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px;
+  background-color: var(--grey);
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  min-height: 346px;
+}
+.news-page-card__info-title {
+  font-size: 40px;
+  line-height: 90%;
+}
+.news-page-card__info-desc {
+  font-weight: 500;
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.news-page-card__info-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.news-page-card__info-date-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+.news-page-card__info-date-link {
+  padding: 12px 16px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 1440px) {
+  .news-page-card__info {
+    min-height: 311px;
+  }
+  .news-page-card__info-title {
+    font-size: 32px;
+  }
+  .news-page-card__info-desc {
+    font-size: 14px;
+  }
+  .news-page-card__info-date-text {
+    font-size: 14px;
+  }
+  .news-page-card__info-date-link {
+    padding: 9px 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .news-page-card {
+    width: calc(50% - 8px);
+  }
+}
+@media (max-width: 480px) {
+  .news-page-card__info {
+    /* justify-content: flex-start; */
+    gap: 0;
+    min-height: 227px;
+  }
+
+  .news-page-card__info-title {
+    font-size: 18px;
+  }
+  .news-page-card__info-desc {
+    font-size: 12px;
+  }
+  .news-page-card__info-date-text {
+    font-size: 12px;
+  }
+  .news-page-card__info-date-link {
+    padding: 6px 9px;
+  }
+  .news-page-card__info-date-link  img {
+    height: 16px;
+    width: 16px;
+  }
+}

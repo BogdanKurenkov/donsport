@@ -30,6 +30,8 @@ export default defineConfig({
         news: "news.html",
         newsDetail: "news-detail.html",
         promotions: "promotions.html",
+        notFound: "not-found.html",
+        marketing: "marketing.html",
       },
     },
   },
