@@ -126,6 +126,7 @@
     background: var(--white);
     padding: 8px 12px;
     color: var(--dark-blue);
+    border-radius: 4px;
 }
 
 .page-info_bg {

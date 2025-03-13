@@ -32,6 +32,8 @@ export default defineConfig({
         promotions: "promotions.html",
         notFound: "not-found.html",
         marketing: "marketing.html",
+        aboutUs: "about-us.html",
+        events: "events.html",
       },
     },
   },

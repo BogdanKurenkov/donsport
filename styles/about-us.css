@@ -1,0 +1,137 @@
+.about-us-history-section {
+  margin-bottom: 20px;
+}
+.about-us-history-section .container {
+  display: flex;
+  gap: 8px;
+}
+.history-right,
+.history-left {
+  width:50%;
+  border-radius: 16px;
+  display: flex;
+}
+.history-left img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.history-right {
+  padding: 36px;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.history-right__box-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.history-right__box-upper-title {
+  font-size: 140px;
+  text-align: center;
+  padding: 0 50px;
+  line-height: 90%;
+}
+.history-right__box-upper-date {
+  display: flex;
+  gap: 16px;
+  background-color: #F8F8F9;
+  padding: 8px;
+  border-radius: 16px;
+}
+.box-upper-date-prev,
+.box-upper-date-def,
+.box-upper-date-now {
+  font-size: 84px;
+  align-self: center;
+  color: #929AAA;
+}
+.box-upper-date-prev,
+.box-upper-date-now {
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.active-year {
+  background-color: var(--white) !important;
+  color: var(--dark-blue) !important;
+}
+.history-right__box-lower__text {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.history-right-date__mobile {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .history-right__box-upper-title {
+    font-size: 98px;
+  }
+  .history-right__box-upper-date {
+    padding: 6px;
+  }
+  .box-upper-date-prev,
+  .box-upper-date-def,
+  .box-upper-date-now {
+  font-size: 60px;
+  }
+  .box-upper-date-prev,
+  .box-upper-date-now {
+    padding: 10px 15px;
+  }
+  .history-right__box-lower__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .about-us-history-section .container {
+    flex-direction: column;
+  }
+  .history-right,
+  .history-left {
+    width: 100%;
+  }
+  .history-right {
+    order: 2;
+  }
+  .history-right__box-upper-title {
+    padding: 0 140px;
+  }
+  .history-right__box-upper {
+    gap: 8px;
+  }
+  .history-right {
+    gap: 60px;
+  }
+}
+@media (max-width: 475px) {
+  .history-right-date__desktop {
+    display: none;
+  }
+  .history-right-date__mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .history-right {
+    padding: 16px;
+    gap: 20px;
+  }
+  .history-right__box-upper-title {
+    padding: 0 40px;
+  }
+  .history-right__box-upper-title {
+    font-size: 50px;
+  }
+  .box-upper-date-prev,
+  .box-upper-date-def,
+  .box-upper-date-now {
+  font-size: 50px;
+  }
+}

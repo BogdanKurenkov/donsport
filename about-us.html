@@ -9,9 +9,8 @@
     <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/clubs.css">
-    <link rel="stylesheet" href="/styles/fitnes.css">
-    <link rel="stylesheet" href="/styles/services-detail.css">
-    
+    <link rel="stylesheet" href="/styles/about-us.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
     <!-- calltouch -->
@@ -166,285 +165,95 @@
 
     <main class="main">
 
-        <section class="club-info">
+      <section class="club-info ">
             <div class="container">
                 <div class="page-info_bg rounded-16">
                     <div class="page-info rounded-16">
                         <div class="routes rounded-8">
                             <p class="route">Главная</p>
                             <img src="/assets/svg/chevron-right.svg" alt="arrow">
-                            <p class="route">Фитнес</p>
-                            <img src="/assets/svg/chevron-right.svg" alt="arrow">
-                            <p class="route route_active">Пилатес</p>
+                            <p class="route route_active">О нас</p>
                         </div>
-                        <h1 class="page-title page-title_lg">Пилатес</h1>
-                        <p class="page-info_desc"> 
-                            Пилатес – это система фитнес-тренировок, направленных на развитие всех групп мышц, координации и достижения гармонии между телом, духом и разумом. Метод был разработан в начале XX века и к сегодняшнему дню приобрел колоссальную популярность
+                        <h1 class="page-title page-title_lg">О нас </h1>
+                        <p class="page-info_desc"></p>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <section class="numbers clubs-banner">
+        <div class="container">
+            <div class="numbers-wrapper">
+                <div class="numbers-left">
+                    <div class="numbers-card">
+                        <h4 class="numbers-card__number counter" id="counter1" data-target="23000" data-suffix=" м²"></h4>
+                        <p class="numbers-card__description">  общая площадь всех клубов</p>
+                    </div>
+                    <div class="numbers-card">
+                        <h4 class="numbers-card__number counter" id="counter2" data-target="22" data-suffix=" года"></h4>
+                        <p class="numbers-card__description"> компании</p>
+                    </div>
+                </div>
+
+                <div class="center-section">
+                    <img src="/assets/img/numbers.png" alt="image" class="center-image">
+                    <h4>Пусть ДОНСПОРТ станет вашей главной традицией</h4>
+
+                </div>
+
+                <div class="numbers-right">
+                    <div class="numbers-card">
+                        <h4 class="numbers-card__number counter" id="counter3" data-target="180" data-suffix=" чел."></h4>
+                        <p class="numbers-card__description">профессиональных тренеров, из которых более половины КМС и МС</p>
+                    </div>
+                    <div class="numbers-card">
+                        <div class="percent">
+                            <h4 class="numbers-card__number counter" data-target="16" data-suffix=" тыс."></h4>
+                            <!-- <img src="/assets/svg/percent.svg" alt="percent"> -->
+                        </div>
+                        <p class="numbers-card__description"> довольных клиентов 
                         </p>
-                        <div class="detail-services-info">
-                            <div class="services-info-block">
-                                от 18 до 60 лет
-                            </div>
-                            <div class="services-info-block">
-                                Сложность: Средняя
-                            </div>
-                            <div class="services-info-block">
-                                Здоровая осанка
-                            </div>
-                        </div>
-                        <div class="btns-wrap btns-wrap_desktop">
-                            <button class="btn-join btn hover-effect  rounded-8" data-hover-text="Записаться на занятие">Записаться на занятие</button>
-                            <button class="btn-schedule btn hover-effect rounded-8"
-                                data-hover-text="Смотреть расписание">Смотреть расписание</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="btns-wrap btns-wrap_mobile">
-                    <button class="btn-join btn hover-effect rounded-8" data-hover-text="Записаться на занятие">
-                        Записаться на занятие
-                    </button>
-                    <button class="btn-schedule btn hover-effect rounded-8"
-                        data-hover-text="Смотреть расписание">
-                        Смотреть расписание
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section class="clubs-banner">
-            <div class="container">
-                <div class="banner banner-detail-services rounded-24"></div>
-            </div>
-        </section>
-
-        <section class="services-detail-section">
-            <div class="container">
-                <div class="services-detail-container">
-                    <div class="services-left">
-                        <h2 class="services-left-title">преимущества</h2>
-                        <p class="services-left-text">В стремительном ритме современной жизни многие ищут способы поддержания здоровья и гармонии тела и духа. Один из таких методов — пилатес, который набирает популярность среди жителей Москвы и Подольска</p>
-                        <div class="services-card-btn">
-                            <button class="btn-join btn btn-small hover-effect  rounded-8" data-hover-text="Записаться на занятие">
-                              Записаться на занятие
-                            </button>
-                        </div>
-                    </div>
-                    <div class="services-right">
-                        <div class="services-right-card">
-                            <div class="right-card-upper">
-                                <img src="/assets/svg/services-accept.svg" alt="accept">
-                            </div>
-                            <div class="right-card-lower">
-                                <p class="right-card-lower-subtitle">Укрепление мышц и улучшение осанки</p>
-                                <p class="right-card-lower-text">Регулярные занятия пилатесом помогают укрепить мышцы спины, живота и тазового дна, что положительно сказывается на общем физическом состоянии и самочувствии</p>
-                            </div>
-                        </div>
-                        <div class="services-right-card">
-                            <div class="right-card-upper">
-                                <img src="/assets/svg/services-accept.svg" alt="accept">
-                            </div>
-                            <div class="right-card-lower">
-                                <p class="right-card-lower-subtitle">Укрепление мышц и улучшение осанки</p>
-                                <p class="right-card-lower-text">Регулярные занятия пилатесом помогают укрепить мышцы спины, живота и тазового дна, что положительно сказывается на общем физическом состоянии и самочувствии</p>
-                            </div>
-                        </div>
-                        <div class="services-right-card">
-                            <div class="right-card-upper">
-                                <img src="/assets/svg/services-accept.svg" alt="accept">
-                            </div>
-                            <div class="right-card-lower">
-                                <p class="right-card-lower-subtitle">Укрепление мышц и улучшение осанки</p>
-                                <p class="right-card-lower-text">Регулярные занятия пилатесом помогают укрепить мышцы спины, живота и тазового дна, что положительно сказывается на общем физическом состоянии и самочувствии</p>
-                            </div>
-                        </div>
-                        <div class="services-right-card">
-                            <div class="right-card-upper">
-                                <img src="/assets/svg/services-accept.svg" alt="accept">
-                            </div>
-                            <div class="right-card-lower">
-                                <p class="right-card-lower-subtitle">Укрепление мышц и улучшение осанки</p>
-                                <p class="right-card-lower-text">Регулярные занятия пилатесом помогают укрепить мышцы спины, живота и тазового дна, что положительно сказывается на общем физическом состоянии и самочувствии</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="services-card-btn-mobile">
-                <button class="btn-join btn btn-services-mobile btn-small hover-effect  rounded-8" data-hover-text="Записаться на занятие">
-                  Записаться на занятие
-                </button>
+        </div>
+      </section>
+
+      <section class="about-us-slider-section">
+        <div class="container"></div>
+      </section>
+
+      <section class="about-us-history-section">
+        <div class="container">
+          <div class="history-right">
+
+            <div class="history-right__box-upper">
+              <h2 class="history-right__box-upper-title">история компании</h2>
+
+              <div class="history-right__box-upper-date history-right-date__desktop">
+                <h3 class="box-upper-date-prev history-right-date__desktop active-year" data-year="2003">2003</h3> 
+                <h3 class="box-upper-date-def">—</h3>
+                <h3 class="box-upper-date-now history-right-date__desktop" data-year="2025">2025</h3>
+              </div>
+
             </div>
-        </section>
-
-        <section class="buy-card">
-            <div class="container container_relative">
-                <div class="buy-card-window">
-                    <div class="buy-card-heading">
-                        <div class="heading_left">
-                            <h4>получить консультацию</h4>
-                            <p>Оставьте свой контакт. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты
-                            </p>
-                        </div>
-                    </div>
-
-                    <form class="buy-card-form">
-                        <input class="" type="text" placeholder="Имя">
-                        <input id="input-phone" type="text" placeholder="Телефон" id="input-phone">
-
-                        <div class="dropdown-container">
-                            <div class="dropdown-header" data-dropdown>
-                                <span class="selected-item">Клуб</span>
-                                <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
-                            </div>
-                            <div class="dropdown-menu">
-                                <div class="menu-item" data-club-id="73230" data-value="Юго-Западная">Юго-Западная
-                                    <span>г. Москва, пр-т Вернадского, 92</span>
-                                </div>
-                                <div class="menu-item" data-club-id="45692" data-value="Хамовники">Хамовники
-                                    <span>г. Москва, ул. Малая Пироговская, 8</span>
-                                </div>
-                                <div class="menu-item" data-club-id="45691"  data-value="Алые паруса">Алые паруса
-                                    <span>г. Москва, Ул. Авиационная, 79</span>
-                                </div>
-                                <div class="menu-item" data-club-id="45693" data-value="Бирюзова">Бирюзова
-                                    <span>г. Москва, ул. Маршала Бирюзова, 32 к. 1</span>
-                                </div>
-                                <div class="menu-item" data-club-id="45694" data-value="Атлант">Атлант <span>Подольск, ул. Советская, 41/5</span></div>
-                                <div class="menu-item" data-club-id="45695" data-value="Амосфера">Атмосфера
-                                    <span>Подольск, ул. Ленинградская, д.5</span>
-                                </div>
-        
-                            </div>
-                        </div>
-
-                        <button class="btn-primary hover-effect" data-hover-text="Отправить">
-                            <span>Отправить</span>
-                        </button>
-                    </form>
-
-                    <p class="form-politic">Нажимая на кнопку “Отправить” я соглашаюсь с условиями политики
-                        конфиденциальности</p>
-
-                </div>
+            <div class="history-right__box-lower">
+              <p class="history-right__box-lower__text">
+                В 2003 году фитнес-клуб "ДОНСПОРТ" был основан как небольшое пространство, где энтузиасты спорта могли тренироваться и заниматься фитнесом. С акцентом на индивидуальный подход и дружелюбную атмосферу, клуб быстро завоевал популярность среди местных жителей. Предлагая разнообразные тренировки, включая групповые занятия и персональные тренировки, "Донспорт" стал важной частью сообщества, привлекая людей с разными уровнями подготовки
+              </p>
             </div>
-        </section>
+          </div>
 
-        <section class="services-detail-mq clubs-banner">
-            <div class="container">
-                <div class="services-detail-heading">
-                    <h2>Другие программы</h2>
-                </div>
-                <div class="marquee">
-                    <div class="marquee-content marquee-content-fitnes">
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card1.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Lower body</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card2.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Upper Body</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card3.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Zumba Toning</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card4.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Bodypump</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card5.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Круговая тренировка</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card6.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Iron</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card6.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Fitbox</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <!-- Double content -->
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card1.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Lower body</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card2.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Upper Body</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card3.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Zumba Toning</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card4.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Bodypump</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card5.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Круговая тренировка</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card6.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Iron</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                        <div class="fitnes-card-mq">
-                            <img src="/assets/img/fitnes-card6.png" alt="fitnes">
-                            <div class="fitnes-card-info">
-                                <p class="fitnes-desc">Fitbox</p>
-                                <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fitnes-seemoree__container">
-                    <a  class="navigate-btn btn-fitnes-see hover-effect navigate-btn_center" data-hover-text="Смотреть всех">
-                      <span>Смотреть всех</span>
-                    </a>
-                </div>  
-            </div> 
+          <div class="history-left">
+            <img src="/assets/img/history-card.png" alt="history">
+          </div>
+          <div class="history-right__box-upper-date history-right-date__mobile">
+            <h3 class="box-upper-date-prev history-right-date__mobile active-year" data-year="2003">2003</h3> 
+            <h3 class="box-upper-date-def">—</h3>
+            <h3 class="box-upper-date-now history-right-date__mobile" data-year="2025">2025</h3>
+          </div>
+        </div>
+      </section>
 
-        </section>
     </main>
 
     <footer class="footer">
@@ -590,23 +399,23 @@
                         <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
                     </div>
                     <div class="dropdown-menu">
-                        <div class="menu-item" data-club-id="45694" data-value="Атлант">Атлант <span>Подольск, ул. Ленинградская,
-                                д.5</span></div>
-                        <div class="menu-item" data-club-id="45695" data-value="Атмосфера">Атмосфера
-                            <span>Подольск, ул. Ленинградская, д.5</span>
+                        <div class="menu-item" data-club-id="73230" data-value="Юго-Западная">Юго-Западная
+                            <span>г. Москва, пр-т Вернадского, 92</span>
                         </div>
-                        <div class="menu-item" data-club-id="45691" data-value="Алые паруса">Алые паруса
+                        <div class="menu-item" data-club-id="45692" data-value="Хамовники">Хамовники
+                            <span>г. Москва, ул. Малая Пироговская, 8</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45691"  data-value="Алые паруса">Алые паруса
                             <span>г. Москва, Ул. Авиационная, 79</span>
                         </div>
                         <div class="menu-item" data-club-id="45693" data-value="Бирюзова">Бирюзова
                             <span>г. Москва, ул. Маршала Бирюзова, 32 к. 1</span>
                         </div>
-                        <div class="menu-item" data-club-id="45692" data-value="Хамовники">Хамовники
-                            <span>г. Москва, ул. Малая Пироговская, 8</span>
+                        <div class="menu-item" data-club-id="45694" data-value="Атлант">Атлант <span>Подольск, ул. Советская, 41/5</span></div>
+                        <div class="menu-item" data-club-id="45695" data-value="Амосфера">Атмосфера
+                            <span>Подольск, ул. Ленинградская, д.5</span>
                         </div>
-                        <div class="menu-item" data-club-id="73230" data-value="Юго-Западная">Юго-Западная
-                            <span>г. Москва, пр-т Вернадского, 92</span>
-                        </div>
+
                     </div>
                 </div>
 
@@ -628,6 +437,10 @@
     <script type="module" defer src="/js/burger.js"></script>
     <script type="module" defer src="/js/clipBoard.js"></script>
     <script type="module" defer src="/js/modals.js"></script>
+    <script type="module" defer src="/js/count.js"></script>
+    <script type="module" defer src="/js/historyCardChange.js"></script>
+    
+    <!-- <script type="module" defer src="/js/clubsDd.js"></script> -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
@@ -635,7 +448,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
+    
     <script type="module" defer src="/js/dropdown.js"></script>
     <!-- <script type="module" src="./js/sliderClub.js"></script> -->
     <script src="/js/clickTouch.js"></script>
