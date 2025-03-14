@@ -380,11 +380,19 @@ input {
     width: calc(100vw - 64px);
     margin: 0 auto;
 }
-
+.page-title__box {
+    display: flex;
+    gap: 8px;
+}
 .page-title {
     font-size: 135px;
     line-height: 117px;
-    color: var(--white);
+    color: var(--white);  
+}
+.page-title__count {
+    color: var(--dark-blue);
+    font-size: 56px;
+    font-family: 'Bebas Neue Cyrillic', sans-serif;
 }
 
 .page-title_small {
@@ -2100,7 +2108,9 @@ a.social-media img {
 }
 
 @media(max-width:1440px) {
-
+    .page-title__count {
+        font-size: 42px;
+    }
     .app-icon {
         border-radius: 6px;
     }
@@ -3046,7 +3056,9 @@ a.social-media img {
 }
 
 @media(max-width:500px) {
-
+    .page-title__count {
+        font-size: 32px;
+    }
     .slide-desc .column {
         gap: 19px;
         padding: 14px 13px;

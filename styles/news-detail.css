@@ -3,15 +3,26 @@
   color: #000000;
   margin-bottom: 10px;
 }
-
+.page-subtitle-events {
+  margin-top: 20px;
+  font-size: 68px;
+}
 @media (max-width: 1440px) {
   .news-detail-article-text {
     font-size: 14px;
+  }
+  .page-subtitle-events {
+    
+    font-size: 40px;
   }
 }
 @media (max-width: 500px) {
   .news-detail-btn-see {
     width: 100% !important;
     padding: 0 16px;
+  }
+  .page-subtitle-events {
+    
+    font-size: 24px;
   }
 }

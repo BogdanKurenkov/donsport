@@ -262,4 +262,7 @@
     width: 100% !important;
     padding: 0 16px ;
   }
+  .route-trim {
+    max-width: 60px;             
+  }
 }

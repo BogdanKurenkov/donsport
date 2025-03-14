@@ -34,6 +34,7 @@ export default defineConfig({
         marketing: "marketing.html",
         aboutUs: "about-us.html",
         events: "events.html",
+        eventsDetail: "events-detail.html",
       },
     },
   },
