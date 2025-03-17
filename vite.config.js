@@ -16,6 +16,7 @@ export default defineConfig({
         clubsSails: "clubs-sails.html",
         ourClubs: "our-clubs.html",
         team: "team.html",
+        teamDetail: "team-detail.html",
         reviews: "reviews.html",
         fitnes: "fitnes.html",
         servicesDetail: "services-detail.html",
