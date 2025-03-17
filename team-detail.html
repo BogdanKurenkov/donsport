@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Донспорт</title>
+    <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/clubs.css">
+    <link rel="stylesheet" href="/styles/fitnes.css">
+    <link rel="stylesheet" href="/styles/services-detail.css">
+    <link rel="stylesheet" href="/styles/team-detail.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
+    <!-- calltouch -->
+    <script>
+        (function (w, d, n, c) {
+        w.CalltouchDataObject = n;
+        w[n] = function () {
+            w[n]["callbacks"].push(arguments);
+        };
+        if (!w[n]["callbacks"]) {
+            w[n]["callbacks"] = [];
+        }
+        w[n]["loaded"] = false;
+        if (typeof c !== "object") {
+            c = [c];
+        }
+        w[n]["counters"] = c;
+        for (var i = 0; i < c.length; i += 1) {
+            p(c[i]);
+        }
+    
+        function p(cId) {
+            var a = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            i = function () {
+                a.parentNode.insertBefore(s, a);
+            };
+            s.async = true;
+            s.src = "https://mod.calltouch.ru/init.js?id=" + cId;
+            if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", i, false);
+            } else {
+            i();
+            }
+        }
+        })(window, document, "ct", "ls659mh5");
+    </script>
+    <!--calltouch -->
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="/" class="header-col1 header-col1_clubs">
+                    <img class="header-logo" src="/assets/img/logo.png" alt="logo">
+                </a>
+                <div class="header-col2 header-col2_clubs">
+                    <nav class="header-menu">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link header-menu-link_drop">Клубы
+                                <img class="arrow_white" src="/assets/svg/chevron-down_white.svg" alt="arrow down">
+                                <img class="arrow_black" src="/assets/svg/chevron-down.svg" alt="arrow down">
+                            </a>
+                            <ul class="dropdown-menu_header">
+                                <li><a href="/clubs.html">юго-западная</a></li>
+                                <li><a href="/clubs-hamovniki.html">хамовники</a></li>
+                                <li><a href="/clubs-sails.html">алые паруса</a></li>
+                                <li><a href="/clubs-atlant.html">атлант</a></li>
+                                <li><a href="/clubs-birusova.html">бирюзова</a></li>
+                                <li><a href="/clubs-atmosphere.html">атмосфера</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="/fitnes.html" class="header-menu-link">Фитнес</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="/widget.html" class="header-menu-link">Расписание</a>
+                        </li>
+                        <!-- <li class="header-menu-item">
+                            <a href="#" class="header-menu-link">мероприятия</a>
+                        </li> -->
+                        <li class="header-menu-item">
+                            <a href="/investors.html" class="header-menu-link">инвесторам</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="/marketing.html" class="header-menu-link">реклама</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="header-col3 header-col3_clubs">
+                    <p id="phone-number" class="phone">+7 495 292 12 94</p>
+                    <a  class="back-call hover-effect"
+                        data-hover-text="Контакты" href="/contacts.html">Контакты</a>
+                    <button data-modal-id="buy-card" class="buy-card__btn hover-effect"
+                        data-hover-text="Купить карту">Купить карту</button>
+                    <div class="burger-menu" id="burger-menu">
+                        <img class="burger" src="/assets/svg/menu.svg" alt="burger">
+                    </div>
+
+                    <nav class="header-submenu" id="header-submenu">
+
+                        <div class="header-submenu-col header-submenu-col_desktop">
+                            <ul>
+                                <li><a href="/about-us.html">о нас</a></li>
+                                <li><a href="/our-clubs.html">клубы</a></li>
+                                <li><a href="/team.html">команда</a></li>
+                                <li><a href="/contacts.html">контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_desktop">
+                            <ul>
+                                <li><a href="/fitnes.html">фитнес</a></li>
+                                <li><a href="/widget.html">расписание</a></li>
+                                <li><a href="/events.html">мероприятия</a></li>
+                                <li><a href="/promotions.html">Акции</a></li>
+                                <li><a href="/subscription.html">виды карт</a></li>
+                                <li><a href="/reviews.html">отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_desktop">
+                            <ul>
+                                <li><a href="/blog.html">блог</a></li>
+                                <li><a href="/news.html">новости</a></li>
+                                <li><a href="/marketing.html">реклама</a></li>
+                                <li><a href="/investors.html">инвесторам</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_mobile">
+                            <ul>
+                                <li><a href="/about-us.html">о нас</a></li>
+                                <li><a href="/team.html">команда</a></li>
+                                <!-- <li><a href="/partners.html">партнеры</a></li> -->
+                                <li><a href="/our-clubs.html">клубы</a></li>
+                                <li><a href="/blog.html">блог</a></li>
+                                <li><a href="/news.html">новости</a></li>
+                                <li><a href="/contacts.html">контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-col header-submenu-col_mobile">
+                            <ul>
+                                <li><a href="/fitnes.html">фитнес</a></li>
+                                <li><a href="/widget.html">расписание</a></li>
+                                <li><a href="/events.html">мероприятия</a></li>
+                                <li><a href="/promotions.html">акции</a></li>
+                                <li><a href="/subscription.html">виды карт</a></li>
+                                <li><a href="/reviews.html">отзывы</a></li>
+                                <li><a href="/marketing.html">реклама</a></li>
+                                <li><a href="/investors.html">инвесторам</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-submenu-close" id="close-submenu">
+                            <img class="close-submenu" src="/assets/svg/x.svg" alt="close">
+                        </div>
+                    </nav>
+                    <div class="header-overlay" id="header-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+      <section class="trainer-detail-section">
+        <div class="container">
+
+          <div class="trainer-detail-left">
+            <img src="/assets/img/trainer-detail.png" alt="trainer">
+            <div class="trainer-detail-left-btns">
+              <div class="left-btns__box">
+                <button class="btn-trainer hover-effect" data-hover-text="Заполните форму">Заполните форму</button>
+                <button class="btn-trainer btn-trainer_black hover-effect hover-effect_black" data-hover-text="+7 495 292 12 94">+7 495 292 12 94</button>
+              </div>
+              <p class="left-btns__text">Или позвоните по номеру телефона <br> для записи на тренировку</p>
+            </div>
+          </div>
+
+          <div class="trainer-detail-right">
+
+            <div class="trainer-detail-right__header trainer-bg-round">
+              <div class="routes trainer-detail-routes rounded-8">
+                <p class="route">Главная</p>
+                <img src="/assets/svg/chevron-right.svg" alt="arrow">
+                <p class="route ">Блог</p>
+                <img src="/assets/svg/chevron-right.svg" alt="arrow">
+                <p class="route route_active route-trainer">Аксёнова Анастасия</p>
+              </div>
+              <h1 class="trainer-detail-right__header-title">Аксёнова Анастасия </h1>
+            </div>
+
+            <div class="trainer-detail-right__desc trainer-bg-round">
+              <div class="trainer-detail-right__desc-left">
+                <p class="trainer-detail-right__desc-left-text">Премиум-тренер групповых программ в клубах </p>
+              </div>
+              <div class="trainer-detail-right__desc-right">
+                <div class="trainer-detail-right__desc-right-links">
+                  <a href="/clubs-sails.html" class="trainer-detail-right__desc-right-link">Юго-Западная</a>
+                  <a href="/clubs-sails.html" class="trainer-detail-right__desc-right-link">Алые паруса</a>
+                  <a href="/clubs-sails.html" class="trainer-detail-right__desc-right-link">Атмосфера</a>
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="trainer-detail-right__desc trainer-bg-round">
+              <div class="trainer-detail-right__desc-left">
+                <p class="trainer-detail-right__desc-left-text">Аксёнова Анастасия поможет прийти вам к назначенной цели </p>
+              </div>
+              <div class="trainer-detail-right__desc-right">
+                <p class="trainer-detail-right__desc-right-text">Персональный тренер подскажет и расскажет, как и сколько надо тренироватьтся, составит программу тренировок, даст советы по питанию, и, возможно, станет для вас хорошим другом!</p>
+              </div>
+            </div>
+
+            <div class="trainer-detail-right__desc trainer-bg-round">
+              <div class="trainer-detail-right__desc-left">
+                <p class="trainer-detail-right__desc-left-text">Образование </p>
+              </div>
+              <div class="trainer-detail-right__desc-right">
+                <p class="trainer-detail-right__desc-right-text">
+                  Высшее
+                </p>
+              </div>
+            </div>
+
+            <div class="trainer-detail-right__desc trainer-bg-round">
+              <div class="trainer-detail-right__desc-left">
+                <p class="trainer-detail-right__desc-left-text">Год начала работы в фитнесе</p>
+              </div>
+              <div class="trainer-detail-right__desc-right">
+                <p class="trainer-detail-right__desc-right-text">
+                  2019
+                </p>
+              </div>
+            </div>
+
+
+            <div class="trainer-detail-right__desc trainer-bg-round">
+              <div class="trainer-detail-right__desc-left">
+                <p class="trainer-detail-right__desc-left-text">Специализация</p>
+              </div>
+              <div class="trainer-detail-right__desc-right">
+                <p class="trainer-detail-right__desc-right-text">
+                  Коррекция фигуры, кардиотренинг на снижение жирового компонента, специальная подготовка к марафонам и iron men; улучшение гибкости; силовой и функциональный тренинг, стретчинг, cycling, jumping, персональная постановка танцев: танец живота и современные направления.
+                </p>
+              </div>
+            </div>
+
+            <div class="trainer-detail-right__desc trainer-bg-round">
+              <div class="trainer-detail-right__desc-left">
+                <p class="trainer-detail-right__desc-left-text">Образование</p>
+              </div>
+              <div class="trainer-detail-right__desc-right">
+                <p class="trainer-detail-right__desc-right-text">
+                  Автономная некоммерческая организация дополнительного профессионального образования ПЛАТФОРМА: Профессиональная переподготовка – Тренер преподаватель в области физической культуры и спорта
+                </p>
+                <p class="trainer-detail-right__desc-right-text">
+                  Сертифицированный инструктор групповых программ: cycling, jumping, stretch, функциональный тренинг, персональный тренер
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="trainer-detail-left-btns trainer-detail-left-btns__mobile">
+            <div class="left-btns__box">
+              <button class="btn-trainer hover-effect" data-hover-text="Заполните форму">Заполните форму</button>
+              <button class="btn-trainer btn-trainer_black hover-effect hover-effect_black" data-hover-text="+7 495 292 12 94">+7 495 292 12 94</button>
+            </div>
+            <p class="left-btns__text">Или позвоните по номеру телефона <br> для записи на тренировку</p>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="services-detail-mq clubs-banner">
+        <div class="container">
+            <div class="services-detail-heading">
+                <h2>Другие программы</h2>
+            </div>
+            <div class="marquee">
+                <div class="marquee-content marquee-content-fitnes">
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card1.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Lower body</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card2.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Upper Body</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card3.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Zumba Toning</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card4.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Bodypump</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card5.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Круговая тренировка</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card6.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Iron</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card6.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Fitbox</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <!-- Double content -->
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card1.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Lower body</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card2.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Upper Body</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card3.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Zumba Toning</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card4.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Bodypump</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card5.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Круговая тренировка</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card6.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Iron</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                    <div class="fitnes-card-mq">
+                        <img src="/assets/img/fitnes-card6.png" alt="fitnes">
+                        <div class="fitnes-card-info">
+                            <p class="fitnes-desc">Fitbox</p>
+                            <img src="/assets/svg/arrow-fitnes.svg" alt="arrow-fitnes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
+      </section>
+
+      <section class="team">
+        <h3 class="section-title section-title-trainer-detail">другие тренеры</h3>
+        <!-- <p class="section-description">Каждый из них — эксперт своего дела, с уникальным подходом и опытом
+            работы. Они помогут вам раскрыть потенциал, преодолеть преграды и достичь поставленных целей </p> -->
+
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="team-card">
+                    <img src="/assets/img/team_1-ham.webp" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name"> Смиртюкова <br> Александра</h5>
+                        <p class="trainer-description">Премиум-тренер детского клуба</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_2-ham.jpg" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name">Горбачевский<br> Никита</h5>
+                        <p class="trainer-description">Элит-тренер тренажерного зала</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_1-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name"> Смиртюкова <br> Александра</h5>
+                        <p class="trainer-description">Премиум-тренер детского клуба</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_2-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name">Горбачевский<br> Никита</h5>
+                        <p class="trainer-description">Элит-тренер тренажерного зала</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_1-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name"> Смиртюкова <br> Александра</h5>
+                        <p class="trainer-description">Премиум-тренер детского клуба</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_2-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name">Горбачевский<br> Никита</h5>
+                        <p class="trainer-description">Элит-тренер тренажерного зала</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_1-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name"> Смиртюкова <br> Александра</h5>
+                        <p class="trainer-description">Премиум-тренер детского клуба</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_2-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name">Горбачевский<br> Никита</h5>
+                        <p class="trainer-description">Элит-тренер тренажерного зала</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_1-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name"> Смиртюкова <br> Александра</h5>
+                        <p class="trainer-description">Премиум-тренер детского клуба</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_2-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name">Горбачевский<br> Никита</h5>
+                        <p class="trainer-description">Элит-тренер тренажерного зала</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_1-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name"> Смиртюкова <br> Александра</h5>
+                        <p class="trainer-description">Премиум-тренер детского клуба</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="/assets/img/team_2-ham.png" class="trainer" alt="trainer">
+                    <div class="team-card-wrapper">
+                        <h5 class="trainer-name">Горбачевский<br> Никита</h5>
+                        <p class="trainer-description">Элит-тренер тренажерного зала</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/team" class="navigate-btn hover-effect navigate-btn_center" data-hover-text="Смотреть все">
+            <span>Смотреть всех</span>
+        </a>
+      </section>
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+
+                    <div class="footer-col footer-col_col1">
+                        <h3 class="footer-title">
+                            подписывайся <br> на нас в соцсетях
+                        </h3>
+                        <div class="social-media-wrapper">
+                            <a href="tg://resolve?phone=74954775781" target="_blank" class="social-media">
+                                <div class="social-media__text">TELEGRAM</div>
+                                <img class="social-media__icon" src="/assets/svg/tg.svg" alt="plane">
+                            </a>
+                            <a href="https://vk.com/donsport?roistat_visit=3915940" class="social-media">
+                                <div class="social-media__text">ВКОНТАКТЕ</div>
+                                <img class="social-media__icon" src="/assets/svg/vk.svg" alt="vk">
+                            </a>
+                        </div>
+                    </div>
+
+                    <nav class="footer-menu">
+                        <div class="footer-col">
+                            <a href="/our-clubs.html" class="footer-menu__item">клубы</a>
+                            <a href="/fitnes.html" class="footer-menu__item">фитнес</a>
+                            <a href="/widget.html" class="footer-menu__item">расписание</a>
+                            <a href="/events.html" class="footer-menu__item">мероприятия</a>
+                            <a href="/subscription.html" class="footer-menu__item">виды карт</a>
+                            <a href="/promotions.html" class="footer-menu__item">Акции</a>
+                        </div>
+
+                        <div class="footer-col">
+                            <a href="/about-us.html" class="footer-menu__item">о нас</a>
+                            <a href="/team.html" class="footer-menu__item">команда</a>
+                            <a href="/blog.html" class="footer-menu__item">блог</a>
+                            <a href="/news.html" class="footer-menu__item">новости</a>
+                        </div>
+
+                        <div class="footer-col">
+
+                            <a href="/contacts.html" class="footer-menu__item">контакты</a>
+                            <a href="/reviews.html" class="footer-menu__item">отзывы</a>
+                            <a href="/partners.html" class="footer-menu__item">партнеры</a>
+                            <a href="#" class="footer-menu__item">реклама</a>
+                            <a href="/investors.html" class="footer-menu__item">инвесторам</a>
+                        </div>
+
+                        <div class="footer-col">
+                            <a href="tel:+74954775781" class="footer-menu__item">+ 7 (495) 477-57-81</a>
+                            <a href="mailto:info@donsport.ru" class="footer-menu__item">info@donsport.ru</a>
+                            <a href="mailto:press@donsport.ru" class="footer-menu__item">press@donsport.ru</a>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="footer-bottom">
+                    <img class="footer-logo" src="/assets/svg/footer-logo.svg" alt="donsport">
+                    <div class="footer-info">
+                        <p class="years">2003 - 2025 ДОНСПОРТ</p>
+                        <a class="oferta" href="#">оферта</a>
+                        <p class="finik">сайт сделан в <a href="https://finik.org/">finik</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="buy-card" class="buy-card-overlay overlay">
+        <div class="buy-card-window overlay__content ">
+            <div class="buy-card-heading">
+                <div class="heading_left">
+                    <h4>купить карту</h4>
+                    <p>Приобретите клубную карту и получите доступ ко всем нашим бассейнам, спортивным залам, групповым занятиям и эксклюзивным предложениям
+                    </p>
+                </div>
+                <div class="close-card">
+                    <img src="/assets/svg/x.svg" alt="x" id="modal-close">
+                </div>
+            </div>
+            <form class="buy-card-form">
+                <input type="text" placeholder="Имя">
+                <input id="input-phone" type="text" placeholder="Телефон" id="input-phone">
+
+                <div class="dropdown-container">
+                    <div class="dropdown-header" data-dropdown>
+                        <span class="selected-item">Клуб</span>
+                        <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="menu-item" data-club-id="73230" data-value="Юго-Западная">Юго-Западная
+                            <span>г. Москва, пр-т Вернадского, 92</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45692" data-value="Хамовники">Хамовники
+                            <span>г. Москва, ул. Малая Пироговская, 8</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45691"  data-value="Алые паруса">Алые паруса
+                            <span>г. Москва, Ул. Авиационная, 79</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45693" data-value="Бирюзова">Бирюзова
+                            <span>г. Москва, ул. Маршала Бирюзова, 32 к. 1</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45694" data-value="Атлант">Атлант <span>Подольск, ул. Советская, 41/5</span></div>
+                        <div class="menu-item" data-club-id="45695" data-value="Амосфера">Атмосфера
+                            <span>Подольск, ул. Ленинградская, д.5</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="btn-primary hover-effect" data-hover-text="Отправить">
+                    <span>Отправить</span>
+                </button>
+            </form>
+
+            <p class="form-politic">Нажимая на кнопку “Отправить” я соглашаюсь с условиями политики
+                конфиденциальности</p>
+        </div>
+    </div>
+
+    <div id="get-consultation" class="consultation-overlay overlay">
+        <div class="buy-card-window overlay__content buy-card-window_consultation">
+            <div class="buy-card-heading">
+                <div class="heading_left">
+                    <h4>получить консультацию</h4>
+                    <p>Оставьте свой контакт. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты
+                    </p>
+                </div>
+                <div class="close-card">
+                    <img src="/assets/svg/x.svg" alt="x" id="modal-close">
+                </div>
+            </div>
+
+            <form class="buy-card-form">
+                <input type="text" placeholder="Имя">
+                <input id="input-phone" type="text" placeholder="Телефон" id="input-phone">
+
+                <div class="dropdown-container">
+                    <div class="dropdown-header" data-dropdown>
+                        <span class="selected-item">Клуб</span>
+                        <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="menu-item" data-club-id="73230" data-value="Юго-Западная">Юго-Западная
+                            <span>г. Москва, пр-т Вернадского, 92</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45692" data-value="Хамовники">Хамовники
+                            <span>г. Москва, ул. Малая Пироговская, 8</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45691"  data-value="Алые паруса">Алые паруса
+                            <span>г. Москва, Ул. Авиационная, 79</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45693" data-value="Бирюзова">Бирюзова
+                            <span>г. Москва, ул. Маршала Бирюзова, 32 к. 1</span>
+                        </div>
+                        <div class="menu-item" data-club-id="45694" data-value="Атлант">Атлант <span>Подольск, ул. Советская, 41/5</span></div>
+                        <div class="menu-item" data-club-id="45695" data-value="Амосфера">Атмосфера
+                            <span>Подольск, ул. Ленинградская, д.5</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary hover-effect" data-hover-text="Отправить">Отправить</button>
+            </form>
+
+            <p class="form-politic form-politic_consultation">Нажимая на кнопку “Отправить” я соглашаюсь с условиями
+                политики
+                конфиденциальности</p>
+
+        </div>
+    </div>
+
+    <!-- <script type="module" defer src="/js/clubPhotos.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js"
+        integrity="sha512-+3RJc0aLDkj0plGNnrqlTwCCyMmDCV1fSYqXw4m+OczX09Pas5A/U+V3pFwrSyoC1svzDy40Q9RU/85yb/7D2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="module" defer src="/js/hideBlock.js"></script> -->
+    <script type="module" defer src="/js/burger.js"></script>
+    <script type="module" defer src="/js/clipBoard.js"></script>
+    <script type="module" defer src="/js/modals.js"></script>
+    <!-- <script type="module" defer src="/js/clubsDd.js"></script> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script type="module" defer src="/js/dropdown.js"></script>
+    <!-- <script type="module" src="./js/sliderClub.js"></script> -->
+    <script src="/js/clickTouch.js"></script>
+</body>
+
+</html>
