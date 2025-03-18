@@ -469,24 +469,25 @@
     z-index: 2;
     bottom: 20px;
     width: 430px;
-    height: 94px;
+    /* height: 94px; */
     color: var(--white);
     left: 8px;
     transition: 0.5s ease;
     padding-left: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* tyt */
+    justify-content: space-between;
 }
 
 
 .club-photo-desc h3 {
-    max-width: 248px;
+    /* max-width: 248px; */
     transition: 0.2s ease;
 }
 
 .club-photo-desc p {
-    max-width: 381px;
+    /* max-width: 381px; */
     display: none;
     font-size: 16px;
     line-height: 21.86px;
