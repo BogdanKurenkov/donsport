@@ -20,4 +20,4 @@ function cycleWords() {
 
 cycleWords();
 
-setInterval(cycleWords, 3000);
+setInterval(cycleWords, 1500);
