@@ -1896,7 +1896,17 @@ a.social-media img {
     transform: translateY(0);
     transition-delay: 2s;
 }
+.letter {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.4s forwards;
+  }
 
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
 .span3 {
     transform: translateY(-50px);
 }
