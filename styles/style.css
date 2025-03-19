@@ -604,6 +604,7 @@ input {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .news-image {
@@ -1187,6 +1188,7 @@ a.social-media img {
 
 .team-card {
     width: calc(20% - 8px);
+    cursor: pointer;
     
 }
 
@@ -3104,13 +3106,18 @@ a.social-media img {
     .love-card {
         padding: 16px;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         max-width: 297px;
         height: max-content;
-        /* gap: 40px; */
+        /* gap: 20px; */
         border-radius: 6px;
     }
+    /* .love-card__title {
+        align-self: center;
+        justify-content: flex-start;
+    } */
 
     .for-love-left {
         padding: 16px 8px;

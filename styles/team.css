@@ -23,7 +23,7 @@
 .page-team-card {
   width: calc(20% - 8px);
   margin-bottom: 40px;
-  
+  cursor: pointer;
 }
 .page-team-card img {
   width: 100%;

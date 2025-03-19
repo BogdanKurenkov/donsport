@@ -28,6 +28,7 @@
 }
 .blog-card {
   width: calc(33.3% - 8px);
+  cursor: pointer;
 }
 .blog-card-upper img {
   width: 100%;
