@@ -8,6 +8,7 @@
     <title>Донспорт</title>
     <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/events.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
@@ -163,7 +164,7 @@
 
     <main class="main">
         <section class="video-container">
-            <video autoplay loop muted>
+            <video autoplay loop muted playsinline>
                 <source src="/assets/video/bg.webm" type="video/mp4">
                 Ваш браузер не поддерживает видео
             </video>
@@ -1030,99 +1031,64 @@
                 <div class="splide" id="news-slider">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide news-card clickable-card-href" data-href="/events-detail.html">
-                                <img class="news-image" src="/assets/img/news1.png" alt="image">
-                                <div class="news-content-wrapper">
-                                    <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка</p>
-                                    <p class="news-description">В программе праздника были увлекательные конкурсы,
-                                        творческие номера и, конечно же, встреча с Дедом Морозом и Снегурочкой. Особое
-                                        внимание уделено атмосферным декорациям и праздничным угощениям, которые создали
-                                        волшебное настроение</p>
+                            <li class="splide__slide event-card clickable-card-href" data-href="/events-detail.html">
+                                <div class="event-link-club__mobile clickable-card-href" data-href="/clubs-sails.html">
+                                    <img src="/assets/svg/map-pin.svg" alt="arrow">
+                                    <p class="event-link-club__mobile__text">Алые паруса</p>
                                 </div>
-                                <div class="news-date-wrapper">
-                                    <p class="news-date">25.12.24</p>
-                                    <div class="arrow-wrapper">
-                                        <svg class="svg-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7 17L17 7" stroke="#383838" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M7 7H17V17" stroke="#383838" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
+                                <div class="event-card-upper">
+                                    <div class="event-card-upper-box">
+                                      <h2 class="event-card-upper-box__date">23.08</h2>
+                                      <a href="/clubs-sails.html" class="event-card-upper-box__link">Алые паруса</a>
+                                    </div>
+                                    <p class="event-card-upper-box__desc">Outdoor тренировка на свежем воздухе</p>
+                                </div>
+                                <div class="event-card-lower clickable-card-href" data-href="/events-detail.html">
+                                    <img src="/assets/img/event-card.png" alt="event">
+                                    <div class="event-card-lower__link">
+                                      <img src="/assets/svg/arrow-up-right.svg" alt="arrow">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide event-card clickable-card-href" data-href="/events-detail.html">
+                                <div class="event-link-club__mobile clickable-card-href" data-href="/clubs-sails.html">
+                                    <img src="/assets/svg/map-pin.svg" alt="arrow">
+                                    <p class="event-link-club__mobile__text">Алые паруса</p>
+                                </div>
+                                <div class="event-card-upper">
+                                    <div class="event-card-upper-box">
+                                      <h2 class="event-card-upper-box__date">23.08</h2>
+                                      <a href="/clubs-sails.html" class="event-card-upper-box__link">Алые паруса</a>
+                                    </div>
+                                    <p class="event-card-upper-box__desc">Outdoor тренировка на свежем воздухе</p>
+                                  </div>
+                                  <div class="event-card-lower clickable-card-href" data-href="/events-detail.html">
+                                    <img src="/assets/img/event-card.png" alt="event">
+                                    <div class="event-card-lower__link">
+                                      <img src="/assets/svg/arrow-up-right.svg" alt="arrow">
+                                    </div>
+                                  </div>
+                            </li>
+                            <li class="splide__slide event-card clickable-card-href" data-href="/events-detail.html">
+                                <div class="event-link-club__mobile clickable-card-href" data-href="/clubs-sails.html">
+                                    <img src="/assets/svg/map-pin.svg" alt="arrow">
+                                    <p class="event-link-club__mobile__text">Алые паруса</p>
+                                </div>
+                                <div class="event-card-upper">
+                                    <div class="event-card-upper-box">
+                                      <h2 class="event-card-upper-box__date">23.08</h2>
+                                      <a href="/clubs-sails.html" class="event-card-upper-box__link">Алые паруса</a>
+                                    </div>
+                                    <p class="event-card-upper-box__desc">Outdoor тренировка на свежем воздухе</p>
+                                </div>
+                                <div class="event-card-lower clickable-card-href" data-href="/events-detail.html">
+                                    <img src="/assets/img/event-card.png" alt="event">
+                                    <div class="event-card-lower__link">
+                                      <img src="/assets/svg/arrow-up-right.svg" alt="arrow">
+                                    </div>
+                                </div>
+                            </li>
 
-                                        <!-- <img src="/assets/svg/arrow-up-right.svg" alt="arrow" /> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide news-card clickable-card-href" data-href="/events-detail.html">
-                                <img class="news-image" src="/assets/img/news2.png" alt="image">
-                                <div class="news-content-wrapper">
-                                    <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка</p>
-                                    <p class="news-description">В программе праздника были увлекательные конкурсы,
-                                        творческие номера и, конечно же, встреча с Дедом Морозом и Снегурочкой. Особое
-                                        внимание уделено атмосферным декорациям и праздничным угощениями, которые
-                                        создали волшебное настроение</p>
-                                </div>
-                                <div class="news-date-wrapper">
-                                    <p class="news-date">25.12.24</p>
-                                    <div class="arrow-wrapper">
-                                        <svg class="svg-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7 17L17 7" stroke="#383838" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M7 7H17V17" stroke="#383838" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <!-- <img src="/assets/svg/arrow-up-right.svg" alt="arrow" /> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide news-card clickable-card-href" data-href="/events-detail.html">
-                                <img class="news-image" src="/assets/img/news3.png" alt="image">
-                                <div class="news-content-wrapper">
-                                    <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка</p>
-                                    <p class="news-description">В программе праздника были увлекательные конкурсы,
-                                        творческие номера и, конечно же, встреча с Дедом Морозом и Снегурочкой. Особое
-                                        внимание уделено атмосферным декорациям и праздничным угощениями, которые
-                                        создали волшебное настроение</p>
-                                </div>
-                                <div class="news-date-wrapper">
-                                    <p class="news-date">25.12.24</p>
-                                    <div class="arrow-wrapper">
-                                        <svg class="svg-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7 17L17 7" stroke="#383838" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M7 7H17V17" stroke="#383838" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <!-- <img src="/assets/svg/arrow-up-right.svg" alt="arrow" /> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide news-card clickable-card-href" data-href="/events-detail.html">
-                                <img class="news-image" src="/assets/img/news1.png" alt="image">
-                                <div class="news-content-wrapper">
-                                    <p class="news-title">В клубе Атлант прошла наша чудесная Новогодняя Елка</p>
-                                    <p class="news-description">В программе праздника были увлекательные конкурсы,
-                                        творческие номера и, конечно же, встреча с Дедом Морозом и Снегурочкой. Особое
-                                        внимание уделено атмосферным декорациям и праздничным угощениями, которые
-                                        создали волшебное настроение</p>
-                                </div>
-                                <div class="news-date-wrapper">
-                                    <p class="news-date">25.12.24</p>
-                                    <div class="arrow-wrapper">
-                                        <!-- <img src="/assets/svg/arrow-up-right.svg" alt="arrow" /> -->
-                                        <svg class="svg-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7 17L17 7" stroke="#383838" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M7 7H17V17" stroke="#383838" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>
