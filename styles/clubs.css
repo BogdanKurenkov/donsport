@@ -984,12 +984,11 @@
     }
     .club-media-card img {
         height: 194px;
+        max-height: 194px;
     }
     .card-media-info {
-        position: relative;
-        top: -10px;
-        width: 100%;
-        border-radius: 16px;
+        position: static;
+
     }
     .card-media-title {
         margin-bottom: 10px;
