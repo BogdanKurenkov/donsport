@@ -165,8 +165,8 @@
     overflow: hidden; 
     /* z-index: 10; */
     margin-bottom: 20px;
-    padding-right: 26px;
-    padding-left: 26px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 .clubs-video-banner video  {
     width: 100%;
