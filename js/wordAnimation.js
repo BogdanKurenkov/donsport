@@ -1,4 +1,4 @@
-const words = ["семейных", "динамичных", "уникальных", "центральных"];
+const words = ["семейных", "надёжных", "доступных"];
 const wordContainer = document.getElementById("word-container");
 let wordIndex = 0;
 
