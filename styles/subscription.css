@@ -142,6 +142,111 @@
 .btn-certificate-mobile {
   display: none;
 }
+/* форма */
+.buy-certeficate-window {
+  width: 940px;
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: auto;
+  height: 95vh;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.buy-certeficate-window::-webkit-scrollbar {
+  display: none;
+}
+.close-card-certeficate {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  background-color: var(--grey);
+  width: 56px;
+  height: 56px;
+}
+.certeficate-modal__title {
+  font-size: 68px;
+  line-height: 90%;
+  text-align: center;
+  white-space: pre-line;
+  margin: 32px 0 16px 0;
+}
+.certeficate-modal__img {
+  background-color: var(--grey);
+  border-radius: 16px;
+
+}
+.certeficate-modal__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.buy-certificate-form {
+  background-color: var(--grey);
+  border-radius: 16px;
+  padding: 24px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.certeficate-modal__text {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+.certeficate-modal__input-box {
+  display: flex;
+  gap: 8px;
+}
+.certeficate-modal__input-wrap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.certeficate-currency-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+ .currency {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  transform: translateY(-50%);
+  color: #383838;
+  font-size: 16px;
+  font-weight: 600;
+  pointer-events: none;
+}
+.certeficate-currency-box input[placeholder='Номинал']:focus + .currency {
+  display: none; 
+}
+.certeficate-currency-box input[placeholder='Номинал'] {
+  width: 100%;
+}
+.certeficate-modal__input-box input[placeholder='E-mail'], 
+.certeficate-modal__input-box input[placeholder='Телефон'] {
+  width: 100%;
+}
+.certeficate-modal__send-box {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+.btn--send-certificate {
+  padding: 12px 32px;
+  width: 260px;
+  height: 56px;
+}
+/* конец формы */
 @media (max-width: 1440px) {
   .subscribtion-card-upper {
     min-height: 210px;
@@ -165,6 +270,47 @@
   .certificate-left-description-text {
     font-size: 12px;
   }
+  .currency {
+    top: 30px;
+  }
+
+  /* форма */
+  .buy-certeficate-window {
+    width: 705px;
+    padding: 12px;
+  }
+  .buy-certificate-form {
+    padding: 18px;
+  }
+  .certeficate-modal__title {
+    font-size: 51px;
+  }
+  .close-card-certeficate {
+    width: 42px;
+    height: 42px;
+  }
+  .close-card-certeficate img {
+    width: 18px;
+    height: 18px;
+  }
+  .form-politic-certificate {
+    font-size: 14px;
+  }
+  .certeficate-modal__text {
+    font-size: 14px;
+  }
+  .certeficate-modal__send-box {
+    align-items: center;
+  }
+  .btn--send-certificate {
+    padding: 9px 24px;
+    height: 42px;
+    width: 195px;
+  }
+  .currency {
+    font-size: 14px;
+  }
+  /* конец стилей формы */
 }
 @media (max-width: 768px) {
   .subscribtion-card {
@@ -239,4 +385,29 @@
     width: 100%;
     margin-bottom: 20px;
   }
+
+    /* форма */
+    .buy-certeficate-window {
+      width: 375px;
+    }
+    .certeficate-modal__title {
+      font-size: 42px;
+    }
+    .certeficate-modal__input-box {
+      flex-direction: column;
+    }
+    .certeficate-modal__input-wrap {
+      width: 100%;
+    }
+    .certeficate-modal__send-box {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .btn--send-certificate {
+      padding: 9px 24px;
+      height: 42px;
+      width: 100%;
+    }
+    /* конец стилей формы */
 }

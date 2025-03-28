@@ -33,18 +33,20 @@
 .team-card-wrapper-page {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: space-between;
+  
   border-radius: 8px;
   background-color: var(--grey);
   padding: 16px;
   width: 100%;
-  
+  min-height: 160px;
   
 }
 .trainer-name-title {
   font-size: 48px;
   line-height: 46.8px;
   text-wrap: wrap;
+  white-space: pre-line;
 }
 .trainer-description-text {
   font-size: 14px;
@@ -63,10 +65,12 @@
   }
   .trainer-name-title  {
     font-size: 32px;
+    line-height: 30.6px;
   }
   .team-card-wrapper-page {
     max-width: 272px;
     padding: 12px;
+    min-height: 122px;
     /* padding-bottom: 20px; */
   }
 }
@@ -109,10 +113,15 @@
   }
   .team-card-wrapper-page {
     max-width: 240px;
+    min-height: 107px;
+    max-height: 107px;
    
   }
 }
 @media (max-width:475px) {
+  .page-title__count {
+    display: none;
+  }
   .page-team-card {
     width: calc(50% - 4px);
   }
@@ -121,8 +130,19 @@
     max-width: 218px;
   }
   .team-card-wrapper-page {
+    padding: 8px;
     max-width: 218px;
-   
+    min-height: 88px;
+    gap: 4px;
+  }
+  .trainer-name-title {
+    font-size: 22px;
+    white-space: normal;
+    line-height: 1;
+  }
+  .trainer-description-text {
+    font-size: 12px;
+    line-height: 120%;
   }
   .btn-trainer-see {
     width: 100% !important;

@@ -528,7 +528,7 @@
                         <p class="certificate-left-description-text">Ищете оригинальный подарок для близких? Подарочный сертификат от нашего фитнес-клуба — это не просто презент, а возможность изменить жизнь к лучшему</p>
                     </div>
                     <div class="certificate-left-description-btn">
-                        <button class="btn-join btn hover-effect btn-certificate-desk  rounded-8" data-modal-id="get-consultation" data-hover-text="Оформить сертификат">
+                        <button class="btn-join btn hover-effect btn-certificate-desk  rounded-8" data-modal-id="get-certeficate" data-hover-text="Оформить сертификат">
                             Оформить сертификат
                         </button>
                     </div>
@@ -538,7 +538,7 @@
                 </div>
             </div>
             <div class="certificate-btns-mobile__container">
-                <button class="btn-join btn hover-effect btn-certificate-mobile  rounded-8" data-modal-id="get-consultation" data-hover-text="Оформить    сертификат">
+                <button class="btn-join btn hover-effect btn-certificate-mobile  rounded-8" data-modal-id="get-certeficate" data-hover-text="Оформить сертификат">
                     Оформить сертификат
                 </button>
             </div>
@@ -718,6 +718,57 @@
                 политики
                 конфиденциальности</p>
 
+        </div>
+    </div>
+
+    <div id="get-certeficate" class="consultation-overlay overlay">
+        <div class="buy-certeficate-window overlay__content ">
+            
+            <h4 class="certeficate-modal__title">Виртуальный подарочный 
+                сертификат</h4>
+
+            <div class="certeficate-modal__img">
+                <img src="/assets/img/certificate-cards-modal.png" alt="certifate">
+            </div>
+            <div class="close-card close-card-certeficate">
+                <img src="/assets/svg/x.svg" alt="x" id="modal-close">
+            </div>
+            <form class="buy-card-form buy-certificate-form">
+                <div class="certeficate-currency-box">
+                    <input type="number" placeholder="Номинал">
+                    <span class="currency">₽</span>
+                </div>
+                <p class="certeficate-modal__text">От кого</p>
+                <input type="text" placeholder="Имя">
+                <div class="certeficate-modal__input-box">
+                    <div class="certeficate-modal__input-wrap">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="certeficate-modal__input-wrap">
+                       <input id="input-phone" type="text" placeholder="Телефон" id="input-phone"> 
+                    </div>
+                    
+                </div>
+                <p class="certeficate-modal__text">Кому</p>
+                <input type="text" placeholder="Имя">
+                <div class="certeficate-modal__input-box">
+                    <div class="certeficate-modal__input-wrap">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="certeficate-modal__input-wrap">
+                        <input id="input-phone" type="text" placeholder="Телефон" id="input-phone">
+                    </div>
+                    
+                </div>
+                <p class="certeficate-modal__text">Сообщение</p>
+                <textarea name="comment" placeholder="Укажите сообщение для получателя. Длина сообщения до 210 символов "></textarea>
+                <div class="certeficate-modal__send-box">   
+                    <button type="submit" class="btn-primary btn--send-certificate hover-effect" data-hover-text="Отправить">Отправить</button>         
+                    <p class="form-politic form-politic-certificate">
+                       Нажимая на кнопку “Отправить” я соглашаюсь с условиями политики конфиденциальности
+                   </p>
+                </div>
+            </form>
         </div>
     </div>
 
