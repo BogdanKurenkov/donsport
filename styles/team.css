@@ -60,6 +60,9 @@
 .trainers-drawer-filter {
   display: none;
 }
+.drawer {
+  display: none;
+}
 
 @media (max-width: 1440px) {
   .page-team-card img {
