@@ -1,5 +1,10 @@
 .club-contacts-container {
   width: 100%;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.club-contacts-container::-webkit-scrollbar {
+  display: none;
 }
 .dropdown-contact-content {
   display: flex;
