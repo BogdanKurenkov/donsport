@@ -561,6 +561,17 @@ input {
     font-size: 18px;
     font-weight: 600;
 }
+/* фикс меню */
+.dropdown-menu-overflow {
+    overflow-x: auto;
+    max-height: 240px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+.dropdown-menu-overflow::-webkit-scrollbar {
+    display: none;
+  }
+/* фикс меню */
 
 .dropdown-menu.show {
     opacity: 1;
