@@ -89,6 +89,9 @@
   text-align: center;
   padding: 12px 16px;
   max-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .subscribe-btn--img {
   padding: 12px 16px;
