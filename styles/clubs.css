@@ -14,7 +14,7 @@
 }
 
 .header {
-    z-index: 11;
+    z-index: 4;
 }
 
 .rounded-8 {
@@ -246,6 +246,7 @@
 }
 .club-slider {
     position: relative;
+    z-index: -1;
     /* overflow: hidden;  */
     padding: 0 24px;
     width: 100%;

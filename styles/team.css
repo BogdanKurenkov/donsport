@@ -12,9 +12,19 @@
   justify-content: center;
   gap: 8px;
 }
+/* фиксы по дропдаунам */
 .dropdown-container-trainers {
   background-color: var(--grey);
+  width: 231px;
+  max-height: 56px ;
 }
+.trainer-dropdown-media {
+  width: 231px;
+}
+.selected-item-trainers {
+  text-align: center;
+}
+/* фиксы по дропдаунам */
 .trainers-container {
   display: flex;
   flex-wrap: wrap;
@@ -60,6 +70,7 @@
 .trainers-drawer-filter {
   display: none;
 }
+
 .drawer {
   display: none;
 }
@@ -79,6 +90,13 @@
     min-height: 122px;
     /* padding-bottom: 20px; */
   }
+  .dropdown-container-trainers {
+    max-height: 48px ;
+  }
+  .selected-item-trainers {
+    font-size: 14px;
+  }
+  
 }
 @media (max-width: 1140px) {
   .page-team-card img {
@@ -153,7 +171,7 @@
   .btn-trainer-see {
     width: 100% !important;
   }
-  .trainer-dropdow-media {
+  .trainer-dropdown-media {
     width: 100%;
   }
   /* Drawer */

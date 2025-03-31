@@ -9,6 +9,7 @@
 .dropdown-contact-content {
   display: flex;
   gap: 8px;
+  z-index: 3;
 }
 .dropdown-contact-content.active {
   height: 720px;

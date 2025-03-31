@@ -1929,11 +1929,12 @@ a.social-media img {
 .span2 {
     transform: translateY(0);
     transition-delay: 2s;
+    white-space: nowrap;
 }
 .letter {
     display: inline-block;
     opacity: 0;
-    animation: fadeIn 0.4s forwards;
+    animation: fadeIn 0.3s forwards;
   }
 
   @keyframes fadeIn {

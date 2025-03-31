@@ -1,4 +1,4 @@
-const words = ["семейных", "надёжных", "доступных"];
+const words = ["семейных", "многофункциональных", "доступных"];
 const wordContainer = document.getElementById("word-container");
 let wordIndex = 0;
 
@@ -20,4 +20,4 @@ function cycleWords() {
 
 cycleWords();
 
-setInterval(cycleWords, 1500);
+setInterval(cycleWords, 3000);

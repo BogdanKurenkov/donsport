@@ -11,6 +11,11 @@
   padding: 12px 18px;
   border: none;
   border-radius: 48px;
+  transition: 0.3 ease-in;
+}
+.blog-filter-btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 .blog-filter-btn--active {
   background-color: var(--dark-blue);
