@@ -95,6 +95,8 @@
 }
 .subscribe-btn--img {
   padding: 12px 16px;
+  width: 56px;
+  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,6 +279,13 @@
   .currency {
     top: 30px;
   }
+  .subscribe-btn {
+    max-height: 48px;
+  }
+  .subscribe-btn--img {
+    width: 48px;
+    height: 48px;
+  }
 
   /* форма */
   .buy-certeficate-window {
@@ -363,6 +372,14 @@
   .btn-certificate-mobile {
     display: none;
   }
+  .subscribe-btn--img {
+    width: 43px;
+    height: 43px;
+  }
+  .subscribe-btn {
+    max-height: 43px;
+  }
+
 }
 @media (max-width: 475px) {
   .certificate-section .container {
@@ -388,6 +405,9 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
+  }
+  .subscribe-btn {
+    width: 100%;
   }
 
     /* форма */
