@@ -1240,8 +1240,11 @@ a.social-media img {
     padding: 16px 24px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 12px;
     width: 367px;
+    height: 160px;
+    min-height: 160px;
     border-radius: 8px;
 }
 
@@ -1268,6 +1271,7 @@ a.social-media img {
     font-weight: 600;
     line-height: 21.6px;
     border-radius: 8px;
+    text-wrap: wrap;
 }
 
 /* изменения по котакт дропдауну z-index */
@@ -2519,9 +2523,9 @@ a.social-media img {
 
     .team-card,
     .team-card-wrapper {
-        /* width: 275px; */
         width: 100%;
         max-width: 275px;
+ 
     }
 
     .team-card img {
@@ -2542,6 +2546,8 @@ a.social-media img {
 
     .team-card-wrapper {
         padding: 12px 18px;
+        height: 130px;
+        min-height: 130px;
     }
 
     .main-page-text {
@@ -2725,9 +2731,6 @@ a.social-media img {
     .map-left,
     .map-right {
         width: 100%;
-    }
-    .trainer-description {
-        font-size: 10px;
     }
     .container-slider {
         flex-direction: column-reverse;
@@ -2956,6 +2959,7 @@ a.social-media img {
         width: 100%;
         padding: 12px 16px;
     }
+
 
     .team-card img {
         max-width: 240px;
@@ -3256,7 +3260,9 @@ a.social-media img {
         line-height: 32.4px;
         max-width: 125px;
     }
+    .team-card-wrapper {
 
+    }
     .news {
         width: 100vw;
     }
