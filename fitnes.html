@@ -378,22 +378,10 @@
                     </div>
                 </div>
             </div>
-            <div class="fitnes-section-filter-mobile">
-                <div class="dropdown-container dropdown-container-fitnes-mobile">
-                    <div class="dropdown-header  fitnes-dropdown-header-mobile" data-dropdown>
-                        <span class="selected-item">Фильтры</span>
-                        <img id="arrowIcon" class="arrow-icon" src="/assets/svg/chevron-down.svg" alt="arrow">
-                    </div>
-                    <div class="dropdown-menu">
-                        <div class="menu-item" data-value="Атлант ">Атлант </div>
-                        <div class="menu-item" data-value="Атлант ">Амосфера</div>
-                        <div class="menu-item" data-value="Атлант ">Алые паруса</div>
-                        <div class="menu-item" data-value="Атлант ">Бирюзова</div>
-                        <div class="menu-item" data-value="Атлант ">Хамовники</div>
-                        <div class="menu-item" data-value="Атлант ">Юго-Западная</div>
-                    </div>
-                </div>
-            </div>
+            <button class="trainers-drawer-filter" data-drawer="drawer-filter">
+                <span class="drawer-filter-text">Фильтр</span>
+                <img class="drawer-filter-icon" src="/assets/svg/plus.svg" alt="filter">
+            </button>
             
             <div class="fitnes-section-cards">
                 <div class="fitnes-card clickable-card-href" data-href="/services-detail.html">
@@ -642,7 +630,120 @@
 
         </div>
     </div>
+    <!-- Добавлен фильтр в фитнес -->
+    <div class="drawer-overlay">
+        
+    </div>
+    <div class="drawer" id="drawer-filter">
 
+        <div class="close-drawer">
+            <img class="" src="/assets/svg/x.svg" alt="x">
+        </div>
+        
+        <h2 class="drawer__title">ФИЛЬТРЫ</h2>
+        <div class="drawer-menu__container">
+            <div class="drawer-menu-item">
+                <p class="drawer-menu-item__title">Направление</p> 
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="submenu">
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Аэробика</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Функциональный тренинг</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Кардио тренинг</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Mind & body</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Силовые тренировки</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Йога</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+            </div>
+    
+            <div class="drawer-menu-item">
+                <p class="drawer-menu-item__title">Возвраст</p>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="submenu">
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">0 - 6 лет</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">6 - 17 лет</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">18 - 30 лет</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">31 - 65 лет</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">65+ лет</p>
+                    <input type="checkbox">
+                     <span class="custom-checkbox"></span> 
+                </label>
+            </div>
+            <div class="drawer-menu-item">
+                <p class="drawer-menu-item__title">Сложность</p> 
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="submenu">
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Начальный</p>
+                    <input type="checkbox">
+                    <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Средний</p>
+                    <input type="checkbox">
+                    <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Продвинутый</p>
+                    <input type="checkbox">
+                    <span class="custom-checkbox"></span> 
+                </label>
+                <label class="checkbox-label">
+                    <p class="drawer-menu-item__title">Специальные программы</p>
+                    <input type="checkbox">
+                    <span class="custom-checkbox"></span> 
+                </label>
+            </div>
+        </div>
+        
+        <div class="drawer-bts">
+            <button class="btn reset-btn">Сбросить</button>
+            <button class="btn apply-btn">Применить</button>
+        </div>
+    </div>
+    <!-- Добавлен фильтр в фитнес -->
     <!-- <script type="module" defer src="/js/clubPhotos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js"
         integrity="sha512-+3RJc0aLDkj0plGNnrqlTwCCyMmDCV1fSYqXw4m+OczX09Pas5A/U+V3pFwrSyoC1svzDy40Q9RU/85yb/7D2A=="
@@ -652,6 +753,7 @@
     <script type="module" defer src="/js/clipBoard.js"></script>
     <script type="module" defer src="/js/modals.js"></script>
     <script type="module" defer src="/js/cardLink.js"></script>
+    <script type="module" defer src="/js/drawerModal.js"></script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
