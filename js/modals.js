@@ -325,6 +325,11 @@ document.addEventListener("DOMContentLoaded", () => {
       //Вызов второй модалки
       function requestCallback(data) {
         console.log(data);
+
+        const activeModal = document.querySelector(".overlay.overlay_active");
+        if (activeModal) {
+          toggleModal(activeModal);
+        }
         const successModal = document.getElementById("success-modal");
 
         if (successModal && !data.success) {
