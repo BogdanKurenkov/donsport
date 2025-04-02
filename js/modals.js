@@ -351,8 +351,9 @@ document.addEventListener("DOMContentLoaded", () => {
           const message = successModal.querySelector(".success-modal__text");
 
           if (data.success) {
-            title.textContent = "Форма успешно отправлена!";
-            message.textContent = "Спасибо! Мы скоро свяжемся с вами.";
+            title.textContent = "спасибо за заявку!!";
+            message.textContent =
+              "Ваша заявка принята в обработку. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты";
           } else {
             title.textContent = "Ошибка отправки формы!";
             message.textContent =
@@ -373,6 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       }
+
       //Вызов второй модалки
 
       window.ctw.createRequest(
