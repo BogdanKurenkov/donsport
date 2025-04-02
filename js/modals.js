@@ -315,28 +315,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "club", value: clubCall },
       ];
 
-      //Вызов второй модалки
-      // function requestCallback(data) {
-      //   console.log(data);
-
-      //   const activeModal = document.querySelector(".overlay.overlay_active");
-      //   if (activeModal) {
-      //     toggleModal(activeModal);
-      //   }
-      //   const successModal = document.getElementById("success-modal");
-
-      //   if (successModal && !data.success) {
-      //     const title = successModal.querySelector(".success-modal__title");
-      //     const message = successModal.querySelector(".success-modal__text");
-
-      //     if (title) title.textContent = "Ошибка отправки формы!";
-      //     if (message)
-      //       message.textContent =
-      //         "Попробуйте еще раз или свяжитесь с нами другим способом.";
-
-      //     toggleModal(successModal);
-      //   }
-      // }
       function requestCallback(data) {
         console.log(data);
 

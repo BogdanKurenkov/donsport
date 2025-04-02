@@ -531,7 +531,10 @@ input {
     position: relative;
     background-color: var(--grey);
     background-image: url(/assets/img/line-success-modal.png);
-    background-position: bottom;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    
+    
 }
 .close-card__success {
     position: absolute;
@@ -2734,6 +2737,26 @@ a.social-media img {
     .counter-suffix {
         font-size: 32px;
     }
+    /* Стили новой модалки, медяха */
+    .buy-card-window__success {
+        height: 501px;
+        background-image: url(/assets/img/line-success-modal1440.png);
+        background-position: center bottom;
+        gap: 8px;
+    }
+    .success-modal__title {
+        font-size: 75px;
+    }
+    .success-modal__text {
+        font-size: 14px;
+    }
+    .return-btn {
+        width: 210px;
+        height: 56px;
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+     /* Стили новой модалки, медяха */
 }
 
 @media(max-width:1280px) {
@@ -2818,6 +2841,7 @@ a.social-media img {
     .footer-bottom {
         gap: 24px;
     }
+    
 }
 
 @media(max-width:768px) {
@@ -3162,6 +3186,7 @@ a.social-media img {
     .counter-suffix {
         font-size: 28px;
     }
+    
 }
 
 @media(max-width:500px) {
@@ -3673,6 +3698,18 @@ a.social-media img {
     flex: 1 1 auto;
   }
   /* drawer */
+
+    /* Стили новой модалки, медяха */
+    .buy-card-window__success {
+        height: 440px;
+        width: 343px;
+        gap: 16px;
+    }
+    .success-modal__title {
+        font-size: 56px;
+        white-space: pre-line;
+    }
+     /* Стили новой модалки, медяха */
 }
 
 @media(max-width:430px) {
@@ -3914,6 +3951,11 @@ a.social-media img {
         height: 33px;
         border-radius: 2px;
     }
+    /* стили модалки */
+    .buy-card-window__success {
+        background-image: none;
+    }
+    /* стили модалки */
 }
 
 @media(max-width:375px) {
