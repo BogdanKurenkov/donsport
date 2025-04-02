@@ -349,7 +349,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("click", function (event) {
-    if (event.target.classList.contains("return-btn")) {
+    const returnBtn = event.target.closest(".return-btn");
+    if (returnBtn) {
       const successModal = document.getElementById("success-modal");
       if (successModal && successModal.classList.contains("overlay_active")) {
         toggleModal(successModal);
