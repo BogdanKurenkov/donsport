@@ -350,11 +350,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const title = successModal.querySelector(".success-modal__title");
           const message = successModal.querySelector(".success-modal__text");
 
-          if (data === true) {
-            title.textContent = "спасибо за заявку!!";
-            message.textContent =
-              "Ваша заявка принята в обработку. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты";
-          } else {
+          if (data === false) {
             title.textContent = "Ошибка отправки формы!";
             message.textContent =
               "Попробуйте еще раз или свяжитесь с нами другим способом.";
