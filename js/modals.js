@@ -218,13 +218,6 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleModal(modal);
     });
 
-    // Добавляем обработчик для кнопки "Вернуться" в новой модалке
-    const returnBtn = modal.querySelector(".return-btn");
-    returnBtn?.addEventListener("click", () => {
-      toggleModal(modal);
-    });
-    // Добавляем обработчик для кнопки "Вернуться" в новой модалке
-
     modal.addEventListener("click", triggerOverlayClick);
   });
 
@@ -332,7 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         const successModal = document.getElementById("success-modal");
 
-        if (successModal && !data.success) {
+        if (successModal && data.success) {
           const title = successModal.querySelector(".success-modal__title");
           const message = successModal.querySelector(".success-modal__text");
 
@@ -352,6 +345,15 @@ document.addEventListener("DOMContentLoaded", () => {
         fields,
         requestCallback
       );
+    }
+  });
+
+  document.addEventListener("click", function (event) {
+    if (event.target.classList.contains("return-btn")) {
+      const successModal = document.getElementById("success-modal");
+      if (successModal && successModal.classList.contains("overlay_active")) {
+        toggleModal(successModal);
+      }
     }
   });
 
