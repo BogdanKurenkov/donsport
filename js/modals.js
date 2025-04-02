@@ -347,8 +347,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const successModal = document.getElementById("success-modal");
         if (successModal) {
-          const title = successModal.querySelector(".success-title");
-          const message = successModal.querySelector(".success-message");
+          const title = successModal.querySelector(".success-modal__title");
+          const message = successModal.querySelector(".success-modal__text");
 
           if (data.success) {
             title.textContent = "Форма успешно отправлена!";
