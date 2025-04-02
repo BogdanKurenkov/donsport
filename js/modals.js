@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         const successModal = document.getElementById("success-modal");
 
-        if (successModal && data.success) {
+        if (successModal && !data.success) {
           const title = successModal.querySelector(".success-modal__title");
           const message = successModal.querySelector(".success-modal__text");
 
