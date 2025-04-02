@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const title = successModal.querySelector(".success-modal__title");
           const message = successModal.querySelector(".success-modal__text");
 
-          if (data.success) {
+          if (data === true) {
             title.textContent = "спасибо за заявку!!";
             message.textContent =
               "Ваша заявка принята в обработку. Мы свяжемся с вами, чтобы обсудить детали оформления клубной карты";
