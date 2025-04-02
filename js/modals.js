@@ -217,6 +217,14 @@ document.addEventListener("DOMContentLoaded", () => {
     closeModal?.addEventListener("click", () => {
       toggleModal(modal);
     });
+
+    // Добавляем обработчик для кнопки "Вернуться" в новой модалке
+    const returnBtn = modal.querySelector(".return-btn");
+    returnBtn?.addEventListener("click", () => {
+      toggleModal(modal);
+    });
+    // Добавляем обработчик для кнопки "Вернуться" в новой модалке
+
     modal.addEventListener("click", triggerOverlayClick);
   });
 
@@ -313,9 +321,25 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "name", value: nameInputs[0].value },
         { name: "club", value: clubCall },
       ];
+
+      //Вызов второй модалки
       function requestCallback(data) {
         console.log(data);
+        const successModal = document.getElementById("success-modal");
+
+        if (successModal && !data.success) {
+          const title = successModal.querySelector(".success-modal__title");
+          const message = successModal.querySelector(".success-modal__text");
+
+          if (title) title.textContent = "Ошибка отправки формы!";
+          if (message)
+            message.textContent =
+              "Попробуйте еще раз или свяжитесь с нами другим способом.";
+
+          toggleModal(successModal);
+        }
       }
+      //Вызов второй модалки
 
       window.ctw.createRequest(
         "SIMPLE_FORM_4",

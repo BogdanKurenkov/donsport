@@ -111,6 +111,9 @@ input[type="number"] {
     z-index: 1;
     color: var(--white);
 }
+.hover-effect_black::after {
+    background: var(--red);
+}
 
 
 
@@ -517,6 +520,47 @@ input {
     flex-direction: column;
     gap: 4px;
 }
+/* Стили модалки при успехе */
+.buy-card-window__success {
+    height: 646px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    position: relative;
+    background-color: var(--grey);
+    background-image: url(/assets/img/line-success-modal.png);
+    background-position: bottom;
+}
+.close-card__success {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+.success-modal__title {
+    font-size: 100px;
+    line-height: 90%;
+    text-align: center;
+}
+.success-modal__text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: center;
+    white-space: pre-line;
+}
+.return-btb {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 32px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-radius: 8px;
+    height: 62px;
+    width: 250px;
+}
+/* Стили модалки при успехе */
 
 .dropdown-container {
     position: relative;
