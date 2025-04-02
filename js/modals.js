@@ -316,6 +316,27 @@ document.addEventListener("DOMContentLoaded", () => {
       ];
 
       //Вызов второй модалки
+      // function requestCallback(data) {
+      //   console.log(data);
+
+      //   const activeModal = document.querySelector(".overlay.overlay_active");
+      //   if (activeModal) {
+      //     toggleModal(activeModal);
+      //   }
+      //   const successModal = document.getElementById("success-modal");
+
+      //   if (successModal && !data.success) {
+      //     const title = successModal.querySelector(".success-modal__title");
+      //     const message = successModal.querySelector(".success-modal__text");
+
+      //     if (title) title.textContent = "Ошибка отправки формы!";
+      //     if (message)
+      //       message.textContent =
+      //         "Попробуйте еще раз или свяжитесь с нами другим способом.";
+
+      //     toggleModal(successModal);
+      //   }
+      // }
       function requestCallback(data) {
         console.log(data);
 
@@ -323,18 +344,33 @@ document.addEventListener("DOMContentLoaded", () => {
         if (activeModal) {
           toggleModal(activeModal);
         }
+
         const successModal = document.getElementById("success-modal");
+        if (successModal) {
+          const title = successModal.querySelector(".success-title");
+          const message = successModal.querySelector(".success-message");
 
-        if (successModal && !data.success) {
-          const title = successModal.querySelector(".success-modal__title");
-          const message = successModal.querySelector(".success-modal__text");
-
-          if (title) title.textContent = "Ошибка отправки формы!";
-          if (message)
+          if (data.success) {
+            title.textContent = "Форма успешно отправлена!";
+            message.textContent = "Спасибо! Мы скоро свяжемся с вами.";
+          } else {
+            title.textContent = "Ошибка отправки формы!";
             message.textContent =
               "Попробуйте еще раз или свяжитесь с нами другим способом.";
+          }
 
           toggleModal(successModal);
+
+          const returnBtn = successModal.querySelector(".return-btn");
+          if (returnBtn) {
+            returnBtn.addEventListener(
+              "click",
+              () => {
+                toggleModal(successModal);
+              },
+              { once: true }
+            );
+          }
         }
       }
       //Вызов второй модалки
