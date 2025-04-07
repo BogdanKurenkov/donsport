@@ -6,6 +6,14 @@ export default defineConfig({
     outDir: "dist",
     assetsDir: "assets",
     rollupOptions: {
+      external: [
+        "./libs/splide/splide.min.js",
+        "./libs/swipper/swiper-bundle.min.js",
+        "./libs/imask/imask.min.js",
+        "./libs/toastify/toastify.min.js",
+        "./libs/clipboard/clipboard.min.js",
+        "./libs/gsap/gsap.min.js",
+      ],
       input: {
         main: "index.html",
         clubs: "clubs.html",

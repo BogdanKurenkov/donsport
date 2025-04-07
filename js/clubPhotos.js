@@ -1,5 +1,3 @@
-import { Splide } from "../libs/splide/splide.min.js";
-
 document.addEventListener("DOMContentLoaded", () => {
   const count = document.querySelector(".splide-arrow-wrap p");
 

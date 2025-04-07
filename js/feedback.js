@@ -1,4 +1,3 @@
-import { Splide } from "../libs/splide/splide.min.js";
 document.addEventListener("DOMContentLoaded", () => {
   const splide = new Splide(".splide", {
     type: "loop",
