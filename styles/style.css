@@ -2146,6 +2146,10 @@ a.social-media img {
     width: max-content;
     border-radius: 8px;
 }
+.club-detail_phone p {
+    font-size: 16px;
+    font-weight: 500;
+}
 
 .club-detail_flex {
     display: flex;
@@ -3011,6 +3015,10 @@ a.social-media img {
         padding: 12px 24px;
         font-size: 14px;
         margin-top: 0;
+    }
+    .club-detail_phone p {
+        font-size: 14px;
+        font-weight: 400;
     }
      /* Стили новой модалки, медяха */
 }

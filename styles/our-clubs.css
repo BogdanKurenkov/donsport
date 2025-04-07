@@ -138,6 +138,9 @@
   .btn-club-details {
     font-size: 12px;
   }
+  .club-card-container {
+    bottom: 12px;
+  }
 
 }
 @media (max-width: 375px) {
