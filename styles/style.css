@@ -2149,6 +2149,7 @@ a.social-media img {
 .club-detail_phone p {
     font-size: 16px;
     font-weight: 500;
+    color: var(--dark-blue);
 }
 
 .club-detail_flex {
