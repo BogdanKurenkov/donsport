@@ -161,4 +161,8 @@
   .dropdown-container-blog {
     background-color: var(--grey);
   }
+  .menu-item-blog {
+    padding: 12px;
+    border-radius: 8px;
+  }
 }

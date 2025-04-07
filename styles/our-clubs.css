@@ -54,6 +54,10 @@
 .btn-small--cl {
   background-color: var(--red);
   color: var(--white);
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 48px;
 }
 @media (max-width: 1440px) {
   .club-card {
@@ -64,6 +68,10 @@
   }
   .club-card-info_addres {
     font-size: 12px;
+  }
+  .btn-small--cl {
+    font-size: 14px;
+    padding: 15px 36px;
   }
 }
 @media (max-width: 1070px) {
@@ -87,6 +95,10 @@
   .club-card-info__title {
     font-size: 32px;
   }
+  .btn-small--cl {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 }
 @media (max-width: 768px) {
   .club-card {
@@ -107,6 +119,10 @@
   }
   .club-card {
     width: 100%;
+  }
+  .btn-small--cl {
+    font-size: 12px;
+    padding: 10px 20px;
   }
 
 }

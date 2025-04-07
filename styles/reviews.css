@@ -19,6 +19,7 @@
   font-size: 16px;
   white-space: nowrap;
   transition: 0.3s ease;
+  color: var(--dark-blue);
 }
 .filter-btn:hover {
   background-color: var(--dark-blue);
