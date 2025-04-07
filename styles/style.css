@@ -1596,7 +1596,12 @@ a.social-media img {
 }
 
 .body-lock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
+    width: 100%;
 }
 
 .overlay__content {
