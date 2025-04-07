@@ -598,9 +598,7 @@ input {
     align-items: center;
     justify-content: center;
 }
-.header.scrolled {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
+
 
 .scrolled .header-col2 {
     background-color: var(--white);
@@ -810,7 +808,7 @@ input {
     height: 62px;
     width: 250px;
     border: none;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 /* Стили модалки при успехе */
 
@@ -3018,7 +3016,7 @@ a.social-media img {
         height: 56px;
         padding: 12px 24px;
         font-size: 14px;
-        margin-top: 0;
+        margin-top: 16px;
     }
     .club-detail_phone a {
         font-size: 14px;
