@@ -51,7 +51,10 @@
   background-color: var(--white);
 }
 
-
+.btn-small--cl {
+  background-color: var(--red);
+  color: var(--white);
+}
 @media (max-width: 1440px) {
   .club-card {
     max-height: 675px;
