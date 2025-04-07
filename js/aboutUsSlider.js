@@ -1,5 +1,3 @@
-import { Splide } from "@splidejs/splide";
-
 const splide = new Splide("#aboutUsSlider", {
   type: "loop",
   perPage: 1,

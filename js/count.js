@@ -1,12 +1,10 @@
-import { CountUp } from "countup.js";
-
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          initializeCountUp(entry.target);
+          startCountUp(entry.target);
           observer.unobserve(entry.target);
         }
       });
@@ -16,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   counters.forEach((counter) => {
     if (isElementInViewport(counter)) {
-      initializeCountUp(counter);
+      startCountUp(counter);
     } else {
       observer.observe(counter);
     }
@@ -34,36 +32,30 @@ function isElementInViewport(el) {
   );
 }
 
-function initializeCountUp(target) {
-  if (!target || !(target instanceof HTMLElement)) {
-    return;
+function startCountUp(element) {
+  const endValue = parseInt(element.getAttribute("data-target"), 10);
+  const suffix = element.getAttribute("data-suffix") || "";
+  if (isNaN(endValue)) return;
+
+  let startValue = 0;
+  const duration = 2000;
+  const frameRate = 60;
+  const totalFrames = (duration / 1000) * frameRate;
+  const increment = endValue / totalFrames;
+  let currentFrame = 0;
+
+  function updateCounter() {
+    if (currentFrame < totalFrames) {
+      startValue += increment;
+      element.innerHTML = `${Math.floor(
+        startValue
+      )} <span class="counter-suffix">${suffix}</span>`;
+      currentFrame++;
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.innerHTML = `${endValue} <span class="counter-suffix">${suffix}</span>`;
+    }
   }
 
-  const endValue = parseInt(target.getAttribute("data-target"), 10);
-  // add data-suffix
-  const suffix = target.getAttribute("data-suffix") || "";
-
-  if (isNaN(endValue)) {
-    return;
-  }
-
-  const countUp = new CountUp(target, endValue, {
-    startVal: 0,
-    duration: 2,
-    useEasing: true,
-    useGrouping: false,
-    separator: "",
-    decimal: ".",
-    // add format
-    formattingFn: function (n) {
-      return `${n} <span class="counter-suffix">${suffix}</span>`;
-    },
-  });
-
-  if (!countUp.error) {
-    countUp.start();
-    target.innerHTML = target.innerHTML;
-  } else {
-    console.error(`err: ${countUp.error}`);
-  }
+  requestAnimationFrame(updateCounter);
 }

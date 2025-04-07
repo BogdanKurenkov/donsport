@@ -1,5 +1,3 @@
-import { Splide } from "@splidejs/splide";
-
 document.addEventListener("DOMContentLoaded", () => {
   const count = document.querySelector(".splide-arrow-wrap p");
 

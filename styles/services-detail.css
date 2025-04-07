@@ -12,7 +12,7 @@
 
 }
 .banner-detail-services {
-  background: url(/assets/img/services-banner.png);
+  background: url(../assets/img/services-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -24,7 +24,7 @@
 .services-detail-container {
   display: flex;
   gap: 8px;
-  background-image: url(/assets/img/line-services.png); 
+  background-image: url(../assets/img/line-services.png); 
   background-repeat: no-repeat;
   background-position: left bottom;
   /* min-height: 100dvh; */
@@ -126,7 +126,7 @@
     flex-direction: column;
     gap: 80px;
     /* min-height: 1092px; */
-    background-image: url(/assets/img/line-services-mobile.png); 
+    background-image: url(../assets/img/line-services-mobile.png); 
   }
   .services-left,
   .services-right {

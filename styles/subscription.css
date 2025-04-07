@@ -106,7 +106,7 @@
 .certificate-section .container {
   display: flex;
   background-color: var(--grey);
-  background-image: url(/assets/img/certificate-line.png);
+  background-image: url(../assets/img/certificate-line.png);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 12px;

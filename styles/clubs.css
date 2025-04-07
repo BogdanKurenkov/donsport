@@ -1,7 +1,7 @@
-@import '/assets/fonts/inter/stylesheet.css';
-@import '/assets/fonts/bebas/stylesheet.css';
-@import '/assets/fonts/monrope/stylesheet.css';
-@import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+@import '../assets/fonts/inter/stylesheet.css';
+@import '../assets/fonts/bebas/stylesheet.css';
+@import '../assets/fonts/monrope/stylesheet.css';
+@import '../libs/splide/splide.min.css';
 
 :root {
     --white: #ffffff;
@@ -382,13 +382,13 @@
     transform-origin: top;
 }
 .banner-atlant {
-    background-image: url(/assets/img/banner-atlant.jpg);
+    background-image: url(../assets/img/banner-atlant.jpg);
 }
 .banner-hamovniki {
-    background-image: url(/assets/img/banner-hamovniki.jpg);
+    background-image: url(../assets/img/banner-hamovniki.jpg);
 }
 .banner-yg {
-    background-image: url(/assets/img/banner-yg.png);
+    background-image: url(../assets/img/banner-yg.png);
 }
 .header-col1_clubs {
     background-color: var(--card-bg);

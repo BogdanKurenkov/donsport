@@ -1,7 +1,250 @@
-@import '/assets/fonts/bebas/stylesheet.css';
-@import '/assets/fonts/monrope/stylesheet.css';
-@import '/assets/fonts/inter/stylesheet.css';
-@import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+@import '../assets/fonts/bebas/stylesheet.css';
+@import '../assets/fonts/monrope/stylesheet.css';
+@import '../assets/fonts/inter/stylesheet.css';
+@import '../libs/splide/splide.min.css';
+
+@font-face {
+    font-family: 'Bebas Neue Cyrillic';
+    src: url('../assets/fonts/bebas/BebasNeueCyrillic.woff2') format('woff2'),
+        url('../assets/fonts/bebas/BebasNeueCyrillic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-ExtraLightItalic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-BlackItalic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-Thin.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-MediumItalic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-ExtraBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-Italic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-SemiBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-LightItalic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-Light.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-Black.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-Bold.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-ExtraLight.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-ThinItalic.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-Medium.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter/Inter-Regular.woff2') format('woff2'),
+        url('../assets/fonts/inter/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter V';
+    src: url('../assets/fonts/inter/InterV.woff2') format('woff2'),
+        url('../assets/fonts/inter/InterV.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/monrope/Manrope-Bold.woff2') format('woff2'),
+        url('../assets/fonts/monrope/Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/monrope/Manrope-Medium.woff2') format('woff2'),
+        url('../assets/fonts/monrope/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/monrope/Manrope-ExtraLight.woff2') format('woff2'),
+        url('../assets/fonts/monrope/Manrope-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/monrope/Manrope-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/monrope/Manrope-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/monrope/Manrope-Regular.woff2') format('woff2'),
+        url('../assets/fonts/monrope/Manrope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/monrope/Manrope-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/monrope/Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/monrope/Manrope-Light.woff2') format('woff2'),
+        url('../assets/fonts/monrope/Manrope-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 * {
     margin: 0;
@@ -173,7 +416,7 @@ input {
 
 .header-col1 {
     background: var(--white);
-    padding: 8px 16px;
+    padding: 16px;
     display: flex;
     width: max-content;
     border-radius: 8px;
@@ -444,7 +687,7 @@ input {
 }
 
 .buy-card .container_relative {
-    background: url('/assets/img/bar.png');
+    background: url('../assets/img/bar.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 916px;
@@ -465,7 +708,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    background-image: url('/assets/img/card-line.png');
+    background-image: url('../assets/img/card-line.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -530,7 +773,7 @@ input {
     gap: 32px;
     position: relative;
     background-color: var(--grey);
-    background-image: url(/assets/img/line-success-modal.png);
+    background-image: url(../assets/img/line-success-modal.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     
@@ -545,6 +788,7 @@ input {
     font-size: 100px;
     line-height: 90%;
     text-align: center;
+    white-space: pre-line;
 }
 .success-modal__text {
     font-size: 18px;
@@ -563,6 +807,7 @@ input {
     height: 62px;
     width: 250px;
     border: none;
+    margin-top: -10px;
 }
 /* Стили модалки при успехе */
 
@@ -920,7 +1165,7 @@ a.social-media img {
 
 .for-love-left {
     width: 50%;
-    background-image: url('/assets/img/line_forlove.png');
+    background-image: url('../assets/img/line_forlove.png');
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -1269,8 +1514,8 @@ a.social-media img {
 .team-card {
     width: calc(20% - 8px);
     cursor: pointer;
-    
 }
+
 
 .navigate-btn_center {
     margin: 40px auto 0;
@@ -1361,7 +1606,7 @@ a.social-media img {
 }
 
 .buy-card-window_consultation {
-    background-image: url('/assets/img/line_consultation.png');
+    background-image: url('../assets/img/line_consultation.png');
     background-repeat: no-repeat;
     background-position: bottom;
     padding-bottom: 0;
@@ -1523,7 +1768,12 @@ a.social-media img {
 .map-right {
     width: 42%;
     overflow-y: hidden;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
+.map-right::-webkit-scrollbar {
+    display: none;
+  }
 
 .map-wrapper {
     display: flex;
@@ -1610,7 +1860,7 @@ a.social-media img {
     flex-direction: column;
     gap: 8px;
     background: var(--card-bg);
-    background-image: url('/assets/img/line_map.png');
+    background-image: url('../assets/img/line_map.png');
     background-repeat: no-repeat;
     padding: 16px;
     border-radius: 16px;
@@ -1706,7 +1956,7 @@ a.social-media img {
 
 .app-wrapper {
     background-color: var(--card-bg);
-    background-image: url('/assets/img/line_app.png');
+    background-image: url('../assets/img/line_app.png');
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -1853,8 +2103,9 @@ a.social-media img {
     border-radius: 8px;
     border: none;
     font-weight: 700;
-    color: var(--dark-blue);
+    color: var(--white);
     font-size: 16px;
+    background-color: var(--red);
 }
 
 .club-detail_address {
@@ -2225,25 +2476,25 @@ a.social-media img {
     }
 
     .map-card-wrapper {
-        background-image: url('/assets/img/line_map1440.png');
+        background-image: url('../assets/img/line_map1440.png');
         background-position: center;
     }
 
 
     .buy-card-window {
-        background-image: url('/assets/img/card-line1440.png');
+        background-image: url('../assets/img/card-line1440.png');
     }
 
     .buy-card-window_consultation {
-        background-image: url('/assets/img/line_consultation1440.png');
+        background-image: url('../assets/img/line_consultation1440.png');
     }
 
     .for-love-left {
-        background-image: url('/assets/img/line_forlove1440.png');
+        background-image: url('../assets/img/line_forlove1440.png');
     }
 
     .app-wrapper {
-        background-image: url('/assets/img/line_app1440.png');
+        background-image: url('../assets/img/line_app1440.png');
     }
 
     .dropdown-content_map.active {
@@ -2740,7 +2991,7 @@ a.social-media img {
     /* Стили новой модалки, медяха */
     .buy-card-window__success {
         height: 501px;
-        background-image: url(/assets/img/line-success-modal1440.png);
+        background-image: url(../assets/img/line-success-modal1440.png);
         background-position: center bottom;
         gap: 8px;
     }
@@ -2755,6 +3006,7 @@ a.social-media img {
         height: 56px;
         padding: 12px 24px;
         font-size: 14px;
+        margin-top: 0;
     }
      /* Стили новой модалки, медяха */
 }
@@ -2860,7 +3112,7 @@ a.social-media img {
     }
 
     .map-card-wrapper {
-        background-image: url('/assets/img/line_map768.png');
+        background-image: url('../assets/img/line_map768.png');
         background-position: left;
     }
 
@@ -2869,7 +3121,7 @@ a.social-media img {
     }
 
     .app-wrapper {
-        background-image: url('/assets/img/line_app768.png');
+        background-image: url('../assets/img/line_app768.png');
         background-size: contain;
     }
 
@@ -3670,7 +3922,7 @@ a.social-media img {
   }
 
   .checkbox-label input:checked + .custom-checkbox::after {
-    content: url('/assets/svg/check-drawer.svg');
+    content: url('../assets/svg/check-drawer.svg');
     width: 16px;
     height: 16px;
     position: absolute;
@@ -3735,29 +3987,29 @@ a.social-media img {
     }
 
     .buy-card-window {
-        background-image: url('/assets/img/card-line375.png');
+        background-image: url('../assets/img/card-line375.png');
         background-size: cover;
     }
 
     .buy-card-window_consultation {
-        background-image: url('/assets/img/line_consultation375.png');
+        background-image: url('../assets/img/line_consultation375.png');
         background-size: contain;
     }
 
     .for-love-left {
-        background-image: url('/assets/img/line_forlove375.png');
+        background-image: url('../assets/img/line_forlove375.png');
         background-position: bottom;
     }
 
     .app-wrapper {
-        background-image: url('/assets/img/line_app375.png');
+        background-image: url('../assets/img/line_app375.png');
         background-position-y: 395px;
         background-size: contain;
     }
 
 
     .map-card-wrapper {
-        background-image: url('/assets/img/line_map375.png');
+        background-image: url('../assets/img/line_map375.png');
         background-position: left;
         background-size: contain;
     }

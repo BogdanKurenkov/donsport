@@ -2,7 +2,7 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  background-image: url(/assets/img/line-marketing.png);
+  background-image: url(../assets/img/line-marketing.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,13 +61,13 @@
   border-radius: 16px;
 }
 .marketing-banner-card-first {
-  background-image: url(/assets/img/marketing-banner.png);
+  background-image: url(../assets/img/marketing-banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .marketing-banner-card-second {
-  background-image: url(/assets/img/marketing-banner2.png);
+  background-image: url(../assets/img/marketing-banner2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,10 +157,10 @@
     min-height: 675px;
   }
   .marketing-banner-card-first {
-    background-image: url(/assets/img/marketing-banner1440.png);
+    background-image: url(../assets/img/marketing-banner1440.png);
   }
   .marketing-banner-card-second {
-    background-image: url(/assets/img/marketing-banner2-1440.png);
+    background-image: url(../assets/img/marketing-banner2-1440.png);
   }
   .marketing-card-title__title {
     font-size: 50px;
@@ -195,7 +195,7 @@
 
 @media (max-width: 1024px) {
   .marketing-container {
-    background-image: url(/assets/img/line-marketing-768.png);
+    background-image: url(../assets/img/line-marketing-768.png);
   }
   .marketing-card-title {
     width: 100%;
@@ -219,10 +219,10 @@
     min-height: 990px;
   }
   .marketing-banner-card-first {
-    background-image: url(/assets/img/marketing-banner768.png);
+    background-image: url(../assets/img/marketing-banner768.png);
   }
   .marketing-banner-card-second {
-    background-image: url(/assets/img/marketing-banner2-768.png);
+    background-image: url(../assets/img/marketing-banner2-768.png);
   }
   .marketing-banner-info-card {
     flex-direction: column;
@@ -238,7 +238,7 @@
 }
 @media (max-width: 475px) {
   .marketing-container {
-    background-image: url(/assets/img/line-marketing-375.png);
+    background-image: url(../assets/img/line-marketing-375.png);
   }
   .marketing-card-title {
     padding: 20px 30px;
@@ -262,10 +262,10 @@
     align-items: center;
   }
   .marketing-banner-card-first {
-    background-image: url(/assets/img/marketing-banner375.png);
+    background-image: url(../assets/img/marketing-banner375.png);
   }
   .marketing-banner-card-second {
-    background-image: url(/assets/img/marketing-banner2-375.png);
+    background-image: url(../assets/img/marketing-banner2-375.png);
   }
   .marketing-banner-card-upper__title {
     font-size: 36px;
