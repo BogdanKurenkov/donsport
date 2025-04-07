@@ -39,7 +39,7 @@ function handleScroll() {
     header.classList.remove("hidden");
   }
 
-  if (currentScrollPosition > 300) {
+  if (currentScrollPosition > 0) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
