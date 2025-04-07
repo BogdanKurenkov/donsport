@@ -49,6 +49,9 @@
 .btn-club-details {
   color: var(--black);
   background-color: var(--white);
+  padding: 20px 48px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .btn-small--cl {
@@ -70,6 +73,10 @@
     font-size: 12px;
   }
   .btn-small--cl {
+    font-size: 14px;
+    padding: 15px 36px;
+  }
+  .btn-club-details {
     font-size: 14px;
     padding: 15px 36px;
   }
@@ -96,6 +103,10 @@
     font-size: 32px;
   }
   .btn-small--cl {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .btn-club-details {
     font-size: 12px;
     padding: 10px 20px;
   }
