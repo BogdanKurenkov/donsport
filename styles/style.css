@@ -1536,8 +1536,8 @@ a.social-media img {
     justify-content: space-between;
     gap: 12px;
     width: 367px;
-    height: 160px;
-    min-height: 160px;
+    height: 170px;
+    min-height: 170px;
     border-radius: 8px;
 }
 
@@ -1565,6 +1565,10 @@ a.social-media img {
     line-height: 21.6px;
     border-radius: 8px;
     text-wrap: wrap;
+    /* ios precvios 17.4 */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 /* изменения по котакт дропдауну z-index */
@@ -1731,7 +1735,7 @@ a.social-media img {
 
 .marquee-content {
     display: inline-block;
-    animation: marquee 40s linear infinite;
+    animation: marquee 30s linear infinite;
 }
 
 @keyframes marquee {
