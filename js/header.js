@@ -10,13 +10,13 @@ function handleScroll() {
   } else {
     header.classList.remove("hidden");
 
-    if (currentScrollPosition > 100) {
+    if (currentScrollPosition > 300) {
       header.classList.add("scrolled");
     } else {
       header.classList.remove("scrolled");
     }
   }
-  if (currentScrollPosition === 100) {
+  if (currentScrollPosition === 300) {
     header.classList.remove("scrolled");
   }
   lastScrollPosition = currentScrollPosition;
