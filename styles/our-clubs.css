@@ -109,6 +109,6 @@
 }
 @media (max-width: 375px) {
   .btn-small {
-    padding: 6px;
+    padding: 6px !important;
   }
 }

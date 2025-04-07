@@ -96,6 +96,7 @@
 
 .btn-schedule {
     background: var(--white);
+    color: var(--dark-blue) !important;
 }
 
 .btn-join {

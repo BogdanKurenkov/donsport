@@ -3634,7 +3634,7 @@ a.social-media img {
     }
 
     .page-title {
-        font-size: 58px;
+        font-size: 50px;
         line-height: 52.2px;
     }
 
@@ -3794,6 +3794,7 @@ a.social-media img {
   .drawer-filter-text {
     font-size: 14px;
     font-weight: 600;
+    color: var(--dark-blue) !important;
   }
   .drawer-filter-icon {
     width: 18px;
@@ -4213,6 +4214,11 @@ a.social-media img {
     }
     /* стили модалки */
 }
+@media (max-width:400px) {
+    .page-title {
+        font-size: 44px;
+    }
+}
 
 @media(max-width:375px) {
     .club-preview_6 {
@@ -4222,6 +4228,7 @@ a.social-media img {
     .club-preview_5 {
         left: calc(49vw - 40px);
     }
+
 }
 
 .header-menu {
