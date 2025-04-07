@@ -253,6 +253,9 @@
   height: 56px;
 }
 /* конец формы */
+.certificate-btns-mobile__container {
+  display: none;
+}
 @media (max-width: 1440px) {
   .subscribtion-card-upper {
     min-height: 210px;
@@ -398,6 +401,7 @@
     display: none;
   }
   .certificate-btns-mobile__container {
+    display: flex;
     padding: 0 12px;
   }
   .btn-certificate-mobile {
