@@ -16,7 +16,9 @@ function handleScroll() {
       header.classList.remove("scrolled");
     }
   }
-
+  if (currentScrollPosition === 100) {
+    header.classList.remove("scrolled");
+  }
   lastScrollPosition = currentScrollPosition;
 }
 
