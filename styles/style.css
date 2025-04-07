@@ -3017,7 +3017,7 @@ a.social-media img {
         font-size: 14px;
         margin-top: 0;
     }
-    .club-detail_phone p {
+    .club-detail_phone a {
         font-size: 14px;
         font-weight: 400;
     }
@@ -3542,6 +3542,9 @@ a.social-media img {
 
     input {
         padding-left: 12px;
+    }
+    textarea {
+        padding: 21px 12px;
     }
 
     .details-wrapper {

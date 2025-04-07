@@ -72,6 +72,9 @@
   font-size: 16px;
   font-weight: 500;
 }
+.margin-text {
+  margin-right: 19px;
+}
 .upper-info-end-text span {
   color: #CBD1DC;
 }
