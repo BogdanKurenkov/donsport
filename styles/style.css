@@ -1731,7 +1731,7 @@ a.social-media img {
 
 .marquee-content {
     display: inline-block;
-    animation: marquee 80s linear infinite;
+    animation: marquee 40s linear infinite;
 }
 
 @keyframes marquee {
